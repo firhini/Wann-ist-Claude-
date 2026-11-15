@@ -30,13 +30,18 @@ node scripts/screenshots.mjs <ordner> [pfade]  # Screenshots bei 375 und 1440 px
 scripts/lighthouse.sh /weihnachten /ferien     # Lighthouse Mobile
 ```
 
+## Veröffentlichen
+
+Die Seite ist für Netlify eingerichtet. Die Anleitung Schritt für Schritt steht in [`NETLIFY.md`](NETLIFY.md).
+
 ## Was vor dem Start zu tun ist
 
-1. **Persönliche Angaben** in `site.config.ts` eintragen: `owner.name`, `owner.address`, `owner.email`
-   (derzeit `[[NAME]]`, `[[ADRESSE]]`, `[[EMAIL]]`). Sie erscheinen in Impressum und Datenschutz.
+1. **Postleitzahl und Ort** in `site.config.ts` ergänzen: Bei `owner.address` steht noch `[[PLZ ORT]]`.
+   Name und E-Mail sind eingetragen. Die Angaben erscheinen in Impressum und Datenschutz.
 2. **Domain prüfen.** Der Markenname steht nur in `site.config.ts` (`name`, `domain`). `zeitblatt.de` hatte am
    15.11.2026 keinen DNS-Eintrag, das ist aber keine Zusage der DENIC.
-3. **Umgebungsvariablen auf Vercel:** `NEXT_PUBLIC_SITE_URL` (z. B. `https://zeitblatt.de`), optional `CRON_SECRET`.
+3. **Bei Netlify** optional `CRON_SECRET` setzen (siehe `NETLIFY.md`, Schritt 5). Die Adresse der Seite liest
+   der Build selbst aus der Netlify-Variable `URL`.
 4. **Datenschutztext** mit dem tatsächlichen Hosting-Vertrag abgleichen.
 
 ## Aufbau
@@ -81,4 +86,5 @@ Einwilligungsabfrage und einen angepassten Datenschutztext.
 ## Tageswechsel
 
 Alle Seiten sind statisch mit `revalidate = 3600`. Damit die Tageszahl im HTML auch auf selten besuchten Seiten
-stimmt, ruft Vercel Cron kurz nach Mitternacht deutscher Zeit `/api/tageswechsel` auf (`vercel.json`).
+stimmt, ruft eine geplante Netlify-Funktion kurz nach Mitternacht deutscher Zeit `/api/tageswechsel` auf
+(`netlify/functions/tageswechsel.mjs`).

@@ -1,0 +1,15 @@
+# Netlify-Konfiguration. Next.js läuft über die offizielle Laufzeit von Netlify
+# (statische Seiten, ISR, Route Handler). Mehr dazu in NETLIFY.md.
+
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[functions]
+  directory = "netlify/functions"

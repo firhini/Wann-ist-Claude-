@@ -5,17 +5,21 @@
 export const site = {
   name: "Zeitblatt",
   domain: "zeitblatt.de",
+  /** Wird beim Build gesetzt: eigene Angabe, sonst die Adresse der Netlify-Seite (siehe next.config.ts). */
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://zeitblatt.de",
   claim: "Wie lange noch bis …?",
   description:
     "Zeitblatt zählt die Tage bis Weihnachten, Silvester, zu den Ferien in deinem Bundesland und zu jedem anderen Datum. Ohne Eingabe, mit laufender Uhr.",
   locale: "de-DE",
   timeZone: "Europe/Berlin",
-  /** Persönliche Angaben für Impressum und Datenschutz. Bitte ersetzen. */
+  /**
+   * Persönliche Angaben für Impressum und Datenschutz.
+   * Postleitzahl und Ort fehlen noch: [[PLZ ORT]] ersetzen, bevor die Seite online geht.
+   */
   owner: {
-    name: "[[NAME]]",
-    address: "[[ADRESSE]]",
-    email: "[[EMAIL]]",
+    name: "Farhan Ahmad",
+    address: "Ulmenweg 43, [[PLZ ORT]]",
+    email: "Farhan2008hb@gmail.com",
   },
   /** Werbung und Affiliate sind vorbereitet, aber aus. */
   ads: { enabled: false },

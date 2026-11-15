@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
-import { Analytics } from "@vercel/analytics/next";
 import { site } from "@/site.config";
 import "./globals.css";
 
@@ -59,8 +58,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         {children}
-        {/* Cookiefreie Reichweitenmessung. Das Skript gibt es nur auf Vercel. */}
-        {process.env.VERCEL ? <Analytics /> : null}
       </body>
     </html>
   );

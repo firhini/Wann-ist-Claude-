@@ -157,3 +157,10 @@ Nach Rückmeldung drei zusätzliche Akzente, siehe `DECISIONS.md`: die Einheit n
 Abfahrt auf der Tafel, die Heute-Marke auf der Jahresleiste. Geprüft in zwei Runden (Countdown, Startseite,
 Ferienseite mit Stempel, Tintenmodus, Vorschaubild). Kontrastprüfung um zwei Kombinationen erweitert, alle AA.
 Lighthouse unverändert, CLS 0. Screenshots: `screenshots/orchid/`.
+
+## Nachtrag: Netlify und Impressum (15.11.2026)
+
+Hosting auf Netlify umgestellt (`netlify.toml`, geplante Funktion für den Tageswechsel, Anleitung in
+`NETLIFY.md`), Vercel-Teile entfernt, Datenschutztext angepasst, Impressum mit Name, Straße und E-Mail befüllt.
+Geprüft: lokaler Netlify-Build ohne Fehler, 88 Tests grün, Anti-Slop ohne Treffer, Smoke-Test über alle
+608 Seiten ohne Fehler. Offen: Postleitzahl und Ort im Impressum.

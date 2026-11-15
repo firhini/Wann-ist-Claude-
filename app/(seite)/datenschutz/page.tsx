@@ -48,18 +48,16 @@ export default function Datenschutz() {
             </p>
             <h2>Hosting und Server-Protokolle</h2>
             <p>
-              Die Seite liegt bei Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA. Beim Aufruf verarbeitet
-              Vercel technisch notwendige Daten: IP-Adresse, Zeitpunkt, aufgerufene Adresse, Browser und Betriebssystem.
-              Das ist nötig, um die Seite auszuliefern und Angriffe abzuwehren. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f
-              DSGVO. Mit Vercel besteht ein Vertrag zur Auftragsverarbeitung. Für Übermittlungen in die USA gelten die
-              Standardvertragsklauseln der EU und das EU-US Data Privacy Framework.
+              Die Seite liegt bei Netlify, Inc., 101 2nd Street, San Francisco, CA 94105, USA. Beim Aufruf verarbeitet
+              Netlify technisch notwendige Daten: IP-Adresse, Zeitpunkt, aufgerufene Adresse, Browser und
+              Betriebssystem. Das ist nötig, um die Seite auszuliefern und Angriffe abzuwehren. Rechtsgrundlage ist
+              Art. 6 Abs. 1 lit. f DSGVO. Mit Netlify besteht ein Vertrag zur Auftragsverarbeitung. Für Übermittlungen
+              in die USA gelten die Standardvertragsklauseln der EU und das EU-US Data Privacy Framework.
             </p>
-            <h2>Reichweitenmessung ohne Cookies</h2>
+            <h2>Reichweitenmessung</h2>
             <p>
-              Wir nutzen Vercel Web Analytics. Der Dienst zählt Seitenaufrufe, ohne Cookies zu setzen und ohne dich über
-              mehrere Tage oder Websites hinweg wiederzuerkennen. Gespeichert werden nur zusammengefasste Werte wie
-              aufgerufene Seite, verweisende Seite, Land, Gerätetyp und Browser. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f
-              DSGVO: Wir möchten wissen, welche Seiten gebraucht werden.
+              Es gibt keine. Diese Seite bindet kein Analysewerkzeug ein, setzt keine Zählpixel und lädt keine
+              Skripte von Dritten.
             </p>
             <h2>Speicher im Browser</h2>
             <p>

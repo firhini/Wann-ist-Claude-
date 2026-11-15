@@ -264,3 +264,23 @@ statt mit Streuung: **ein großer Akzent pro Seite, höchstens zwei kleine.**
 
 Nicht gemacht: Orchid in Überschriften, Flächen oder Buttons. Dort würde es zur Dekoration, und der Effekt
 der wenigen Stellen wäre weg. `DESIGN.md`, Abschnitt 2, beschreibt die neue Regel.
+
+## Umstellung auf Netlify
+
+Auf Wunsch läuft die Seite auf Netlify statt auf Vercel.
+
+- **Next.js-Laufzeit von Netlify** (`@netlify/plugin-nextjs`, in `netlify.toml` fest eingetragen). Statische
+  Seiten, ISR, die Route für Vorschaubilder und das gezielte Neu-Erzeugen funktionieren damit unverändert.
+  Ein lokaler Netlify-Build (`netlify build --offline`) lief fehlerfrei durch, die Schriften für `/og` liegen im Paket.
+- **Tageswechsel als geplante Netlify-Funktion** statt Vercel Cron: `netlify/functions/tageswechsel.mjs` läuft
+  um 22:01 und 23:01 UTC und ruft `/api/tageswechsel` auf. Geplante Funktionen laufen bei Netlify nur auf der
+  veröffentlichten Seite, in UTC und höchstens 30 Sekunden.
+- **Die Adresse der Seite kommt aus der Netlify-Variable `URL`.** `next.config.ts` baut sie beim Build fest
+  ein (Vorrang hat `NEXT_PUBLIC_SITE_URL`). So stimmen Canonical, Sitemap und Einbett-Code schon unter der
+  `netlify.app`-Adresse und nach dem Verbinden der Domain, ohne dass eine Variable gesetzt werden muss.
+  Nach einem Domainwechsel braucht es einen neuen Build.
+- **Keine Reichweitenmessung mehr.** `@vercel/analytics` ist entfernt, einen cookiefreien Ersatz ohne
+  Zusatzkosten gibt es bei Netlify nicht. Der Datenschutztext sagt jetzt: Es wird nichts gemessen. Netlify
+  Analytics (serverseitig, kostenpflichtig) lässt sich später ohne Codeänderung dazubuchen.
+- **Impressum:** Name, Straße und E-Mail sind eingetragen. Postleitzahl und Ort fehlten in der Angabe und
+  stehen als `[[PLZ ORT]]` in `site.config.ts`.

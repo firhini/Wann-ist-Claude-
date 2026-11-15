@@ -5,6 +5,7 @@ out
 next-env.d.ts
 .env*
 .vercel
+.netlify
 .DS_Store
 /screenshots/tmp
 /lighthouse
