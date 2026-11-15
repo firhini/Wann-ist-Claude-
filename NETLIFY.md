@@ -48,7 +48,7 @@ Netlify gibt der Seite eine Adresse wie `https://irgendein-name-123.netlify.app`
 | `/weihnachten` | große Zahl, darunter laufen die Sekunden |
 | `/ferien/sommerferien/bayern` | Ferienseite mit Stempel „BY“ |
 | `/eigener-countdown` | Formular. Einen Countdown anlegen und öffnen |
-| `/og?s=/weihnachten` | ein Bild mit der Zahl (das Vorschaubild für WhatsApp) |
+| `/og/s/weihnachten/bild.png` | ein Bild mit der Zahl (das Vorschaubild für WhatsApp) |
 | `/sitemap.xml` | eine Liste mit acht Teil-Sitemaps |
 | `/impressum` | dein Name und deine Anschrift |
 

@@ -11,6 +11,7 @@ import { startTafel } from "@/data/start";
 import { eigeneTermine, eigenerAusParametern } from "@/lib/eigener";
 import { datumLang, datumMitWochentag, uhrzeit, wochentagName } from "@/lib/format";
 import { kalenderwoche } from "@/lib/kw";
+import { ogPfad } from "@/lib/og";
 import { nochTage } from "@/lib/texte";
 import { iso, tageDiff, tagVon } from "@/lib/zeit";
 
@@ -25,7 +26,7 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
   const n = tageDiff(tagVon(now), termin.tag);
   const titel = n > 0 ? `${e.name}: ${nochTage(n)}` : n === 0 ? `${e.name}: heute` : `${e.name}: vorbei`;
   const text = `${e.name} ist am ${datumMitWochentag(termin.tag)}${e.zeit ? `, um ${uhrzeit(e.zeit.h, e.zeit.mi)}` : ""}.`;
-  const bild = `/og?${new URLSearchParams({ t: e.name, d: iso(termin.tag) }).toString()}`;
+  const bild = ogPfad({ t: e.name, d: iso(termin.tag) });
   return {
     ...basis,
     title: titel,

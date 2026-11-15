@@ -91,8 +91,22 @@ for (const p of ["/embed/weihnachten"]) {
 }
 const robots = await text("/robots.txt");
 if (!/Sitemap: /.test(robots.body)) fehler.push("robots.txt ohne Sitemap");
-const og = await fetch(BASE + "/og?s=/weihnachten");
-if (og.status !== 200 || !og.headers.get("content-type")?.includes("image/png")) fehler.push("/og liefert kein PNG");
+// Vorschaubilder: jede Seite braucht ihr eigenes Bild. (Auf Netlify lieferte einmal jede Adresse dasselbe.)
+async function bild(pfad) {
+  const res = await fetch(BASE + pfad);
+  const daten = Buffer.from(await res.arrayBuffer());
+  return { ok: res.status === 200 && (res.headers.get("content-type") ?? "").includes("image/png"), daten };
+}
+const bildA = await bild("/og/s/weihnachten/bild.png");
+const bildB = await bild("/og/s/silvester/bild.png");
+const bildC = await bild("/og/d/2031-01-01/Rente/bild.png");
+if (!bildA.ok || !bildB.ok || !bildC.ok) fehler.push("/og liefert kein PNG");
+if (bildA.daten.equals(bildB.daten) || bildA.daten.equals(bildC.daten)) fehler.push("/og liefert für verschiedene Seiten dasselbe Bild");
+const seiteMitBild = await text("/weihnachten");
+const bildAdresse = seiteMitBild.body.match(/property="og:image" content="([^"]+)"/)?.[1] ?? "";
+if (!/\/og\/s\/weihnachten\/bild\.png$/.test(bildAdresse)) fehler.push(`og:image hat eine unerwartete Adresse: ${bildAdresse}`);
+const alt = await fetch(BASE + "/og?s=/weihnachten", { redirect: "manual" });
+if (alt.status !== 307) fehler.push("Alte Bildadresse /og?s=… leitet nicht um");
 
 console.log(`${n} Seiten geprüft (${teilSitemaps.length} Sitemaps), ${ziele.length} weitere Linkziele, ${kaputt} kaputt.`);
 if (fehler.length) {

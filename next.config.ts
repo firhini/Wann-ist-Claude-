@@ -17,7 +17,8 @@ const config: NextConfig = {
   reactStrictMode: true,
   // Die OG-Schriften werden zur Laufzeit per fs gelesen und müssen ins Deployment.
   outputFileTracingIncludes: {
-    "/og": ["./assets/og/**"],
+    "/og/[...teile]": ["./assets/og/**"],
+    "/og/**": ["./assets/og/**"],
   },
   async headers() {
     return [

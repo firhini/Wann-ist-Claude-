@@ -303,3 +303,16 @@ Gewählt wurde **Nochtage** mit `nochtage.de`.
   einer Bestellung ist das normal. Wenn die Domain beim Anbieter nach einigen Stunden nicht aktiv ist: Bestellung prüfen.
 
 **Impressum vollständig (15.11.2026):** Postleitzahl und Ort sind nachgetragen, der Platzhalter `[[PLZ ORT]]` ist weg.
+
+## Vorschaubilder: Pfade statt Parameter
+
+Nach dem Start fiel beim Teilen in WhatsApp auf: Auf Netlify lieferte jede Bildadresse `/og?s=…` dasselbe Bild.
+Der Zwischenspeicher von Netlify unterscheidet Antworten der Next.js-Laufzeit nicht nach beliebigen Parametern,
+also bekam jede Seite das Bild, das in der Stunde zuerst erzeugt worden war. Lokal und im Netlify-Build war das
+nicht zu sehen.
+
+- Die Angaben stehen jetzt im Pfad: `/og/s/weihnachten/bild.png`, `/og/d/2027-06-12/Hochzeit/bild.png`
+  (`lib/og.ts`, Route `app/og/[...teile]`).
+- Alte Adressen `/og?…` leiten ohne Zwischenspeicherung auf die neuen um.
+- Der Smoke-Test prüft jetzt, dass verschiedene Seiten verschiedene Bilder liefern.
+- Geteilte eigene Countdowns (`/c?…`) waren nicht betroffen: Die Seite wird nie zwischengespeichert.

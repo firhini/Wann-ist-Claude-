@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { site } from "@/site.config";
+import { type OgAngabe, ogPfad } from "./og";
 import type { Faq } from "./countdown";
 
 export type Krume = { name: string; pfad: string };
@@ -17,12 +18,11 @@ export function metadaten(opt: {
   titel: string;
   beschreibung: string;
   pfad: string;
-  /** Parameter für das OG-Bild, z. B. { s: "/weihnachten" }. */
-  og?: Record<string, string>;
+  /** Angaben für das Vorschaubild, z. B. { s: "/weihnachten" }. */
+  og?: OgAngabe;
   noindex?: boolean;
 }): Metadata {
-  const ogParams = new URLSearchParams(opt.og ?? { t: opt.titel });
-  const bild = `/og?${ogParams.toString()}`;
+  const bild = ogPfad(opt.og ?? { t: opt.titel });
   return {
     // Lange Titel bekommen keinen Markennamen angehängt, sonst schneidet Google sie ab.
     title: opt.titel.length > 50 ? { absolute: opt.titel } : opt.titel,
