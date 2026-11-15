@@ -164,16 +164,7 @@ export function CountdownSeite({ c, now, krumen, embedPfad, jahre, zusatz, motiv
                 </div>
               ))}
             </dl>
-            {s.phase === "vor" && (
-              <>
-                <h2 className="mono text-fein mt-8 mb-1 font-medium normal-case tracking-normal text-ink-soft">
-                  Dieselbe Strecke in anderen Einheiten
-                </h2>
-                <div className="border-t border-ink">
-                  <EinheitenListe serverNow={now.getTime()} termine={termine} />
-                </div>
-              </>
-            )}
+            {s.phase === "vor" && <EinheitenListe serverNow={now.getTime()} termine={termine} />}
           </aside>
         </div>
       </section>

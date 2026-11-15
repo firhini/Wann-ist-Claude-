@@ -3,6 +3,7 @@ import type { Countdown, Einheiten, Stand } from "./countdown";
 import {
   datumLang,
   datumMitWochentag,
+  datumOhneJahr,
   plural,
   tausender,
   uhrzeit,
@@ -68,7 +69,7 @@ export function antwort(c: Countdown, s: Stand, folge?: Tag | null): { satz: str
   } else if (uhr) {
     zusatz = `${name} ${mz ? "beginnen" : "beginnt"} am ${datumMitWochentag(s.start)}, um ${uhrzeit(uhr.h, uhr.mi)}.`;
   } else {
-    zusatz = `${name} ${mz ? "fallen" : "fällt"} ${s.start.y} auf einen ${wochentagName(s.start)}, den ${datumLang(s.start)}.`;
+    zusatz = `${name} ${mz ? "fallen" : "fällt"} ${s.start.y} auf einen ${wochentagName(s.start)}, den ${datumOhneJahr(s.start)}.`;
   }
   return { satz, zusatz };
 }

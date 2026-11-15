@@ -111,7 +111,7 @@ export default async function Geteilt({ searchParams }: Props) {
                 bis={`bis ${e.name}`}
                 heuteText="Heute."
                 hatUhrzeit={Boolean(e.zeit)}
-                vorbeiText={`${e.name} war am ${datumLang(termin.tag)}.`}
+                vorbeiText=""
               />
             </div>
             <div className="order-4 mt-7 flex flex-wrap items-center gap-x-6 gap-y-3">
@@ -149,14 +149,7 @@ export default async function Geteilt({ searchParams }: Props) {
               )}
             </dl>
             {n > 0 && (
-              <>
-                <h2 className="mono text-fein mt-8 mb-1 font-medium normal-case tracking-normal text-ink-soft">
-                  Dieselbe Strecke in anderen Einheiten
-                </h2>
-                <div className="border-t border-ink">
-                  <EinheitenListe serverNow={now.getTime()} termine={termine.map((t) => ({ start: t.start, ende: t.ende }))} />
-                </div>
-              </>
+              <EinheitenListe serverNow={now.getTime()} termine={termine.map((t) => ({ start: t.start, ende: t.ende }))} />
             )}
           </aside>
         </div>

@@ -12,7 +12,8 @@
     "anti-slop": "tsx scripts/anti-slop-check.ts",
     "contrast": "tsx scripts/contrast-check.ts",
     "screenshots": "node scripts/screenshots.mjs",
-    "smoke": "node scripts/smoke.mjs"
+    "smoke": "node scripts/smoke.mjs",
+    "zustaende": "node scripts/zustaende.mjs"
   },
   "dependencies": {
     "@date-fns/tz": "^1.5.0",

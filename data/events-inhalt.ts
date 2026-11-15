@@ -1309,7 +1309,7 @@ Gekämpft wird an 49 Sportstätten im Großraum Los Angeles und in Oklahoma City
   {
     slug: "mondfinsternis-2028-12-31",
     title: "Mondfinsternis Silvester 2028",
-    tafel: "Mondfinsternis Silvester 2028",
+    tafel: "Mondfinsternis 31.12.2028",
     question: "Wann ist die Mondfinsternis an Silvester 2028?",
     nominativ: "Die totale Mondfinsternis",
     bis: "bis zur Mondfinsternis an Silvester 2028",

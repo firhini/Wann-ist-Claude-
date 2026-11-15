@@ -184,14 +184,14 @@ export function Zaehler({
     return (
       <div className="zaehler" data-phase="laeuft">
         <p className="display text-plakat">{laeuftText ?? heuteText}</p>
-        <p className="zahl-reihe mt-4" data-stellen={String(rest).length}>
+        <p className="zahl-reihe mt-8 lg:mt-10" data-stellen={String(rest).length}>
           <span className="sr-only">Noch </span>
           <span className="zahl" aria-live="polite" aria-atomic="true" data-testid="tageszahl">
             {rest}
           </span>
           <span className="zahl-einheit">
             {plural(rest, "Tag", "Tage")}
-            {zeitraumWort ? <span className="block">{zeitraumWort}</span> : null}
+            <span className="block text-ink-soft">{zeitraumWort ?? "noch"}</span>
           </span>
         </p>
         <div className="mt-6">

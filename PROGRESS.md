@@ -34,10 +34,10 @@ Dazu `/embed/<slug>` (noindex), `/og` (Vorschaubild), `/sitemap.xml` mit `/sitem
 
 ## Phase 2: Ferien-Cluster (15.11.2026)
 
-**Neue URLs (137 indexierbar, insgesamt 151)**
+**Neue URLs (129 indexierbar, insgesamt 143)**
 - `/ferien` (Hub mit Matrix 16 Länder × 6 Ferienarten)
 - `/ferien/<ferienart>` (6): `herbstferien`, `weihnachtsferien`, `winterferien`, `osterferien`, `pfingstferien`, `sommerferien`
-- `/ferien/<ferienart>/<bundesland>` (87, nur wo die KMK Termine führt)
+- `/ferien/<ferienart>/<bundesland>` (89, nur wo die KMK Termine führt)
 - `/ferien/<bundesland>` (16): alle Ferien eines Landes mit Countdown zu den nächsten
 - `/schule` und `/schule/<bundesland>/schulanfang` (1 + 16)
 - neue Sitemaps `/sitemaps/ferien.xml` und `/sitemaps/schule.xml`
@@ -118,3 +118,35 @@ Dazu `/embed/<slug>` (noindex), `/og` (Vorschaubild), `/sitemap.xml` mit `/sitem
 - Smoke-Test über alle 608 Seiten der Sitemaps: keine Fehler, keine kaputten internen Links.
 
 **Screenshots:** `screenshots/phase-5/`
+
+## Phase 6: Feinschliff (15.11.2026)
+
+**Gebaut**
+- `tests/daten.test.ts`: 37 Tests für Datenintegrität und Sonderlogik (zusammen mit der Datumslogik 88 Tests)
+- `scripts/zustaende.mjs`: Screenshots der Zustände „läuft“, „heute“, „letzter Tag“, „vorbei“
+- Accessibility: Tafelzahlen für Screenreader, Ferien-Matrix per Tastatur scrollbar, Fokusreihenfolge geprüft
+  (Sprunglink, Wortmarke, Navigation, Brotkrumen, alle mit 2 px Fokusrahmen)
+- README mit Start, Prüfungen, Inhaltspflege und der Liste „vor dem Start zu tun“
+
+**Qualitätsschleife**
+- Runde 1: Zustand „läuft“ war gequetscht und zeigte Einheiten bis zum Folgejahr (behoben), Überschrift des
+  Einheiten-Blocks blieb am letzten Tag ohne Inhalt stehen (wandert jetzt mit), Antwortsatz nannte das Jahr
+  doppelt (behoben), „Vorbei“-Seite beim eigenen Countdown sagte dasselbe zweimal (behoben).
+- Runde 2: Tintenmodus auf Ferien-Hub, Ferienseite und Generator geprüft, mobile Navigation verdichtet.
+- Abschluss: `npm run build` (Anti-Slop ohne Treffer, 843 Routen), 88 Tests grün, Kontrast AA in beiden Modi,
+  Smoke-Test über alle 608 Seiten ohne Fehler und ohne kaputten internen Link.
+- Lighthouse Mobile, eine Seite je Typ (16 Seiten): Performance 99 bis 100, Accessibility 100,
+  Best Practices 100, SEO 100, CLS 0, LCP 0,8 bis 0,9 s.
+
+**Endstand**
+| | |
+|---|---|
+| Indexierbare Seiten | 608 |
+| davon Feste und Feiertage | 34 + 16 Länderseiten + Hub |
+| davon Ferien und Schule | 89 + 16 + 6 + Hub, 16 Schulanfang + Hub |
+| davon Datumsseiten | 366 + Hub |
+| davon Events | 37 + Hub |
+| Widgets (noindex) | 235 |
+| Build | 843 Routen in rund 11 Sekunden |
+
+**Screenshots:** `screenshots/phase-6/`

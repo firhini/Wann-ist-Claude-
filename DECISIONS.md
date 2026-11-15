@@ -90,7 +90,7 @@ Teile, zwischen denen nur Wochenenden und Feiertage liegen, werden zu einem Zeit
 Deshalb gibt es `/ferien/winterferien/bayern`, mit Hinweis auf die Herkunft der Zuordnung.
 
 **Nur Seiten mit Terminen.** Hat ein Land eine Ferienart laut KMK nicht (Winterferien in Hessen, Pfingstferien
-in Rheinland-Pfalz), gibt es keine Seite. Aus 6 × 16 = 96 möglichen werden so 87 echte. Die Hubs sagen ausdrücklich,
+in Rheinland-Pfalz), gibt es keine Seite. Aus 6 × 16 = 96 möglichen werden so 89 echte. Die Hubs sagen ausdrücklich,
 welche Länder fehlen.
 
 **Zusätzliche Seiten: `/ferien/<bundesland>` (16) und `/schule` (Hub).** „Schulferien Bayern“ ist eine eigene,
@@ -215,3 +215,33 @@ Breite des iframes an.
 **Abriss-Animation überarbeitet.** In der ersten Fassung hatte das alte Blatt dieselbe Farbe wie die Seite
 und sah aus wie eine drehende Zahl. Jetzt ist es eine Stufe dunkler (`paper-deep`), hat oben die Perforation
 und fällt als sichtbares Blatt weg. Dauer weiter 560 ms, nur CSS.
+
+## Phase 6: Feinschliff
+
+**Zustände im Bild geprüft, nicht nur in Tests.** `scripts/zustaende.mjs` stellt die Uhr im Browser vor und
+fotografiert „läuft“ (Ferien mit Fortschrittsbalken), „heute“ (mit Konfetti), den letzten Tag eines Termins mit
+Uhrzeit (Stunden statt Tage) und „vorbei“. Dabei fiel auf: Der Einheiten-Block blieb stehen und rechnete zum
+nächsten Jahr. Er verschwindet jetzt samt Überschrift, sobald der Termin begonnen hat.
+
+**Tests für Daten, nicht nur für Logik.** `tests/daten.test.ts` prüft bei jedem Lauf: eindeutige Pfade, jede
+Seite mit Text, Fakten und Fragen, alle Links im Fließtext zeigen auf vorhandene Seiten, kein Titel über
+70 Zeichen, Feriendaten plausibel, Feiertagsanzahl je Land, Zahltag-Regel, Event-Startzeiten in deutscher Zeit.
+Die Tests fanden drei Fehler, die im Browser nicht aufgefallen wären (eine Ferienseite mit nur zwei Fakten,
+89 statt 87 Ferien-Kombinationen in der Doku, ein zu langer Tafelname).
+
+**Mobile Navigation bleibt zweizeilig.** Fünf Textlinks passen bei 375 px nicht in eine Zeile. Ein
+Menü-Knopf hätte die Links aus dem sichtbaren HTML genommen, ein seitlich scrollender Streifen hätte den
+letzten Punkt versteckt. Die Links sind auf dem Handy etwas niedriger (36 px), die Antwort bleibt im ersten Bildschirm.
+
+**Screenreader lesen die Tafel als Zahl.** Die Fallblatt-Kacheln sind `aria-hidden`, daneben steht
+unsichtbar „noch 14 Tage“. `aria-live="polite"` trägt nur die Tageszahl. Die Ferien-Matrix ist als
+scrollbarer Bereich per Tastatur erreichbar.
+
+**Was bewusst offen bleibt**
+- Die Platzhalter `[[NAME]]`, `[[ADRESSE]]`, `[[EMAIL]]` in `site.config.ts`.
+- Ferien 2029/30 außer Sommer: sobald die KMK den Kalender veröffentlicht.
+- Uhrzeiten mehrerer Events (Super Bowl, ESC, Champions-League-Finale): nachtragen, wenn bestätigt.
+- Die Verfügbarkeit von `zeitblatt.de` ist nur per DNS geprüft.
+- Schleswig-Holsteins Sommerferien 2028 und 2029: Jahreskalender und langfristige Regelung der KMK weichen
+  voneinander ab, übernommen ist der neuere Jahreskalender. Die Seite des Landes war bei der Prüfung nicht
+  erreichbar (siehe `data/ferien-pruefbericht.md`).

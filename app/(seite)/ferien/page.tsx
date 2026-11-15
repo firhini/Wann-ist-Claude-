@@ -148,7 +148,7 @@ export default function FerienHub() {
           Jede Zelle zeigt den nächsten Termin und führt zur Seite mit Countdown. Ein Strich heißt: Diese Ferien gibt
           es in dem Land nicht.
         </p>
-        <div className="overflow-x-auto">
+        <div className="overflow-x-auto" tabIndex={0} role="region" aria-label="Ferientermine nach Bundesland, seitlich scrollbar">
           <table className="tabelle matrix">
             <caption className="sr-only">Nächste Ferientermine nach Bundesland und Ferienart</caption>
             <thead>

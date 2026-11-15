@@ -12,10 +12,10 @@ export function Kopf({ serverNow }: { serverNow: number }) {
           {site.name}
         </Link>
         <nav aria-label="Hauptnavigation" className="max-lg:order-3 max-lg:w-full">
-          <ul className="flex flex-wrap gap-x-6 text-klein">
+          <ul className="flex flex-wrap gap-x-5 text-klein lg:gap-x-6">
             {HAUPTNAVI.map((l) => (
               <li key={l.pfad}>
-                <Link href={l.pfad} className="link-still inline-flex min-h-11 items-center font-medium">
+                <Link href={l.pfad} className="link-still inline-flex min-h-9 items-center font-medium lg:min-h-11">
                   {l.name}
                 </Link>
               </li>

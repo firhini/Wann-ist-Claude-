@@ -540,6 +540,9 @@ export function ferienFakten(art: Ferienart, code: BundeslandCode, now: Date): s
     );
   const fehlend = FERIENARTEN.filter((a) => ferienzeiten(a.slug, code).length === 0).map((a) => a.name);
   if (fehlend.length) fakten.push(`${b.name} hat laut KMK-Kalender keine ${liste(fehlend)}.`);
+  fakten.push(
+    `Quelle des Termins ist der Ferienkalender der Kultusministerkonferenz für das Schuljahr ${f.schuljahr}, abgerufen am ${datumLang(ausIso(FERIEN_ABGERUFEN))}.`,
+  );
   fakten.push(`Zuständig für die Ferientermine ist das Land: ${b.ministerium}.`);
   fakten.push(
     "Zusätzlich zu den festen Ferien gibt es bewegliche Ferientage, über die jede Schule selbst entscheidet. Sie stehen nicht in dieser Übersicht.",
