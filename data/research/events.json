@@ -1,0 +1,1178 @@
+{
+  "abgerufen": "2026-11-15",
+  "events": [
+    {
+      "slug": "gta-6-release",
+      "titel": "GTA VI – Release",
+      "kategorie": "games",
+      "start": "2026-11-19",
+      "startzeit": null,
+      "ende": null,
+      "ort": "weltweit (PS5, Xbox Series X|S)",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "Rockstar Games – offizielle GTA-VI-Seite",
+        "url": "https://www.rockstargames.com/VI"
+      },
+      "fakten": [
+        "Die offizielle Rockstar-Seite nennt als Termin wörtlich „Coming November 19, 2026“ (abgerufen am 15.11.2026).",
+        "Plattformen laut Rockstar-Seite: PlayStation 5 und Xbox Series X|S.",
+        "Der Termin liegt NACH dem 15.11.2026 (Donnerstag, 19.11.2026) – also noch 4 Tage; eine erneute Verschiebung ist auf der Rockstar-Seite nicht vermerkt.",
+        "Rockstar hat den Termin im Newswire unter dem Titel „Grand Theft Auto VI is Now Set to Launch November 19, 2026“ angekündigt; eine weitere Newswire-Meldung trägt den Titel „Grand Theft Auto VI Pre-Load Begins on November 10“ (beide Titel laut Suchtreffer auf rockstargames.com, Meldungen nicht selbst geöffnet)."
+      ],
+      "weitere_quellen": [
+        "https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026",
+        "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10",
+        "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s",
+        "https://blog.playstation.com/2026/11/03/grand-theft-auto-vi-pre-download-begins-november-10/"
+      ],
+      "notiz": "Datum selbst auf rockstargames.com/VI gelesen. Uhrzeit: Laut Suchtreffer zur Rockstar-Support-Seite Freischaltung um Mitternacht Ortszeit (00:00 MEZ am 19.11.) – die Support-Seite lieferte beim Abruf HTTP 503, daher startzeit = null (nicht selbst nachgelesen). Die Newswire-/Support-/PlayStation-Blog-Links unter weitere_quellen sind Suchtreffer, nicht selbst geöffnet. Vorverschiebungen (Herbst 2025 -> 26.05.2026 -> 19.11.2026) stammen aus Medienberichten.",
+      "interesse": "hoch"
+    },
+    {
+      "slug": "black-friday-2026",
+      "titel": "Black Friday 2026",
+      "kategorie": "feste",
+      "start": "2026-11-27",
+      "startzeit": null,
+      "ende": null,
+      "ort": "weltweit / Online-Handel",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "U.S. Office of Personnel Management – Federal Holidays (Thanksgiving 2026)",
+        "url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+      },
+      "fakten": [
+        "Thanksgiving Day 2026 ist laut OPM am Donnerstag, 26. November 2026.",
+        "Black Friday ist der Freitag nach Thanksgiving, also Freitag, 27. November 2026.",
+        "2027 fällt Thanksgiving laut OPM auf Donnerstag, 25. November – Black Friday 2027 wäre damit der 26. November 2027."
+      ],
+      "weitere_quellen": [],
+      "notiz": "Kein offizieller Veranstalter: Das Datum ist aus dem gesetzlichen US-Feiertag Thanksgiving (4. Donnerstag im November) abgeleitet. 27.11.2026 damit bestätigt.",
+      "interesse": "hoch"
+    },
+    {
+      "slug": "avengers-doomsday-kinostart",
+      "titel": "Avengers: Doomsday – Kinostart Deutschland",
+      "kategorie": "popkultur",
+      "start": "2026-12-16",
+      "startzeit": null,
+      "ende": null,
+      "ort": "Kinos in Deutschland",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "Disney Deutschland – Filmseite Avengers: Doomsday",
+        "url": "https://www.disney.de/filme/avengers-doomsday"
+      },
+      "fakten": [
+        "Disney Deutschland nennt als Erscheinungsdatum den 16. Dezember 2026 (ein Mittwoch).",
+        "Auf der Seite heißt es zusätzlich: „Exklusiv im Kino ab Dezember 2026“."
+      ],
+      "weitere_quellen": [],
+      "notiz": "Eigener Fund (nicht in der Kandidatenliste). US-Start laut Medien 18.12.2026 (nicht offiziell geprüft).",
+      "interesse": "hoch"
+    },
+    {
+      "slug": "vierschanzentournee-2026-27",
+      "titel": "Vierschanzentournee 2026/27",
+      "kategorie": "sport",
+      "start": "2026-12-28",
+      "startzeit": null,
+      "ende": "2027-01-06",
+      "ort": "Oberstdorf, Garmisch-Partenkirchen, Innsbruck, Bischofshofen",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "Vierschanzentournee – offizielle Website (Programm 2026/27)",
+        "url": "https://www.vierschanzentournee.com/news/tickets-for-the-anniversary-and-premiere-four-hills-tour"
+      },
+      "fakten": [
+        "Oberstdorf: Mo, 28.12.2026 Qualifikation Männer und Frauen-Wettkampf; Di, 29.12.2026 Auftaktspringen der Männer.",
+        "Garmisch-Partenkirchen: Do, 31.12.2026 Qualifikation/Frauen; Fr, 01.01.2027 Neujahrsspringen der Männer.",
+        "Innsbruck: Sa, 02.01.2027 Qualifikation/Frauen; So, 03.01.2027 Männer-Wettkampf.",
+        "Bischofshofen: Di, 05.01.2027 Qualifikation/Frauen; Mi, 06.01.2027 Finale der Männer.",
+        "Der Veranstalter spricht von der Jubiläums-Tournee und der Premiere der Frauen-Tournee."
+      ],
+      "weitere_quellen": [],
+      "notiz": "Der Veranstalter bezeichnet das Programm als vorläufig („provisional“). Vorläufige Zeiten: offizielle Eröffnung So, 27.12.2026, 19:00 (Kurpark Oberstdorf); 1. Wertungsdurchgang Männer jeweils 16:30 Uhr (29.12., 01.01., 03.01., 06.01.). start = erster Wettkampftag (28.12.); für einen Countdown auf das Auftaktspringen der Männer: 29.12.2026, 16:30 (vorläufig).",
+      "interesse": "hoch"
+    },
+    {
+      "slug": "handball-wm-2027",
+      "titel": "Handball-WM 2027 (Männer)",
+      "kategorie": "sport",
+      "start": "2027-01-13",
+      "startzeit": "17:30",
+      "ende": "2027-01-31",
+      "ort": "Deutschland: München, Stuttgart, Kiel, Magdeburg, Hannover, Köln",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "IHF – Match schedule confirmed for 2027 IHF Men’s World Championship",
+        "url": "https://www.ihf.info/media-center/news/match-schedule-confirmed-2027-ihf-mens-world-championship"
+      },
+      "fakten": [
+        "Die WM findet vom 13. bis 31. Januar 2027 in Deutschland statt (IHF, handball2027.com).",
+        "Eröffnungstag Mi, 13.01.2027 in München (SAP Garden): erstes Spiel 17:30 Uhr, danach Eröffnungsfeier; Deutschland – Tunesien um 20:30 Uhr.",
+        "Weitere deutsche Vorrundenspiele in München, jeweils 20:30 Uhr: 15.01. gegen Uruguay, 17.01. gegen Serbien.",
+        "Hauptrunde ab 20.01. in Hannover und Köln; K.-o.-Runde ab 26.01. in Köln; Halbfinals 29.01.; Finale am So, 31.01.2027 in Köln.",
+        "32 Teams nehmen teil."
+      ],
+      "weitere_quellen": [
+        "https://handball2027.com/de",
+        "https://handball2027.com/en/match-schedule-playing-system",
+        "https://www.ihf.info/competitions/men/308/30th-ihf-mens-handball-world-championship-2027-germany/263667/matches/2027-01-13"
+      ],
+      "notiz": "startzeit 17:30 = erstes Turnierspiel laut IHF; für einen Countdown auf das deutsche Auftaktspiel: 20:30 Uhr (MEZ). Anwurfzeit des Finales noch nicht veröffentlicht. Die IHF-Spielplanseite zeigt für die Einzelspiele noch Platzhalterzeiten (00:00).",
+      "interesse": "hoch"
+    },
+    {
+      "slug": "alpine-ski-wm-2027",
+      "titel": "Alpine Ski-WM 2027",
+      "kategorie": "sport",
+      "start": "2027-02-01",
+      "startzeit": null,
+      "ende": "2027-02-14",
+      "ort": "Crans-Montana, Schweiz",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "FIS – Alpine World Ski Championships 2027 in Crans-Montana confirmed",
+        "url": "https://fis-ski.com/alpine-skiing/news/2024-25/fis-alpine-world-ski-championships-2027-in-crans-montana-confirmed"
+      },
+      "fakten": [
+        "Die FIS nennt als Termin 1. bis 14. Februar 2027.",
+        "Austragungsort ist Crans-Montana (Schweiz)."
+      ],
+      "weitere_quellen": [],
+      "notiz": "FIS-Meldung stammt aus der Saison 2024/25; ein tagesgenaues Rennprogramm wurde nicht geprüft.",
+      "interesse": "mittel"
+    },
+    {
+      "slug": "biathlon-wm-2027",
+      "titel": "Biathlon-WM 2027",
+      "kategorie": "sport",
+      "start": "2027-02-09",
+      "startzeit": null,
+      "ende": "2027-02-21",
+      "ort": "Otepää, Estland",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "Biathlon Otepää – offizieller Zeitplan des Veranstalters",
+        "url": "https://www.biathlonotepaa.com/en/ajakava"
+      },
+      "fakten": [
+        "Die IBU-Weltmeisterschaften in Otepää laufen laut Veranstalter vom 9. bis 21. Februar 2027.",
+        "Di, 09.02.2027: Eröffnungsfeier; Mi, 10.02.2027: erstes Rennen (Mixed-Staffel).",
+        "Letzter Wettkampftag So, 21.02.2027 mit den Massenstarts der Männer und Frauen."
+      ],
+      "weitere_quellen": [],
+      "notiz": "Zeitplan des Veranstalters nennt Uhrzeiten ohne Zeitzone (Eröffnung 20:00, Mixed-Staffel 17:10 – vermutlich Ortszeit Estland = MEZ+1); deshalb startzeit = null. Ältere Kalender nannten 8.–21.02. bzw. 10.–21.02.",
+      "interesse": "mittel"
+    },
+    {
+      "slug": "super-bowl-lxi",
+      "titel": "Super Bowl LXI",
+      "kategorie": "sport",
+      "start": "2027-02-14",
+      "startzeit": null,
+      "ende": null,
+      "ort": "SoFi Stadium, Inglewood (Los Angeles), USA",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "NFL.com – Jay-Z to headline Super Bowl LXI Halftime Show",
+        "url": "https://www.nfl.com/news/jay-z-to-headline-super-bowl-lxi-at-sofi-stadium-in-inglewood"
+      },
+      "fakten": [
+        "Super Bowl LXI findet laut NFL am Sonntag, 14. Februar 2027 (US-Ortszeit) im SoFi Stadium in Inglewood, Kalifornien statt.",
+        "Die Halbzeitshow bestreitet laut NFL Jay-Z.",
+        "US-Übertragung laut NFL bei ESPN, ABC und Disney+."
+      ],
+      "weitere_quellen": [
+        "https://www.nfl.com/news/sofi-stadium-approved-to-host-super-bowl-lxi-in-2027",
+        "https://www.sofistadium.com/news/detail/sofi-stadium-to-host-super-bowl-lxi-in-2027"
+      ],
+      "notiz": "ACHTUNG Zeitzone: start ist das offizielle US-Datum. Die Kickoff-Zeit steht in der NFL-Meldung nicht und ist laut Suchtreffer zur ESPN-Seite noch nicht final bestätigt. Bei der üblichen Kickoff-Zeit (18:30 ET / 15:30 PT) wäre der Anpfiff in Deutschland in der Nacht auf Montag, 15.02.2027, ca. 00:30 MEZ – unbestätigt. Die beiden weiteren Quellen sind Suchtreffer, nicht selbst geöffnet.",
+      "interesse": "hoch"
+    },
+    {
+      "slug": "nordische-ski-wm-2027",
+      "titel": "Nordische Ski-WM 2027",
+      "kategorie": "sport",
+      "start": "2027-02-24",
+      "startzeit": null,
+      "ende": "2027-03-07",
+      "ort": "Falun (Lugnet), Schweden",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "Falun2027 – offizielle Website",
+        "url": "https://www.falun2027.com/en/"
+      },
+      "fakten": [
+        "Die offizielle Seite nennt: „24 February – 7 March 2027. Lugnet, Falun, Sweden.“"
+      ],
+      "weitere_quellen": [],
+      "notiz": "Ein Entwurf des FIS-Kalenders nannte laut Fachmedien zunächst den 22.02. als Beginn; die Veranstalterseite nennt den 24.02.",
+      "interesse": "mittel"
+    },
+    {
+      "slug": "formel-1-saisonstart-2027",
+      "titel": "Formel 1 – Saisonstart 2027 (Bahrain-GP)",
+      "kategorie": "sport",
+      "start": "2027-03-12",
+      "startzeit": null,
+      "ende": "2027-03-14",
+      "ort": "Bahrain International Circuit, Sakhir",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "Formula1.com – Rennkalender 2027",
+        "url": "https://www.formula1.com/en/racing/2027"
+      },
+      "fakten": [
+        "Runde 1 der Saison 2027 ist der Große Preis von Bahrain am Wochenende 12.–14. März 2027.",
+        "Der Kalender umfasst 24 Rennen; das Finale steigt vom 10. bis 12. Dezember 2027 in Abu Dhabi.",
+        "Bahrain bildet zum Auftakt einen Double-Header mit Saudi-Arabien; die Wintertests (ein Test, vier Tage) finden Ende Februar in Bahrain statt."
+      ],
+      "weitere_quellen": [
+        "https://www.formula1.com/en/latest/article/everything-you-need-to-know-about-the-2027-f1-calendar.B8HW7bYE1DhRm4Ib1nlqT",
+        "https://www.mclaren.com/racing/formula-1/2026/2027-calendar-announced/"
+      ],
+      "notiz": "start = erster Tag des Rennwochenendes (Freitag). Renntag ist der letzte Tag des Wochenendes, Sonntag, 14.03.2027; Startzeit des Rennens noch nicht veröffentlicht.",
+      "interesse": "hoch"
+    },
+    {
+      "slug": "landtagswahl-schleswig-holstein-2027",
+      "titel": "Landtagswahl Schleswig-Holstein 2027",
+      "kategorie": "wahlen",
+      "start": "2027-04-18",
+      "startzeit": null,
+      "ende": null,
+      "ort": "Schleswig-Holstein",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "Die Bundeswahlleiterin – Wahltermine",
+        "url": "https://www.bundeswahlleiterin.de/service/wahltermine.html"
+      },
+      "fakten": [
+        "Die Bundeswahlleiterin führt die Landtagswahl in Schleswig-Holstein für den 18.04.2027 (Sonntag).",
+        "Die Übersicht enthält laut Bundeswahlleiterin genaue Termine erst nach offizieller Bekanntgabe."
+      ],
+      "weitere_quellen": [
+        "https://www.schleswig-holstein.de/DE/landesregierung/ministerien-behoerden/IV/Presse/PI/2026/1_Quartal/260324_landtagswahl",
+        "https://www.landtag.ltsh.de/nachrichten/26_03_25_landtagswahl_2027/"
+      ],
+      "notiz": "Kabinettsbeschluss vom 24.03.2026 laut Pressemitteilung des Landes (Suchtreffer; schleswig-holstein.de lieferte beim Abruf HTTP 503).",
+      "interesse": "mittel"
+    },
+    {
+      "slug": "landtagswahl-saarland-2027",
+      "titel": "Landtagswahl Saarland 2027",
+      "kategorie": "wahlen",
+      "start": "2027-04-18",
+      "startzeit": null,
+      "ende": null,
+      "ort": "Saarland",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "Die Bundeswahlleiterin – Wahltermine",
+        "url": "https://www.bundeswahlleiterin.de/service/wahltermine.html"
+      },
+      "fakten": [
+        "Die Bundeswahlleiterin führt die Landtagswahl im Saarland für den 18.04.2027 (Sonntag)."
+      ],
+      "weitere_quellen": [
+        "https://www.saarland.de/mibs/DE/aktuelles/newsletter/medieninformationen/_documents/2026/M%C3%A4rz/pm21_2026-03-03-Wahlankuendigung"
+      ],
+      "notiz": "Ministerratsbeschluss laut Medieninformation des Saarlandes vom 03.03.2026 (Suchtreffer; saarland.de lieferte beim Abruf HTTP 403).",
+      "interesse": "mittel"
+    },
+    {
+      "slug": "landtagswahl-nrw-2027",
+      "titel": "Landtagswahl Nordrhein-Westfalen 2027",
+      "kategorie": "wahlen",
+      "start": "2027-04-25",
+      "startzeit": null,
+      "ende": null,
+      "ort": "Nordrhein-Westfalen",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "Land NRW – Kabinett setzt Landtagswahl 2027 auf den 25. April fest",
+        "url": "https://www.land.nrw/pressemitteilung/kabinett-setzt-landtagswahl-2027-auf-den-25-april-fest"
+      },
+      "fakten": [
+        "„Die nächsten Wahlen zum nordrhein-westfälischen Landtag werden am 25. April 2027 stattfinden.“ (Pressemitteilung vom 24. Februar 2026)",
+        "Der 25.04.2027 ist ein Sonntag; die Bundeswahlleiterin führt denselben Termin."
+      ],
+      "weitere_quellen": [
+        "https://www.bundeswahlleiterin.de/service/wahltermine.html",
+        "https://www.im.nrw/landtagswahl-2027-am-25-april-2027"
+      ],
+      "notiz": "",
+      "interesse": "hoch"
+    },
+    {
+      "slug": "esc-2027-finale",
+      "titel": "Eurovision Song Contest 2027 – Finale",
+      "kategorie": "popkultur",
+      "start": "2027-05-15",
+      "startzeit": null,
+      "ende": null,
+      "ort": "Arena Burgas, Burgas, Bulgarien",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "EBU – Burgas to host Eurovision Song Contest 2027",
+        "url": "https://www.ebu.ch/news/2026/08/burgas-to-host-eurovision-song-contest-2027"
+      },
+      "fakten": [
+        "Das Finale des 71. Eurovision Song Contest findet am Samstag, 15. Mai 2027 in der Arena Burgas statt.",
+        "Die Halbfinals sind am Dienstag, 11. Mai und Donnerstag, 13. Mai 2027.",
+        "Bulgarien ist Gastgeber, weil DARA den ESC 2026 in Wien mit „Bangaranga“ gewonnen hat (EBU-Meldung vom 13.08.2026)."
+      ],
+      "weitere_quellen": [
+        "https://www.eurovision.com/stories/burgas-to-host-71st-eurovision-bulgaria-2027/",
+        "https://www.eurovision.com/newsroom/frequently-asked-questions/faqs-burgas-2027/"
+      ],
+      "notiz": "Beginn 21:00 Uhr MESZ wird in Suchtreffern zur eurovision.com-FAQ genannt; eurovision.com lieferte beim Abruf HTTP 403 und die EBU-Meldung nennt keine Uhrzeit – daher startzeit = null.",
+      "interesse": "hoch"
+    },
+    {
+      "slug": "dfb-pokalfinale-2027",
+      "titel": "DFB-Pokalfinale 2027",
+      "kategorie": "sport",
+      "start": "2027-05-29",
+      "startzeit": "20:00",
+      "ende": null,
+      "ort": "Berlin (Olympiastadion)",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "DFB – Rahmentermine DFB-Pokal 2026/27",
+        "url": "https://www.dfb.de/maenner/wettbewerbe/dfb-pokal/rahmentermine"
+      },
+      "fakten": [
+        "Der DFB nennt: „Finale in Berlin: 29. Mai 2027“ (ein Samstag).",
+        "Laut DFB-Wettbewerbsinformationen findet das Finale „am 29. Mai 2027 ab 20 Uhr“ statt.",
+        "Davor: Achtelfinale 1./2. Dezember 2026, Viertelfinale 2./3. und 9./10. Februar 2027, Halbfinale 20./21. April 2027."
+      ],
+      "weitere_quellen": [
+        "https://www.dfb.de/maenner/wettbewerbe/dfb-pokal/wettbewerbsinformationen",
+        "https://www.dfb.de/news/dfb-pokalfinale-der-maenner-bleibt-bis-2030-in-berlin"
+      ],
+      "notiz": "Die DFB-Terminseiten nennen als Ort „Berlin“; das Olympiastadion ergibt sich aus der DFB-Meldung zur Verlängerung bis 2030 (Suchtreffer, nicht selbst geöffnet) und der DFL-Meldung zum Finale 2028.",
+      "interesse": "hoch"
+    },
+    {
+      "slug": "buergerschaftswahl-bremen-2027",
+      "titel": "Bürgerschaftswahl Bremen 2027",
+      "kategorie": "wahlen",
+      "start": "2027-05-30",
+      "startzeit": null,
+      "ende": null,
+      "ort": "Bremen und Bremerhaven",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "Die Bundeswahlleiterin – Wahltermine",
+        "url": "https://www.bundeswahlleiterin.de/service/wahltermine.html"
+      },
+      "fakten": [
+        "Die Bundeswahlleiterin führt die Bürgerschaftswahl in Bremen für den 30.05.2027 (Sonntag)."
+      ],
+      "weitere_quellen": [
+        "https://www.wahlen.bremen.de/bremer-wahlen-6925"
+      ],
+      "notiz": "Die Seite des Landeswahlleiters Bremen (wahlen.bremen.de) nennt laut Suchtreffer ebenfalls den 30.05.2027, lieferte beim Abruf aber HTTP 403.",
+      "interesse": "mittel"
+    },
+    {
+      "slug": "rock-am-ring-2027",
+      "titel": "Rock am Ring 2027",
+      "kategorie": "feste",
+      "start": "2027-06-04",
+      "startzeit": null,
+      "ende": "2027-06-06",
+      "ort": "Nürburgring, Rheinland-Pfalz",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "Rock am Ring – offizielle Info-Seite",
+        "url": "https://www.rock-am-ring.com/en/info"
+      },
+      "fakten": [
+        "Rock am Ring 2027 findet laut Veranstalter vom 4. bis 6. Juni 2027 am Nürburgring statt."
+      ],
+      "weitere_quellen": [],
+      "notiz": "Camping-Öffnung ab 02.06. und Headliner (u. a. blink-182) nur aus Suchtreffern, nicht selbst auf der Veranstalterseite geprüft.",
+      "interesse": "hoch"
+    },
+    {
+      "slug": "champions-league-finale-2027",
+      "titel": "Champions-League-Finale 2027",
+      "kategorie": "sport",
+      "start": "2027-06-05",
+      "startzeit": null,
+      "ende": null,
+      "ort": "Estadio Metropolitano, Madrid",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "UEFA.com – 2027 UEFA Champions League final: Estadio Metropolitano",
+        "url": "https://www.uefa.com/uefachampionsleague/news/029d-1eb2d5faf53c-d67c9fed04fa-1000--2027-uefa-champions-league-final-estadio-metropolitano"
+      },
+      "fakten": [
+        "Das Finale der Saison 2026/27 ist laut UEFA für Samstag, 5. Juni 2027 angesetzt.",
+        "Gespielt wird im Estadio Metropolitano von Atlético de Madrid."
+      ],
+      "weitere_quellen": [],
+      "notiz": "Anstoßzeit auf der UEFA-Seite nicht genannt.",
+      "interesse": "hoch"
+    },
+    {
+      "slug": "kieler-woche-2027",
+      "titel": "Kieler Woche 2027",
+      "kategorie": "feste",
+      "start": "2027-06-19",
+      "startzeit": null,
+      "ende": "2027-06-27",
+      "ort": "Kiel",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "Kieler Woche – offizielle Website",
+        "url": "https://www.kieler-woche.de/"
+      },
+      "fakten": [
+        "Die offizielle Seite nennt den Zeitraum 19. bis 27. Juni 2027."
+      ],
+      "weitere_quellen": [],
+      "notiz": "",
+      "interesse": "mittel"
+    },
+    {
+      "slug": "fifa-frauen-wm-2027",
+      "titel": "FIFA Frauen-WM 2027",
+      "kategorie": "sport",
+      "start": "2027-06-24",
+      "startzeit": null,
+      "ende": "2027-07-25",
+      "ort": "Brasilien (8 Spielorte; Eröffnungsspiel und Finale im Maracanã, Rio de Janeiro)",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "FIFA – Women’s World Cup Brazil 2027 dates confirmed",
+        "url": "https://inside.fifa.com/media-releases/fifa-womens-world-cup-brazil-2027-dates-confirmed"
+      },
+      "fakten": [
+        "Laut FIFA wird das Turnier vom 24. Juni bis 25. Juli 2027 gespielt.",
+        "Gastgeber Brasilien startet am Donnerstag, 24. Juni 2027 im Estádio do Maracanã in Rio de Janeiro; dort finden Eröffnungsspiel und Finale statt.",
+        "32 Teams, acht Spielorte: Rio de Janeiro, São Paulo, Brasília, Porto Alegre, Recife, Salvador, Belo Horizonte, Fortaleza."
+      ],
+      "weitere_quellen": [
+        "https://inside.fifa.com/en/news/womens-world-cup-2027-brazil-maracana-match-schedule-unveiled"
+      ],
+      "notiz": "Anstoßzeiten nicht veröffentlicht. Brasilien liegt 5 Stunden hinter MESZ – ein Abendspiel in Rio fiele in Deutschland auf den Folgetag (25.06.).",
+      "interesse": "hoch"
+    },
+    {
+      "slug": "wimbledon-2027",
+      "titel": "Wimbledon 2027",
+      "kategorie": "sport",
+      "start": "2027-06-28",
+      "startzeit": null,
+      "ende": "2027-07-11",
+      "ort": "All England Lawn Tennis Club, London",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "Wimbledon.com – Dates for Future Championships",
+        "url": "https://www.wimbledon.com/en_GB/atoz/dates.html"
+      },
+      "fakten": [
+        "„The Championships 2027 will take place from 28 June 2027 to 11 July 2027.“",
+        "2028 läuft das Turnier vom 3. bis 16. Juli, 2029 vom 2. bis 15. Juli."
+      ],
+      "weitere_quellen": [],
+      "notiz": "",
+      "interesse": "mittel"
+    },
+    {
+      "slug": "tour-de-france-2027",
+      "titel": "Tour de France 2027 – Grand Départ",
+      "kategorie": "sport",
+      "start": "2027-07-02",
+      "startzeit": null,
+      "ende": "2027-07-25",
+      "ort": "Start in Edinburgh (Schottland), Ziel Paris Champs-Élysées",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "letour.fr – offizielle Website der Tour de France",
+        "url": "https://www.letour.fr/en/"
+      },
+      "fakten": [
+        "letour.fr nennt für die Tour 2027 den Zeitraum 02.07.–25.07.2027.",
+        "Der Grand Départ findet vom 2. bis 4. Juli 2027 in Großbritannien statt; die 1. Etappe führt von Edinburgh nach Carlisle.",
+        "Die 21. Etappe am 25. Juli 2027 endet auf den Champs-Élysées in Paris.",
+        "Die Tour de France Femmes startet am 30. Juli 2027 in Leeds."
+      ],
+      "weitere_quellen": [
+        "https://www.letourgb.com/"
+      ],
+      "notiz": "letour.fr war nur per Direktabruf (nicht per WebFetch) lesbar. Der Countdown auf der Startseite zielt auf 02.07.2027, 17:05 (Europe/Paris) – als Etappen-Startzeit nicht bestätigt, daher startzeit = null.",
+      "interesse": "hoch"
+    },
+    {
+      "slug": "wacken-open-air-2027",
+      "titel": "Wacken Open Air 2027",
+      "kategorie": "feste",
+      "start": "2027-07-28",
+      "startzeit": null,
+      "ende": "2027-07-31",
+      "ort": "Wacken, Schleswig-Holstein",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "W:O:A – offizielle FAQ „When will W:O:A 2027 take place?“",
+        "url": "https://faq.wacken.com/en-us/43-w-o-a-2026/536-when-will-w-o-a-2026-take-place"
+      },
+      "fakten": [
+        "W:O:A 2027 findet laut Veranstalter vom 28. bis 31. Juli 2027 in Wacken, Schleswig-Holstein statt."
+      ],
+      "weitere_quellen": [
+        "https://www.wacken.com/en/rechtliches/terms-conditions-2027/",
+        "https://www.wacken.com/en/tickets-shop/ticket-overview-2027/"
+      ],
+      "notiz": "Die wacken.com-Startseite selbst zeigte beim Abruf kein Datum (Countdown ohne Werte); Datum aus der offiziellen FAQ-Datenbank des Veranstalters.",
+      "interesse": "hoch"
+    },
+    {
+      "slug": "sonnenfinsternis-2027",
+      "titel": "Totale Sonnenfinsternis am 2. August 2027 (in Deutschland partiell)",
+      "kategorie": "astronomie",
+      "start": "2027-08-02",
+      "startzeit": null,
+      "ende": null,
+      "ort": "Totalität: Marokko, Spanien, Algerien, Libyen, Ägypten, Saudi-Arabien, Jemen, Somalia; in Deutschland partiell",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "NASA GSFC – Solar Eclipses 2021–2030 (Fred Espenak)",
+        "url": "https://eclipse.gsfc.nasa.gov/SEdecade/SEdecade2021.html"
+      },
+      "fakten": [
+        "NASA: totale Sonnenfinsternis am 2. August 2027, Saros 136, größte Finsternis um 10:07:49 TD, maximale Totalitätsdauer 6 min 23 s.",
+        "Sichtbarkeitsgebiet laut NASA: Afrika, Europa, Naher Osten, West- und Südasien; Totalitätszone u. a. über Südspanien, Marokko und Ägypten.",
+        "Deutschland liegt außerhalb der Totalitätszone – hier ist die Finsternis nur partiell zu sehen (Montagvormittag).",
+        "Eigene Berechnung aus den NASA-Besselelementen (siehe lokal_deutschland): Beginn je nach Ort ca. 10:04–10:22 MESZ, Maximum ca. 11:06–11:14 MESZ, Ende ca. 12:04–12:17 MESZ; Bedeckung der Sonnenscheibe ca. 28 % (Rügen) bis 54 % (Bodensee)."
+      ],
+      "weitere_quellen": [
+        "https://eclipse.gsfc.nasa.gov/JSEX/JSEX-EU.html",
+        "https://eclipse.gsfc.nasa.gov/JSEX/SE2001.js"
+      ],
+      "notiz": "UTC: größte Finsternis 10:07:49 TD ≈ 10:06:33 UTC (ΔT = 76,0 s laut NASA-Elementen) = 12:06:33 MESZ – das ist der globale Höhepunkt (in Ägypten), nicht das Maximum in Deutschland. Eine offizielle Seite (NASA/ESA/DLR) mit fertigen Ortszeiten für Deutschland wurde NICHT gefunden; die Deutschland-Werte sind eine eigene Berechnung mit dem Standardverfahren (Meeus) aus den NASA-Besselelementen (Five Millennium Canon). Die Rechnung wurde gegen den Rechner des U.S. Naval Observatory für den 12.08.2026/Berlin geprüft (Abweichung ≤ 2 s; für 2027 liefert die USNO-API keine Daten). Deshalb startzeit = null; für einen Countdown kann der früheste Beginn in Deutschland (ca. 10:04 MESZ, Südwesten) oder die Ortszeit einer Stadt aus lokal_deutschland verwendet werden.",
+      "interesse": "hoch",
+      "lokal_deutschland": {
+        "methode": "Eigene Berechnung aus NASA-Besselelementen (Espenak/Meeus), validiert gegen USNO-Rechner (12.08.2026). Zeiten in MESZ (UTC+2), auf volle Minuten gerundet; Bedeckung = verdeckter Flächenanteil der Sonnenscheibe.",
+        "offiziell_veroeffentlicht": false,
+        "staedte": [
+          {
+            "ort": "Berlin",
+            "beginn": "10:17",
+            "maximum": "11:14",
+            "ende": "12:12",
+            "bedeckung_prozent": 34.0,
+            "magnitude": 0.447
+          },
+          {
+            "ort": "Hamburg",
+            "beginn": "10:16",
+            "maximum": "11:10",
+            "ende": "12:07",
+            "bedeckung_prozent": 32.2,
+            "magnitude": 0.43
+          },
+          {
+            "ort": "München",
+            "beginn": "10:08",
+            "maximum": "11:11",
+            "ende": "12:17",
+            "bedeckung_prozent": 50.5,
+            "magnitude": 0.591
+          },
+          {
+            "ort": "Köln",
+            "beginn": "10:08",
+            "maximum": "11:07",
+            "ende": "12:08",
+            "bedeckung_prozent": 42.3,
+            "magnitude": 0.521
+          },
+          {
+            "ort": "Frankfurt am Main",
+            "beginn": "10:08",
+            "maximum": "11:08",
+            "ende": "12:11",
+            "bedeckung_prozent": 44.6,
+            "magnitude": 0.541
+          },
+          {
+            "ort": "Stuttgart",
+            "beginn": "10:07",
+            "maximum": "11:08",
+            "ende": "12:13",
+            "bedeckung_prozent": 49.3,
+            "magnitude": 0.581
+          },
+          {
+            "ort": "Leipzig",
+            "beginn": "10:14",
+            "maximum": "11:13",
+            "ende": "12:13",
+            "bedeckung_prozent": 38.5,
+            "magnitude": 0.488
+          },
+          {
+            "ort": "Freiburg im Breisgau",
+            "beginn": "10:04",
+            "maximum": "11:07",
+            "ende": "12:13",
+            "bedeckung_prozent": 52.8,
+            "magnitude": 0.611
+          },
+          {
+            "ort": "Lindau (Bodensee)",
+            "beginn": "10:05",
+            "maximum": "11:09",
+            "ende": "12:15",
+            "bedeckung_prozent": 53.7,
+            "magnitude": 0.618
+          },
+          {
+            "ort": "Sassnitz (Rügen)",
+            "beginn": "10:22",
+            "maximum": "11:14",
+            "ende": "12:08",
+            "bedeckung_prozent": 27.6,
+            "magnitude": 0.386
+          }
+        ]
+      }
+    },
+    {
+      "slug": "perseiden-2027",
+      "titel": "Perseiden-Maximum 2027",
+      "kategorie": "astronomie",
+      "start": "2027-08-13",
+      "startzeit": "10:00",
+      "ende": null,
+      "ort": "Nordhalbkugel (in Deutschland sichtbar)",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "International Meteor Organization – 2027 Meteor Shower Calendar (PDF)",
+        "url": "https://www.imo.net/files/meteor-shower/cal2027.pdf"
+      },
+      "fakten": [
+        "IMO: Perseiden aktiv vom 17. Juli bis 24. August 2027; Maximum am 13. August 2027 zwischen 08 und 10 Uhr UT (10–12 Uhr MESZ), ZHR 110+.",
+        "Das Maximum fällt in Deutschland auf den Vormittag (Taghimmel); für Beobachter bieten sich daher die Nächte 12./13. und 13./14. August an (eigene Einordnung).",
+        "Laut IMO steht der Mond am 12./13. August zwischen erstem Viertel und Vollmond – das mondfreie Zeitfenster ist kurz.",
+        "Die IMO nennt mögliche zusätzliche Aktivität durch Staubspuren in der Nacht 12./13. August (u. a. 12.08. 23:46 UT und 13.08. ca. 02 UT) sowie eine um 10–20 % erhöhte Rate (ZHR 110–120)."
+      ],
+      "weitere_quellen": [
+        "https://www.imo.net/meteor-shower-calendar-2027/"
+      ],
+      "notiz": "UTC: Maximum 13.08.2027, 08:00–10:00 UT. startzeit = Beginn des Maximumsfensters in MESZ. Für einen Publikums-Countdown ist die Nacht vom 12. auf den 13. August sinnvoller. Die IMO ist der Fachverband, keine Behörde. Eigene Rechnung (PyEphem): Monduntergang in der Nacht 12./13.08. ca. 01:10 MESZ (Berlin) bis 01:45 MESZ (München).",
+      "interesse": "hoch"
+    },
+    {
+      "slug": "bundesliga-start-2027-28",
+      "titel": "Bundesliga-Saisonstart 2027/28",
+      "kategorie": "sport",
+      "start": "2027-08-20",
+      "startzeit": null,
+      "ende": null,
+      "ort": "Deutschland",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "DFL / bundesliga.com – Rahmenterminkalender 2027/28",
+        "url": "https://www.bundesliga.com/de/bundesliga/news/rahmenterminkalender-saison-2027-28-auftakt-39772"
+      },
+      "fakten": [
+        "Das Eröffnungsspiel der Bundesliga 2027/28 ist auf Freitag, 20. August 2027 terminiert (1. Spieltag 20.–22.08.).",
+        "Die 2. Bundesliga startet am 30. Juli 2027; der Supercup wird am Samstag, 14. August 2027 gespielt.",
+        "Winterpause nach dem 15. Spieltag (17.–19.12.2027), Wiederbeginn am 7. Januar 2028; letzter Spieltag am Samstag, 13. Mai 2028.",
+        "1. DFB-Pokal-Runde: 13.–16. August 2027."
+      ],
+      "weitere_quellen": [
+        "https://www.dfb.de/news/rahmenterminkalender-fuer-die-saison-2027/2028-verabschiedet"
+      ],
+      "notiz": "Meldung vom 30.10.2026. Paarung und Anstoßzeit des Eröffnungsspiels stehen erst mit dem Spielplan fest.",
+      "interesse": "hoch"
+    },
+    {
+      "slug": "gamescom-2027",
+      "titel": "gamescom 2027",
+      "kategorie": "games",
+      "start": "2027-08-23",
+      "startzeit": null,
+      "ende": "2027-08-29",
+      "ort": "Koelnmesse, Köln",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "gamescom – offizielle Website",
+        "url": "https://www.gamescom.global/en"
+      },
+      "fakten": [
+        "Die offizielle Seite nennt: gamescom 23.–29.08.2027, für das Publikum geöffnet 26.–29.08.2027.",
+        "Selbstbeschreibung: weltgrößtes Event für Computer- und Videospiele, 23.–29. August 2027 in Köln."
+      ],
+      "weitere_quellen": [],
+      "notiz": "Für einen Besucher-Countdown ist der erste Publikumstag Do, 26.08.2027 relevant. Termine von Opening Night Live und Fachbesuchertag nur aus Suchtreffern (ONL 24.08., Fachbesuchertag 25.08.) – nicht selbst verifiziert.",
+      "interesse": "hoch"
+    },
+    {
+      "slug": "oktoberfest-2027",
+      "titel": "Oktoberfest 2027",
+      "kategorie": "feste",
+      "start": "2027-09-18",
+      "startzeit": "12:00",
+      "ende": "2027-10-03",
+      "ort": "Theresienwiese, München",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "oktoberfest.de – offizielle Website der Landeshauptstadt München",
+        "url": "https://www.oktoberfest.de/"
+      },
+      "fakten": [
+        "Das Oktoberfest 2027 findet vom 18. September bis 3. Oktober 2027 statt (oktoberfest.de).",
+        "muenchen.de nennt „Samstag, 18. September, bis Sonntag, 3. Oktober 2027“.",
+        "Der Bierausschank beginnt am Eröffnungstag nach dem Anstich um 12 Uhr (muenchen.de)."
+      ],
+      "weitere_quellen": [
+        "https://www.muenchen.de/veranstaltungen/oktoberfest"
+      ],
+      "notiz": "startzeit = Anstich um 12:00 Uhr am Eröffnungssamstag.",
+      "interesse": "hoch"
+    },
+    {
+      "slug": "landtagswahl-niedersachsen-2027",
+      "titel": "Landtagswahl Niedersachsen 2027",
+      "kategorie": "wahlen",
+      "start": "2027-09-26",
+      "startzeit": "08:00",
+      "ende": null,
+      "ort": "Niedersachsen",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "Niedersächsische Staatskanzlei – Der Niedersächsische Landtag wird am 26. September 2027 neu gewählt",
+        "url": "https://www.stk.niedersachsen.de/startseite/presseinformationen/der-niedersachsische-landtag-wird-am-26-september-2027-neu-gewahlt-253008.html"
+      },
+      "fakten": [
+        "„Die Wahl findet am Sonntag, den 26. September 2027, in der Zeit von 08.00 bis 18.00 Uhr statt.“ (Presseinformation vom 11.08.2026)",
+        "Die Bundeswahlleiterin führt denselben Termin."
+      ],
+      "weitere_quellen": [
+        "https://www.bundeswahlleiterin.de/service/wahltermine.html"
+      ],
+      "notiz": "startzeit = Öffnung der Wahllokale.",
+      "interesse": "mittel"
+    },
+    {
+      "slug": "frankfurter-buchmesse-2027",
+      "titel": "Frankfurter Buchmesse 2027",
+      "kategorie": "feste",
+      "start": "2027-10-06",
+      "startzeit": null,
+      "ende": "2027-10-10",
+      "ort": "Messe Frankfurt, Frankfurt am Main",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "Frankfurter Buchmesse – offizielle Website (Zukünftige Messetermine)",
+        "url": "https://www.buchmesse.de/"
+      },
+      "fakten": [
+        "Die Buchmesse nennt als Termin 6.–10. Oktober 2027.",
+        "Ehrengast 2027 ist Chile."
+      ],
+      "weitere_quellen": [],
+      "notiz": "",
+      "interesse": "mittel"
+    },
+    {
+      "slug": "dfb-pokalfinale-2028",
+      "titel": "DFB-Pokalfinale 2028",
+      "kategorie": "sport",
+      "start": "2028-05-20",
+      "startzeit": null,
+      "ende": null,
+      "ort": "Olympiastadion Berlin",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "DFL / bundesliga.com – Rahmenterminkalender 2027/28",
+        "url": "https://www.bundesliga.com/de/bundesliga/news/rahmenterminkalender-saison-2027-28-auftakt-39772"
+      },
+      "fakten": [
+        "„Das DFB-Pokalfinale wird am Samstag, 20. Mai 2028, im Berliner Olympiastadion ausgetragen.“"
+      ],
+      "weitere_quellen": [],
+      "notiz": "Eigener Fund aus dem Rahmenterminkalender 2027/28.",
+      "interesse": "mittel"
+    },
+    {
+      "slug": "uefa-euro-2028",
+      "titel": "UEFA EURO 2028 – Eröffnungsspiel",
+      "kategorie": "sport",
+      "start": "2028-06-09",
+      "startzeit": null,
+      "ende": "2028-07-09",
+      "ort": "Großbritannien und Irland; Eröffnungsspiel im National Stadium of Wales, Cardiff",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "UEFA.com – EURO 2028: Spielplan bestätigt",
+        "url": "https://de.uefa.com/euro2028/news/029f-1f2f36424d97-2486810a0d57-1000--euro-2028-tournament-schedule-confirmed-when-and-where-a/"
+      },
+      "fakten": [
+        "Das Eröffnungsspiel (Gruppe A) findet am Freitag, 9. Juni 2028 im National Stadium of Wales in Cardiff statt.",
+        "Das Finale steigt am Sonntag, 9. Juli 2028 in Wembley, Anstoß 18:00 Uhr MESZ; die Halbfinals am 4. und 5. Juli ebenfalls in Wembley.",
+        "24 Teams, 51 Spiele in neun Stadien in acht Städten.",
+        "Bestätigte Anstoßzeiten: 15:00, 18:00 und 21:00 Uhr MESZ."
+      ],
+      "weitere_quellen": [],
+      "notiz": "Anstoßzeit des Eröffnungsspiels wird laut UEFA erst nach der Endrundenauslosung 2027 festgelegt.",
+      "interesse": "hoch"
+    },
+    {
+      "slug": "olympia-2028-eroeffnung",
+      "titel": "Olympische Sommerspiele 2028 Los Angeles – Eröffnungsfeier",
+      "kategorie": "sport",
+      "start": "2028-07-15",
+      "startzeit": "02:00",
+      "ende": "2028-07-31",
+      "ort": "Los Angeles, USA",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "LA28 – Comprehensive Olympic Competition Schedule",
+        "url": "https://la28.org/en/newsroom/la28-reveals-comprehensive-olympic-competition-schedule.html"
+      },
+      "fakten": [
+        "Die Eröffnungsfeier ist laut LA28 am 14. Juli 2028 um 17:00 Uhr Ortszeit (PT) / 20:00 Uhr ET – das ist Samstag, 15. Juli 2028, 02:00 Uhr MESZ.",
+        "Die Schlussfeier ist am 30. Juli 2028 um 18:00 Uhr PT – also 31. Juli 2028, 03:00 Uhr MESZ.",
+        "Wettkämpfe an 49 Sportstätten in 18 Zonen im Raum Los Angeles und in Oklahoma City; Baseball beginnt bereits vor der Eröffnungsfeier."
+      ],
+      "weitere_quellen": [
+        "https://la28.org/en/newsroom/LA28_Announces_Games_Dates.html",
+        "https://la28.org/en/games-plan/olympics.html"
+      ],
+      "notiz": "start/startzeit/ende sind in deutsche Zeit umgerechnet (PT = MESZ − 9 h). Offizielles Ortsdatum: 14.–30. Juli 2028. UTC: Eröffnung 15.07.2028, 00:00 UTC; Schlussfeier 31.07.2028, 01:00 UTC.",
+      "interesse": "hoch"
+    },
+    {
+      "slug": "mondfinsternis-2028-12-31",
+      "titel": "Totale Mondfinsternis an Silvester 2028",
+      "kategorie": "astronomie",
+      "start": "2028-12-31",
+      "startzeit": "16:08",
+      "ende": null,
+      "ort": "in Deutschland bei/nach Mondaufgang sichtbar",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "NASA GSFC – Total Lunar Eclipse of 2028 Dec 31 (Espenak)",
+        "url": "https://eclipse.gsfc.nasa.gov/LEplot/LEplot2001/LE2028Dec31T.pdf"
+      },
+      "fakten": [
+        "NASA: totale Mondfinsternis am 31. Dezember 2028, Saros 125, Umbra-Magnitude 1,246.",
+        "Kontaktzeiten (UT -> MEZ): Beginn partielle Phase 15:07:35 UT = 16:08 MEZ; Beginn Totalität 16:16:19 UT = 17:16 MEZ; Maximum 16:51:58 UT = 17:52 MEZ; Ende Totalität 17:27:40 UT = 18:28 MEZ; Ende partielle Phase 18:36:24 UT = 19:36 MEZ.",
+        "Die Totalität dauert 1 h 11 min.",
+        "Laut NASA-Karte liegt Mitteleuropa in der Zone „Eclipse at MoonRise“: Der Mond geht um den Beginn der partiellen Phase auf; die Totalität ist in ganz Deutschland zu sehen."
+      ],
+      "weitere_quellen": [
+        "https://eclipse.gsfc.nasa.gov/LEdecade/LEdecade2021.html"
+      ],
+      "notiz": "startzeit = Beginn der partiellen Kernschattenphase (U1) in MEZ. UTC: U1 15:07:35, U2 16:16:19, Max. 16:51:58, U3 17:27:40, U4 18:36:24. Halbschatten: 14:03:49–19:40:02 UT. Eigene Rechnung (PyEphem): Mondaufgang ca. 15:47 MEZ (Berlin), 15:55 (Hamburg), 16:18 (München), 16:23 (Köln) – im Westen/Süden geht der Mond also bereits leicht angeknabbert auf.",
+      "interesse": "hoch"
+    },
+    {
+      "slug": "mondfinsternis-2029-06-26",
+      "titel": "Totale Mondfinsternis am 26. Juni 2029",
+      "kategorie": "astronomie",
+      "start": "2029-06-26",
+      "startzeit": "03:32",
+      "ende": null,
+      "ort": "in Deutschland in der Morgendämmerung bei Monduntergang",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "NASA GSFC – Total Lunar Eclipse of 2029 Jun 26 (Espenak)",
+        "url": "https://eclipse.gsfc.nasa.gov/LEplot/LEplot2001/LE2029Jun26T.pdf"
+      },
+      "fakten": [
+        "NASA: totale Mondfinsternis am 26. Juni 2029, Saros 130, Umbra-Magnitude 1,844 – eine sehr tiefe Finsternis mit 1 h 42 min Totalität.",
+        "Kontaktzeiten (UT -> MESZ): Beginn partielle Phase 01:32:18 UT = 03:32 MESZ; Beginn Totalität 02:31:08 UT = 04:31 MESZ; Maximum 03:22:05 UT = 05:22 MESZ; Ende Totalität 04:13:01 UT = 06:13 MESZ.",
+        "Laut NASA-Karte liegt Europa in der Zone „Eclipse at MoonSet“: In Deutschland geht der Mond während der Totalität unter."
+      ],
+      "weitere_quellen": [
+        "https://eclipse.gsfc.nasa.gov/LEdecade/LEdecade2021.html"
+      ],
+      "notiz": "startzeit = U1 in MESZ. UTC: U1 01:32:18, U2 02:31:08, Max. 03:22:05, U3 04:13:01, U4 05:11:50. Eigene Rechnung (PyEphem): Monduntergang ca. 04:49 MESZ (Berlin), 04:57 (Hamburg), 05:20 (München), 05:26 (Köln) – sichtbar ist die partielle Phase und der Beginn der Totalität tief am Südwesthorizont in der Morgendämmerung.",
+      "interesse": "mittel"
+    },
+    {
+      "slug": "mondfinsternis-2029-12-20",
+      "titel": "Totale Mondfinsternis am 20./21. Dezember 2029",
+      "kategorie": "astronomie",
+      "start": "2029-12-20",
+      "startzeit": "21:55",
+      "ende": "2029-12-21",
+      "ort": "in ganz Deutschland vollständig sichtbar",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "NASA GSFC – Total Lunar Eclipse of 2029 Dec 20 (Espenak)",
+        "url": "https://eclipse.gsfc.nasa.gov/LEplot/LEplot2001/LE2029Dec20T.pdf"
+      },
+      "fakten": [
+        "NASA: totale Mondfinsternis am 20. Dezember 2029 (UT), Saros 135, Umbra-Magnitude 1,117; Totalität 54 Minuten.",
+        "Kontaktzeiten (UT -> MEZ): Beginn partielle Phase 20:55:17 UT = 21:55 MEZ; Beginn Totalität 22:15:05 UT = 23:15 MEZ; Maximum 22:41:54 UT = 23:42 MEZ; Ende Totalität 23:08:45 UT = 00:09 MEZ (21.12.); Ende partielle Phase 00:28:34 UT = 01:29 MEZ (21.12.).",
+        "Laut NASA-Karte liegt ganz Europa in der Zone „All Eclipse Visible“ – die Finsternis ist in Deutschland in voller Länge am Nachthimmel zu sehen."
+      ],
+      "weitere_quellen": [
+        "https://eclipse.gsfc.nasa.gov/LEdecade/LEdecade2021.html"
+      ],
+      "notiz": "startzeit = U1 in MEZ. UTC: U1 20:55:17, U2 22:15:05, Max. 22:41:54, U3 23:08:45, U4 00:28:34 (21.12.). Von den drei totalen Mondfinsternissen 2027–2030 die einzige, die in Deutschland in voller Länge sichtbar ist.",
+      "interesse": "hoch"
+    },
+    {
+      "slug": "sonnenfinsternis-2030",
+      "titel": "Ringförmige Sonnenfinsternis am 1. Juni 2030 (in Deutschland partiell)",
+      "kategorie": "astronomie",
+      "start": "2030-06-01",
+      "startzeit": null,
+      "ende": null,
+      "ort": "Ringförmig: Algerien, Tunesien, Griechenland, Türkei, Russland, Nordchina, Japan; in Deutschland partiell",
+      "status": "bestaetigt",
+      "quelle": {
+        "label": "NASA GSFC – Solar Eclipses 2021–2030 (Fred Espenak)",
+        "url": "https://eclipse.gsfc.nasa.gov/SEdecade/SEdecade2021.html"
+      },
+      "fakten": [
+        "NASA: ringförmige Sonnenfinsternis am 1. Juni 2030, Saros 128, größte Finsternis um 06:29:13 TD, Ringphase bis 5 min 21 s.",
+        "Sichtbarkeitsgebiet laut NASA: Europa, Nordafrika, Naher Osten, Asien, Arktis, Alaska.",
+        "In Deutschland partiell am frühen Samstagmorgen. Eigene Berechnung aus den NASA-Besselelementen: Beginn ca. 06:13–06:26 MESZ, Maximum ca. 07:14–07:26 MESZ, Ende ca. 08:20–08:33 MESZ; Bedeckung ca. 50 % (Flensburg) bis 62 % (München)."
+      ],
+      "weitere_quellen": [
+        "https://eclipse.gsfc.nasa.gov/JSEX/SE2001.js"
+      ],
+      "notiz": "UTC: größte Finsternis 06:29:13 TD ≈ 06:27:55 UTC (ΔT = 77,8 s laut NASA-Elementen) = 08:28 MESZ (globaler Höhepunkt, nicht Deutschland-Maximum). Deutschland-Zeiten sind eigene Berechnung (nicht offiziell veröffentlicht), daher startzeit = null. Beispiele (MESZ, Beginn/Maximum/Ende, Bedeckung): Berlin 06:20/07:22/08:29, 56,7 %; Hamburg 06:23/07:24/08:29, 52,5 %; München 06:13/07:14/08:22, 62,3 %; Köln 06:20/07:19/08:24, 53,9 %; Frankfurt 06:18/07:18/08:23, 56,6 %.",
+      "interesse": "mittel"
+    },
+    {
+      "slug": "star-wars-starfighter-kinostart",
+      "titel": "Star Wars: Starfighter – Kinostart",
+      "kategorie": "popkultur",
+      "start": "2027-05-28",
+      "startzeit": null,
+      "ende": null,
+      "ort": "Kinos (US-Starttermin)",
+      "status": "unbestaetigt",
+      "quelle": {
+        "label": "StarWars.com – Star Wars: Starfighter",
+        "url": "https://www.starwars.com/films/star-wars-starfighter"
+      },
+      "fakten": [
+        "StarWars.com nennt „Release Date: May 28, 2027“ – das ist der US-Starttermin."
+      ],
+      "weitere_quellen": [],
+      "notiz": "Der DEUTSCHE Starttermin ist nicht offiziell bestätigt: disney.de hat (noch) keine Filmseite (HTTP 404). Einzelne Medien nennen den 26.05.2027 (Mittwoch) für Deutschland – unbestätigt.",
+      "interesse": "hoch"
+    },
+    {
+      "slug": "herr-der-ringe-jagd-nach-gollum-kinostart",
+      "titel": "Der Herr der Ringe: Die Jagd nach Gollum – Kinostart",
+      "kategorie": "popkultur",
+      "start": "2027-12-16",
+      "startzeit": null,
+      "ende": null,
+      "ort": "Kinos in Deutschland (laut Medien)",
+      "status": "unbestaetigt",
+      "quelle": {
+        "label": "keine offizielle Quelle gefunden (Warner Bros.)",
+        "url": "https://www.warnerbros.de/"
+      },
+      "fakten": [
+        "Medien berichten von einem Kinostart im Dezember 2027; für Deutschland wird meist der 16., teils der 17. Dezember 2027 genannt."
+      ],
+      "weitere_quellen": [],
+      "notiz": "Keine Verleih-Seite mit Datum gefunden/geöffnet; Tagesangabe widersprüchlich. Ursprünglich für Dezember 2026 geplant, laut Medien um ein Jahr verschoben.",
+      "interesse": "mittel"
+    },
+    {
+      "slug": "avengers-secret-wars-kinostart",
+      "titel": "Avengers: Secret Wars – Kinostart",
+      "kategorie": "popkultur",
+      "start": "2027-12-17",
+      "startzeit": null,
+      "ende": null,
+      "ort": "Kinos (US-Starttermin laut Medien)",
+      "status": "unbestaetigt",
+      "quelle": {
+        "label": "Marvel.com – Avengers: Secret Wars (nicht abrufbar, HTTP 403)",
+        "url": "https://www.marvel.com/movies/avengers-secret-wars"
+      },
+      "fakten": [
+        "Fachmedien nennen als US-Start den 17. Dezember 2027; deutsche Portale nennen den 15. oder 16. Dezember 2027."
+      ],
+      "weitere_quellen": [],
+      "notiz": "Keine offizielle Quelle lesbar: marvel.com lieferte HTTP 403, disney.de hat keine Filmseite (404). Deutsche Angaben widersprechen sich (15./16.12.2027). Nicht verwenden, bis Disney Deutschland einen Termin nennt.",
+      "interesse": "hoch"
+    },
+    {
+      "slug": "avatar-4-kinostart",
+      "titel": "Avatar 4 – Kinostart",
+      "kategorie": "popkultur",
+      "start": "2029-12-21",
+      "startzeit": null,
+      "ende": null,
+      "ort": "Kinos (US-Starttermin laut Medien)",
+      "status": "unbestaetigt",
+      "quelle": {
+        "label": "keine offizielle Quelle geöffnet (Disney/20th Century Studios)",
+        "url": "https://www.avatar.com/"
+      },
+      "fakten": [
+        "Fachmedien nennen als US-Starttermin den 21. Dezember 2029."
+      ],
+      "weitere_quellen": [],
+      "notiz": "Nur Fachpresse (SlashFilm u. a.), keine offizielle Seite geprüft; ein deutscher Termin ist nicht bekannt.",
+      "interesse": "niedrig"
+    },
+    {
+      "slug": "olympische-winterspiele-2030",
+      "titel": "Olympische Winterspiele 2030 (Französische Alpen)",
+      "kategorie": "sport",
+      "start": "2030-02-01",
+      "startzeit": null,
+      "ende": "2030-02-17",
+      "ort": "Französische Alpen, Frankreich",
+      "status": "unbestaetigt",
+      "quelle": {
+        "label": "IOC / Olympics.com – Alpes 2030 (beim Abruf HTTP 503)",
+        "url": "https://www.olympics.com/ioc/alpes-2030"
+      },
+      "fakten": [
+        "Laut Suchtreffern zu Olympics.com und zur französischen Regierung (info.gouv.fr) sind die Winterspiele für 1. bis 17. Februar 2030 angesetzt, die Paralympics für 1. bis 10. März 2030.",
+        "Die Spiele wurden am 24. Juli 2024 an die Französischen Alpen vergeben."
+      ],
+      "weitere_quellen": [
+        "https://www.olympics.com/en/olympic-games/french-alps-2030",
+        "https://www.info.gouv.fr/actualite/jop-alpes-francaises-2030-des-engagements-concrets-pour-un-heritage-durable"
+      ],
+      "notiz": "Datum sehr wahrscheinlich korrekt, aber nicht selbst auf einer offiziellen Seite gelesen: olympics.com lieferte bei allen Abrufen HTTP 503, info.gouv.fr HTTP 403. Ort der Eröffnungsfeier laut Medien noch offen. Vor Verwendung olympics.com manuell prüfen.",
+      "interesse": "mittel"
+    },
+    {
+      "slug": "fifa-wm-2030",
+      "titel": "FIFA WM 2030",
+      "kategorie": "sport",
+      "start": "2030-06-13",
+      "startzeit": null,
+      "ende": "2030-07-21",
+      "ort": "Marokko, Portugal, Spanien (Jubiläumsspiele in Uruguay, Argentinien, Paraguay)",
+      "status": "unbestaetigt",
+      "quelle": {
+        "label": "FIFA.com – World Cup 2030 (Inhalt beim Abruf leer)",
+        "url": "https://www.fifa.com/en/articles/world-cup-2030-hosts-qualified-bidding-spain-argentina-morocco-uruguay-portugal-paraguay"
+      },
+      "fakten": [
+        "Laut Suchtreffer zu einem FIFA.com-Artikel: Jubiläumsspiele in Südamerika am 8./9. Juni 2030, Eröffnung am 13./14. Juni 2030, Finale am Sonntag, 21. Juli 2030.",
+        "Die FIFA-Turnierseite selbst spricht laut Suchtreffer nur von „Juni und Juli 2030“."
+      ],
+      "weitere_quellen": [
+        "https://www.fifa.com/en/tournaments/mens/worldcup/2030",
+        "https://inside.fifa.com/tournament-organisation/world-cup-2030"
+      ],
+      "notiz": "Nicht selbst auf einer offiziellen Seite gelesen (FIFA-Seiten lieferten nur leeren Inhalt). Ein vollständiger Spielplan ist nicht veröffentlicht. Nicht als bestätigt verwenden.",
+      "interesse": "mittel"
+    },
+    {
+      "slug": "bundestagswahl-2029",
+      "titel": "Nächste Bundestagswahl",
+      "kategorie": "wahlen",
+      "start": null,
+      "startzeit": null,
+      "ende": null,
+      "ort": "Deutschland",
+      "status": "unbestaetigt",
+      "quelle": {
+        "label": "Die Bundeswahlleiterin – Wahltermine",
+        "url": "https://www.bundeswahlleiterin.de/service/wahltermine.html"
+      },
+      "fakten": [
+        "Die Bundeswahlleiterin führt die nächste Bundestagswahl nur mit der Angabe „Frühjahr 2029“ – ein Wahltag ist nicht festgelegt.",
+        "Genaue Termine erscheinen in der Übersicht erst nach offizieller Bekanntgabe.",
+        "Ebenfalls nur grob terminiert: Europawahl (Frühjahr 2029), Landtagswahlen in Bayern und Hessen (Herbst 2028)."
+      ],
+      "weitere_quellen": [],
+      "notiz": "Kein amtlicher Termin – für einen Countdown nicht geeignet.",
+      "interesse": "hoch"
+    }
+  ],
+  "nebenfragen": {
+    "berlin_17_juni_2028": {
+      "antwort": "Ja. Der 17. Juni 2028 (75. Jahrestag des Aufstandes vom 17. Juni 1953) ist in Berlin ein einmaliger gesetzlicher Feiertag. Grundlage ist das Vierte Gesetz zur Änderung des Gesetzes über die Sonn- und Feiertage vom 10. Juli 2024 (GVBl. für Berlin, 80. Jg., Nr. 28 vom 20. Juli 2024, S. 460): In § 1 Abs. 1 wurden als Nr. 11 der 8. Mai 2025 und als Nr. 12 der 17. Juni 2028 eingefügt; die Regelung wird am 18. Juni 2028 wieder aufgehoben (Art. 3 i. V. m. Art. 4 Abs. 3). Der 17. Juni 2028 fällt auf einen Samstag. berlin.de bestätigt: „2028 erhalten Berlinerinnen und Berliner einen weiteren einmaligen Feiertag: den 17. Juni.“",
+      "quelle": "https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/gvbl/g24280460.pdf",
+      "weitere_quellen": [
+        "https://www.berlin.de/aktuelles/9188766-958090-einmaliger-feiertag-am-8-mai-2025.html"
+      ]
+    }
+  },
+  "geprueft_nicht_aufgenommen": [
+    {
+      "slug": "mondfinsternis-2027-02-20",
+      "datum": "2027-02-20",
+      "typ": "Halbschatten-Mondfinsternis",
+      "quelle": "https://eclipse.gsfc.nasa.gov/LEplot/LEplot2001/LE2027Feb20N.pdf",
+      "befund": "NASA: nur Halbschattenfinsternis (Halbschatten-Magnitude 0,927), 21:12:20–01:13:19 UT = 22:12 MEZ bis 02:13 MEZ (21.02.), Maximum 23:12:51 UT = 00:13 MEZ (21.02.). In Deutschland komplett über dem Horizont, aber nur als leichte Abschattung wahrnehmbar – geringes Suchinteresse."
+    },
+    {
+      "slug": "mondfinsternis-2027-07-18",
+      "datum": "2027-07-18",
+      "typ": "Halbschatten-Mondfinsternis",
+      "quelle": "https://eclipse.gsfc.nasa.gov/LEdecade/LEdecade2021.html",
+      "befund": "NASA: Sichtbarkeit Ostafrika, Asien, Australien, Pazifik – in Deutschland nicht sichtbar. Ebenso 17.08.2027 (Pazifik, Amerika)."
+    },
+    {
+      "slug": "mondfinsternis-2028-01-12",
+      "datum": "2028-01-12",
+      "typ": "Partielle Mondfinsternis (klein)",
+      "quelle": "https://eclipse.gsfc.nasa.gov/LEplot/LEplot2001/LE2028Jan12P.pdf",
+      "befund": "NASA: Umbra-Magnitude nur 0,066; partielle Phase 03:45:00–04:41:00 UT = 04:45–05:41 MEZ, Maximum 04:12:57 UT = 05:13 MEZ. In Deutschland am Morgenhimmel sichtbar (Monduntergang erst nach 08 Uhr MEZ, eigene Rechnung), aber nur ein winziger Anschnitt – Datum bestätigt, Interesse gering."
+    },
+    {
+      "slug": "sonnenfinsternis-2028-01-26",
+      "datum": "2028-01-26",
+      "typ": "Ringförmige Sonnenfinsternis (Spanien/Portugal bei Sonnenuntergang)",
+      "quelle": "https://eclipse.gsfc.nasa.gov/SEdecade/SEdecade2021.html",
+      "befund": "NASA: größte Finsternis 15:08:58 TD; Sichtbarkeit u. a. Westeuropa, Ringphase u. a. in Spanien und Portugal. Eigene Berechnung aus NASA-Elementen: In Deutschland beginnt die partielle Phase erst ca. 16:38–16:41 MEZ, d. h. kurz vor bzw. bei Sonnenuntergang (Berlin: Sonne schon untergegangen; Köln/Freiburg: Sonne noch ca. 4° hoch, rund 20–35 Minuten sichtbar). Randereignis, nicht als Deutschland-Event empfohlen."
+    },
+    {
+      "slug": "mondfinsternis-2028-07-06",
+      "datum": "2028-07-06",
+      "typ": "Partielle Mondfinsternis",
+      "quelle": "https://eclipse.gsfc.nasa.gov/LEplot/LEplot2001/LE2028Jul06P.pdf",
+      "befund": "NASA: Umbra-Magnitude 0,389; partielle Phase 17:08:51–19:30:21 UT = 19:09–21:30 MESZ, Maximum 18:19:41 UT = 20:20 MESZ. Deutschland liegt in der Zone „Eclipse at MoonRise“; eigene Rechnung: Mondaufgang erst ca. 21:16 MESZ (München) bis 21:50 MESZ (Hamburg) – die Kernschattenphase ist in Deutschland praktisch nicht zu sehen."
+    },
+    {
+      "slug": "sonnenfinsternis-2029-06-12",
+      "datum": "2029-06-12",
+      "typ": "Partielle Sonnenfinsternis",
+      "quelle": "https://eclipse.gsfc.nasa.gov/SEdecade/SEdecade2021.html",
+      "befund": "NASA: größte Finsternis 04:06:13 TD, Sichtbarkeit Arktis, Skandinavien, Alaska, Nordasien, Nordkanada. Eigene Berechnung: in Norddeutschland bei Sonnenaufgang (ca. 04:45–05:35 MESZ) maximal rund 8–11 % Bedeckung direkt am Horizont – Randereignis."
+    },
+    {
+      "slug": "mondfinsternis-2030-06-15",
+      "datum": "2030-06-15",
+      "typ": "Partielle Mondfinsternis",
+      "quelle": "https://eclipse.gsfc.nasa.gov/LEplot/LEplot2001/LE2030Jun15P.pdf",
+      "befund": "NASA: Umbra-Magnitude 0,503; partielle Phase 17:21:03–19:45:25 UT = 19:21–21:45 MESZ, Maximum 18:33:16 UT = 20:33 MESZ. Deutschland in der Zone „Eclipse at MoonRise“; eigene Rechnung: Mondaufgang ca. 21:06 MESZ (München) bis 21:40 MESZ (Hamburg) – nur die Endphase tief am Horizont."
+    },
+    {
+      "slug": "sonnenfinsternis-2028-07-22",
+      "datum": "2028-07-22",
+      "typ": "Totale Sonnenfinsternis",
+      "quelle": "https://eclipse.gsfc.nasa.gov/SEdecade/SEdecade2021.html",
+      "befund": "NASA: Sichtbarkeit Südostasien, Australien, Neuseeland – kein Deutschland-Bezug."
+    }
+  ],
+  "hinweise": [
+    "Alle Abrufe am 15.11.2026. status=bestaetigt nur, wenn das Datum auf der unter quelle genannten Seite selbst gelesen wurde (WebFetch oder Direktabruf). Angaben, die nur aus Suchtreffern stammen, sind in notiz ausdrücklich so gekennzeichnet.",
+    "Zusatzfelder gegenüber dem vorgegebenen Schema: interesse (redaktionelle Einschätzung hoch/mittel/niedrig, keine Quelle) und bei sonnenfinsternis-2027 lokal_deutschland (eigene Berechnung, nicht offiziell veröffentlicht).",
+    "Zeitzonen: start/startzeit sind deutsche Zeit, wo eine Uhrzeit offiziell bestätigt ist (z. B. LA28-Eröffnung = 15.07.2028, 02:00 MESZ). Ausnahme Super Bowl LXI: Kickoff-Zeit offiziell offen, daher offizielles US-Datum 14.02.2027 (in Deutschland voraussichtlich Nacht auf den 15.02.).",
+    "Nintendo/PlayStation-Großreleases: Kein Titel mit offiziell selbst verifiziertem festem Datum nach dem 15.11.2026 gefunden. Laut Medien erschien das Zelda-Remake „Ocarina of Time“ (Switch 2) bereits am 05.11.2026 (vorbei, nicht offiziell geprüft); für 2027 kursieren nur Händler-/Portal-Listen.",
+    "Karnevalsbeginn (11.11.) wurde auftragsgemäß nicht recherchiert; der 11.11.2026 ist vorbei, nächster Termin 11.11.2027, 11:11 Uhr.",
+    "FIFA-WM 2026, ESC 2026, Olympia 2026, Sonnenfinsternis vom 12.08.2026 und Oktoberfest 2026 liegen vor dem Stichtag und wurden nicht aufgenommen."
+  ]
+}

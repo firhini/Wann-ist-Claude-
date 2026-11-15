@@ -1,0 +1,562 @@
+@import "tailwindcss";
+
+/*
+ * Tokens. Quelle der Wahrheit ist DESIGN.md. Alles, was dort nicht steht, existiert hier nicht:
+ * Tailwinds Standardfarben, -radien, -schatten und -schriftgrößen sind gelöscht.
+ */
+@theme {
+  --color-*: initial;
+  --color-paper: #f3ece0;
+  --color-paper-deep: #e8dfcf;
+  --color-ink: #17151a;
+  --color-ink-soft: #55505a;
+  --color-orchid: #d8439f;
+  --color-orchid-deep: #a11f72;
+  --color-transparent: transparent;
+  --color-current: currentColor;
+
+  --font-*: initial;
+  --font-display: var(--font-big-shoulders), "Arial Narrow", "Helvetica Neue", sans-serif;
+  --font-text: var(--font-atkinson), "Helvetica Neue", Arial, sans-serif;
+  --font-mono: var(--font-martian), "Martian Ersatz", "Courier New", monospace;
+
+  --text-*: initial;
+  --text-zahl: clamp(7rem, 34vw, 22rem);
+  --text-zahl--line-height: 0.8;
+  --text-zahl--letter-spacing: -0.02em;
+  --text-plakat: clamp(2.75rem, 8vw, 6rem);
+  --text-plakat--line-height: 0.92;
+  --text-frage: clamp(1.625rem, 3.2vw, 2.75rem);
+  --text-frage--line-height: 1.02;
+  --text-kopf: clamp(1.5rem, 2.4vw, 2.125rem);
+  --text-kopf--line-height: 1.05;
+  --text-zeile: clamp(1.25rem, 2vw, 1.75rem);
+  --text-zeile--line-height: 1.1;
+  --text-lead: clamp(1.1875rem, 1.5vw, 1.375rem);
+  --text-lead--line-height: 1.45;
+  --text-body: 1.0625rem;
+  --text-body--line-height: 1.62;
+  --text-klein: 0.9375rem;
+  --text-klein--line-height: 1.5;
+  --text-daten: 0.8125rem;
+  --text-daten--line-height: 1.45;
+  --text-fein: 0.75rem;
+  --text-fein--line-height: 1.4;
+  --text-marke: 1.75rem;
+  --text-marke--line-height: 1;
+
+  --radius-*: initial;
+  --radius-flap: 2px;
+  --radius-blatt: 4px;
+
+  --shadow-*: initial;
+  --inset-shadow-*: initial;
+  --drop-shadow-*: initial;
+  --text-shadow-*: initial;
+  --blur-*: initial;
+
+  --ease-*: initial;
+  --ease-klapp: cubic-bezier(0.3, 0, 0.6, 1);
+  --ease-abriss: cubic-bezier(0.55, 0, 0.85, 0.45);
+  --animate-*: initial;
+
+  --spacing-seite: clamp(1rem, 4vw, 3.5rem);
+  --spacing-abschnitt: clamp(3.5rem, 8vw, 6.5rem);
+
+  --container-*: initial;
+  --container-text: 38rem;
+  --container-blatt: 90rem;
+}
+
+/*
+ * Ersatzschrift für Martian Mono, solange die Datei lädt. Martian Mono läuft 0,7em breit,
+ * übliche Monospace-Schriften 0,6em. Mit dem Ausgleich springt beim Nachladen nichts.
+ */
+@font-face {
+  font-family: "Martian Ersatz";
+  src: local("Courier New"), local("Liberation Mono"), local("Menlo"), local("DejaVu Sans Mono");
+  size-adjust: 116.67%;
+}
+
+/* Tintenmodus: Papier und Tinte tauschen die Plätze. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-paper: #17151a;
+    --color-paper-deep: #24212a;
+    --color-ink: #f3ece0;
+    --color-ink-soft: #b9b1a6;
+    --color-orchid: #d8439f;
+    --color-orchid-deep: #f08ccb;
+  }
+}
+
+@layer base {
+  html {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-text);
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    scroll-padding-top: 1.5rem;
+    color-scheme: light dark;
+  }
+
+  body {
+    overflow-x: clip;
+    font-size: var(--text-body);
+    line-height: var(--text-body--line-height);
+    font-synthesis: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: var(--color-orchid);
+    color: #17151a;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-orchid-deep);
+    outline-offset: 2px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  summary {
+    cursor: pointer;
+    list-style: none;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+}
+
+@layer components {
+  /* Die Hauptzahl. */
+  .zahl {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: var(--text-zahl);
+    line-height: var(--text-zahl--line-height);
+    letter-spacing: var(--text-zahl--letter-spacing);
+    font-variant-numeric: tabular-nums lining-nums;
+  }
+
+  /* Textlink: Haarlinie darunter, beim Hover Orchid. */
+  .link {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+    text-decoration-color: currentColor;
+  }
+  .link:hover {
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--color-orchid);
+  }
+
+  /* Link ohne Linie, die erst beim Hover erscheint (Navigation, Tafelzeilen). */
+  .link-still {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.22em;
+    text-decoration-color: transparent;
+  }
+  .link-still:hover,
+  .link-still[aria-current="page"] {
+    text-decoration-color: var(--color-orchid);
+  }
+
+  .knopf {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 2.75rem;
+    padding: 0 1.125rem;
+    border: 1px solid var(--color-ink);
+    font-family: var(--font-mono);
+    font-size: var(--text-daten);
+    font-weight: 500;
+    line-height: 1;
+    color: var(--color-ink);
+    background: transparent;
+    cursor: pointer;
+  }
+  .knopf:hover {
+    background: var(--color-ink);
+    color: var(--color-paper);
+  }
+  .knopf-voll {
+    background: var(--color-ink);
+    color: var(--color-paper);
+  }
+  .knopf-voll:hover {
+    background: transparent;
+    color: var(--color-ink);
+  }
+
+  /* Der Balken: die Leiste des Kalenders am Seitenkopf und über dem Footer. */
+  .balken {
+    border-top: 6px solid var(--color-ink);
+  }
+
+  /* Fahrplanzeile: Beschriftung links, Wert rechts, Haarlinie darunter. */
+  .fahrplan > div.max-lg\:hidden {
+    display: none;
+  }
+  @media (min-width: 64rem) {
+    .fahrplan > div.max-lg\:hidden {
+      display: flex;
+    }
+  }
+  .fahrplan > div {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.625rem 0;
+    border-bottom: 1px solid var(--color-ink);
+  }
+  .fahrplan dt {
+    font-family: var(--font-mono);
+    font-size: var(--text-fein);
+    line-height: var(--text-fein--line-height);
+    color: var(--color-ink-soft);
+    flex: none;
+  }
+  .fahrplan dd {
+    text-align: right;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Tabellen */
+  .tabelle caption {
+    text-align: left;
+  }
+  .tabelle th {
+    font-family: var(--font-mono);
+    font-size: var(--text-fein);
+    font-weight: 500;
+    color: var(--color-ink-soft);
+    text-align: left;
+    padding: 0.5rem 0.75rem 0.5rem 0;
+    border-bottom: 1px solid var(--color-ink);
+    vertical-align: bottom;
+  }
+  .tabelle td {
+    padding: 0.7rem 0.75rem 0.7rem 0;
+    border-bottom: 1px solid var(--color-ink);
+    vertical-align: baseline;
+  }
+  .tabelle th:first-child,
+  .tabelle td:first-child {
+    padding-left: 0.75rem;
+  }
+  .tabelle tbody tr:nth-child(odd) {
+    background: var(--color-paper-deep);
+  }
+  .tabelle .rechts {
+    text-align: right;
+  }
+  .tabelle tr[data-heute] td:first-child {
+    border-left: 0;
+  }
+
+  /* Perforation: dort, wo ein Blatt endet. */
+  .perforation {
+    border: 0;
+    border-top: 2px dotted var(--color-ink);
+    height: 0;
+    width: 100%;
+  }
+
+  /* Fließtext */
+  .prosa > * + * {
+    margin-top: 1em;
+  }
+  .prosa a {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+  }
+  .prosa a:hover {
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--color-orchid);
+  }
+  .prosa h2 {
+    font-size: var(--text-kopf);
+    line-height: var(--text-kopf--line-height);
+    margin-top: 2.5rem;
+  }
+
+  /* Strichmotive: die Linie bleibt 1.5 px, egal wie groß das Motiv ist. */
+  .motiv * {
+    vector-effect: non-scaling-stroke;
+  }
+
+  /* Kleinere Fassung der Hauptzahl: Startseite, Kalenderwoche. */
+  .zahl-klein {
+    font-size: calc(var(--text-zahl) * 0.62);
+  }
+
+  /* Widget: Größen richten sich nach der Breite des iframes. */
+  .embed-zahl {
+    font-size: clamp(4rem, 30vw, 9rem);
+  }
+  .embed-einheit {
+    font-size: clamp(1.25rem, 7vw, 2.25rem);
+    padding-bottom: 0.1em;
+  }
+  .embed-wort {
+    font-size: clamp(1.75rem, 10vw, 3.5rem);
+    line-height: 0.95;
+  }
+
+  /*
+   * Die Zahlenreihe: Hauptzahl plus Einheit. Die Größe richtet sich nach der Stellenzahl,
+   * damit auch zwei Ziffern das Blatt füllen. Drei Stellen sind der Normalfall (--text-zahl).
+   */
+  .zahl-reihe {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.04em;
+    font-size: var(--text-zahl);
+  }
+  .zahl-reihe[data-stellen="1"],
+  .zahl-reihe[data-stellen="2"] {
+    font-size: clamp(11rem, 56vw, 28rem);
+  }
+  .zahl-reihe[data-stellen="3"] {
+    font-size: clamp(8.5rem, 42vw, 22rem);
+  }
+  .zahl-reihe[data-stellen="4"],
+  .zahl-reihe[data-stellen="5"] {
+    font-size: clamp(6rem, 30vw, 18rem);
+  }
+  .zahl-reihe > .zahl {
+    font-size: 1em;
+  }
+  .zahl-reihe > .zahl-einheit {
+    font-size: 0.2em;
+    padding-bottom: 0.05em;
+  }
+
+  /* Die Einheit neben der Hauptzahl ("Tage"). */
+  .zahl-einheit {
+    font-family: var(--font-display);
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: calc(var(--text-zahl) * 0.2);
+    line-height: 0.9;
+    letter-spacing: 0.01em;
+  }
+
+  /* Die Uhr unter der Zahl. */
+  .uhr {
+    font-size: clamp(2.25rem, 5.4vw, 3.75rem);
+  }
+
+  /* Fortschritt während eines Zeitraums. */
+  .fortschritt {
+    height: 0.75rem;
+    border: 1px solid var(--color-ink);
+  }
+  .fortschritt > span {
+    display: block;
+    height: 100%;
+    background: var(--color-orchid);
+  }
+
+  /* ---------- Fallblatt ---------- */
+  .flap {
+    display: inline-flex;
+    gap: 0.07em;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+    vertical-align: middle;
+  }
+  .flap-kachel {
+    position: relative;
+    display: block;
+    width: 0.66em;
+    height: 1.16em;
+    border-radius: var(--radius-flap);
+    background: var(--flap-bg, var(--color-ink));
+    color: var(--flap-fg, var(--color-paper));
+    overflow: hidden;
+  }
+  .flap-kachel-breit {
+    width: auto;
+    padding: 0 0.22em;
+  }
+  .flap-kachel-breit .flap-h {
+    position: static;
+    clip-path: none;
+  }
+  /* Der Falz in der Mitte. */
+  .flap-kachel::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(50% - 0.5px);
+    height: 1px;
+    background: var(--flap-bg, var(--color-ink));
+    opacity: 0.55;
+  }
+  .flap-h {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    background: var(--flap-bg, var(--color-ink));
+    backface-visibility: hidden;
+  }
+  .flap-oben {
+    clip-path: inset(0 0 50% 0);
+  }
+  .flap-unten {
+    clip-path: inset(50% 0 0 0);
+  }
+  .flap-ab {
+    animation: flap-ab 140ms var(--ease-klapp) forwards;
+  }
+  .flap-auf {
+    transform: scaleY(0);
+    animation: flap-auf 140ms var(--ease-klapp) 140ms forwards;
+  }
+  .flap-akzent {
+    --flap-fg: var(--color-orchid);
+  }
+  /* Der Heute-Marker. */
+  .flap-heute {
+    --flap-bg: var(--color-orchid);
+    --flap-fg: #17151a;
+    letter-spacing: 0.02em;
+  }
+  /* Auf der Tafel sind die Kacheln hell. */
+  .tafel {
+    --flap-bg: var(--color-paper);
+    --flap-fg: var(--color-ink);
+  }
+
+  @keyframes flap-ab {
+    to {
+      transform: scaleY(0);
+    }
+  }
+  @keyframes flap-auf {
+    to {
+      transform: scaleY(1);
+    }
+  }
+
+  /* ---------- Kalenderblatt reißt ab (einmal pro Besuch, nur CSS) ---------- */
+  .abriss {
+    display: none;
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: var(--color-paper);
+    transform-origin: 8% 0;
+    pointer-events: none;
+  }
+  html[data-abriss] .abriss {
+    display: block;
+    animation: abreissen 560ms var(--ease-abriss) forwards;
+  }
+  @keyframes abreissen {
+    0% {
+      transform: none;
+      opacity: 1;
+    }
+    22% {
+      transform: rotate(-1.2deg) translateY(1.5%);
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(8deg) translate(5%, 85%);
+      opacity: 0;
+    }
+  }
+
+  /* ---------- Konfetti am Ziel ---------- */
+  .konfetti {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  .konfetti i {
+    position: absolute;
+    top: -3vh;
+    width: 0.5rem;
+    height: 1rem;
+    background: var(--color-orchid);
+    animation: konfetti 1800ms linear forwards;
+  }
+  @keyframes konfetti {
+    to {
+      transform: translate3d(var(--dx, 0), 110vh, 0) rotate(var(--rot, 540deg));
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .flap-ab {
+      display: none;
+    }
+    .flap-auf {
+      animation: none;
+      transform: none;
+    }
+    html[data-abriss] .abriss {
+      display: none;
+      animation: none;
+    }
+    .konfetti {
+      display: none;
+    }
+  }
+}
+
+@utility mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+@utility display {
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+@utility blatt {
+  width: 100%;
+  max-width: var(--container-blatt);
+  margin-inline: auto;
+  padding-inline: var(--spacing-seite);
+}

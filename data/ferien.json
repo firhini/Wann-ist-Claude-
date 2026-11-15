@@ -1,0 +1,3475 @@
+{
+  "abgerufen": "2026-11-15",
+  "quellen": [
+    {
+      "schuljahr": "2026/27",
+      "label": "KMK: Ferien im Schuljahr 2026/27",
+      "url": "https://www.kmk.org/fileadmin/Dateien/pdf/Ferienkalender/FER2026_27.pdf"
+    },
+    {
+      "schuljahr": "2027/28",
+      "label": "KMK: Ferien im Schuljahr 2027/28",
+      "url": "https://www.kmk.org/fileadmin/Dateien/pdf/Ferienkalender/FER2027_28.pdf"
+    },
+    {
+      "schuljahr": "2028/29",
+      "label": "KMK: Ferien im Schuljahr 2028/29",
+      "url": "https://www.kmk.org/fileadmin/Dateien/pdf/Ferienkalender/FER2028_29.pdf"
+    },
+    {
+      "schuljahr": "sommer-2029-2030",
+      "label": "KMK: Langfristige Sommerferienregelung 2025 bis 2030 (Beschluss vom 09.12.2021)",
+      "url": "https://www.kmk.org/fileadmin/Dateien/pdf/Ferienkalender/Sommerferienregelung_2025-2030_2022-09-21.pdf"
+    }
+  ],
+  "eintraege": [
+    {
+      "land": "BW",
+      "art": "herbstferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-10-26",
+          "bis": "2026-10-30"
+        },
+        {
+          "von": "2026-10-31",
+          "bis": "2026-10-31"
+        }
+      ],
+      "hinweis": "Im KMK-Kalender kursiv gesetzt, d. h. als schul- und unterrichtsfreier Tag gekennzeichnet: 31.10.2026."
+    },
+    {
+      "land": "BW",
+      "art": "weihnachtsferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-12-23",
+          "bis": "2027-01-09"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BW",
+      "art": "osterferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-03-25",
+          "bis": "2027-03-25"
+        },
+        {
+          "von": "2027-03-30",
+          "bis": "2027-04-03"
+        }
+      ],
+      "hinweis": "Im KMK-Kalender kursiv gesetzt, d. h. als schul- und unterrichtsfreier Tag gekennzeichnet: 25.03.2027."
+    },
+    {
+      "land": "BW",
+      "art": "pfingstferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-05-18",
+          "bis": "2027-05-29"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BW",
+      "art": "sommerferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-07-29",
+          "bis": "2027-09-11"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BY",
+      "art": "herbstferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-11-02",
+          "bis": "2026-11-06"
+        }
+      ],
+      "hinweis": "Im KMK-Kalender kursiv gesetzt, d. h. als schul- und unterrichtsfreie Tage gekennzeichnet."
+    },
+    {
+      "land": "BY",
+      "art": "weihnachtsferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-12-24",
+          "bis": "2027-01-08"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BY",
+      "art": "osterferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-02-08",
+          "bis": "2027-02-12"
+        },
+        {
+          "von": "2027-03-22",
+          "bis": "2027-04-02"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BY",
+      "art": "pfingstferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-05-18",
+          "bis": "2027-05-28"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BY",
+      "art": "sommerferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-08-02",
+          "bis": "2027-09-13"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BE",
+      "art": "herbstferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-10-19",
+          "bis": "2026-10-31"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BE",
+      "art": "weihnachtsferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-12-23",
+          "bis": "2027-01-02"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BE",
+      "art": "winterferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-02-01",
+          "bis": "2027-02-06"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BE",
+      "art": "osterferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-03-22",
+          "bis": "2027-04-02"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BE",
+      "art": "pfingstferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-05-07",
+          "bis": "2027-05-07"
+        },
+        {
+          "von": "2027-05-18",
+          "bis": "2027-05-19"
+        }
+      ],
+      "hinweis": "Im KMK-Kalender kursiv gesetzt, d. h. als schul- und unterrichtsfreier Tag gekennzeichnet: 07.05.2027."
+    },
+    {
+      "land": "BE",
+      "art": "sommerferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-07-01",
+          "bis": "2027-08-14"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BB",
+      "art": "herbstferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-10-19",
+          "bis": "2026-10-30"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BB",
+      "art": "weihnachtsferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-12-23",
+          "bis": "2027-01-02"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BB",
+      "art": "winterferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-02-01",
+          "bis": "2027-02-06"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BB",
+      "art": "osterferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-03-22",
+          "bis": "2027-04-03"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BB",
+      "art": "pfingstferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-05-18",
+          "bis": "2027-05-18"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BB",
+      "art": "sommerferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-07-01",
+          "bis": "2027-08-14"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HB",
+      "art": "herbstferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-10-12",
+          "bis": "2026-10-24"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HB",
+      "art": "weihnachtsferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-12-23",
+          "bis": "2027-01-09"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HB",
+      "art": "winterferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-02-01",
+          "bis": "2027-02-02"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HB",
+      "art": "osterferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-03-22",
+          "bis": "2027-04-03"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HB",
+      "art": "pfingstferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-05-07",
+          "bis": "2027-05-07"
+        },
+        {
+          "von": "2027-05-18",
+          "bis": "2027-05-18"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HB",
+      "art": "sommerferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-07-08",
+          "bis": "2027-08-18"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HH",
+      "art": "herbstferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-10-19",
+          "bis": "2026-10-30"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HH",
+      "art": "weihnachtsferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-12-21",
+          "bis": "2027-01-01"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HH",
+      "art": "winterferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-01-29",
+          "bis": "2027-01-29"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HH",
+      "art": "osterferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-03-01",
+          "bis": "2027-03-12"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HH",
+      "art": "pfingstferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-05-07",
+          "bis": "2027-05-14"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HH",
+      "art": "sommerferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-07-01",
+          "bis": "2027-08-11"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HE",
+      "art": "herbstferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-10-05",
+          "bis": "2026-10-17"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HE",
+      "art": "weihnachtsferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-12-23",
+          "bis": "2027-01-12"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HE",
+      "art": "osterferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-03-22",
+          "bis": "2027-04-02"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HE",
+      "art": "sommerferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-06-28",
+          "bis": "2027-08-06"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "MV",
+      "art": "herbstferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-10-15",
+          "bis": "2026-10-24"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "MV",
+      "art": "weihnachtsferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-12-21",
+          "bis": "2027-01-02"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "MV",
+      "art": "winterferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-02-08",
+          "bis": "2027-02-19"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "MV",
+      "art": "osterferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-03-24",
+          "bis": "2027-04-02"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "MV",
+      "art": "pfingstferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-05-07",
+          "bis": "2027-05-07"
+        },
+        {
+          "von": "2027-05-14",
+          "bis": "2027-05-18"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "MV",
+      "art": "sommerferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-07-05",
+          "bis": "2027-08-14"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NI",
+      "art": "herbstferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-10-12",
+          "bis": "2026-10-24"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NI",
+      "art": "weihnachtsferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-12-23",
+          "bis": "2027-01-09"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NI",
+      "art": "winterferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-02-01",
+          "bis": "2027-02-02"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NI",
+      "art": "osterferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-03-22",
+          "bis": "2027-04-03"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NI",
+      "art": "pfingstferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-05-07",
+          "bis": "2027-05-07"
+        },
+        {
+          "von": "2027-05-18",
+          "bis": "2027-05-18"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NI",
+      "art": "sommerferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-07-08",
+          "bis": "2027-08-18"
+        }
+      ],
+      "hinweis": "Auf den niedersächsischen Nordseeinseln gelten Sonderregelungen (Fußnote der KMK-Sommerferienregelung 2025–2030)."
+    },
+    {
+      "land": "NW",
+      "art": "herbstferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-10-17",
+          "bis": "2026-10-31"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NW",
+      "art": "weihnachtsferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-12-23",
+          "bis": "2027-01-06"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NW",
+      "art": "osterferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-03-22",
+          "bis": "2027-04-03"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NW",
+      "art": "pfingstferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-05-18",
+          "bis": "2027-05-18"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NW",
+      "art": "sommerferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-07-19",
+          "bis": "2027-08-31"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "RP",
+      "art": "herbstferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-10-05",
+          "bis": "2026-10-16"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "RP",
+      "art": "weihnachtsferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-12-23",
+          "bis": "2027-01-08"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "RP",
+      "art": "osterferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-03-22",
+          "bis": "2027-04-02"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "RP",
+      "art": "sommerferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-06-28",
+          "bis": "2027-08-06"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SL",
+      "art": "herbstferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-10-05",
+          "bis": "2026-10-16"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SL",
+      "art": "weihnachtsferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-12-21",
+          "bis": "2026-12-31"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SL",
+      "art": "winterferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-02-08",
+          "bis": "2027-02-12"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SL",
+      "art": "osterferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-03-30",
+          "bis": "2027-04-09"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SL",
+      "art": "sommerferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-06-28",
+          "bis": "2027-08-06"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SN",
+      "art": "herbstferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-10-12",
+          "bis": "2026-10-24"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SN",
+      "art": "weihnachtsferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-12-23",
+          "bis": "2027-01-02"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SN",
+      "art": "winterferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-02-08",
+          "bis": "2027-02-19"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SN",
+      "art": "osterferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-03-26",
+          "bis": "2027-04-02"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SN",
+      "art": "pfingstferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-05-07",
+          "bis": "2027-05-07"
+        },
+        {
+          "von": "2027-05-15",
+          "bis": "2027-05-18"
+        }
+      ],
+      "hinweis": "Im KMK-Kalender kursiv gesetzt, d. h. als schul- und unterrichtsfreier Tag gekennzeichnet: 07.05.2027."
+    },
+    {
+      "land": "SN",
+      "art": "sommerferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-07-10",
+          "bis": "2027-08-20"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "ST",
+      "art": "herbstferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-10-19",
+          "bis": "2026-10-30"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "ST",
+      "art": "weihnachtsferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-12-21",
+          "bis": "2027-01-02"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "ST",
+      "art": "winterferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-02-01",
+          "bis": "2027-02-06"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "ST",
+      "art": "osterferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-03-22",
+          "bis": "2027-03-27"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "ST",
+      "art": "pfingstferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-05-15",
+          "bis": "2027-05-22"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "ST",
+      "art": "sommerferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-07-10",
+          "bis": "2027-08-20"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SH",
+      "art": "herbstferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-10-12",
+          "bis": "2026-10-24"
+        }
+      ],
+      "hinweis": "Auf den Inseln Sylt, Föhr, Amrum und Helgoland sowie auf den Halligen gelten Sonderregelungen."
+    },
+    {
+      "land": "SH",
+      "art": "weihnachtsferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-12-21",
+          "bis": "2027-01-06"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SH",
+      "art": "osterferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-03-30",
+          "bis": "2027-04-10"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SH",
+      "art": "pfingstferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-05-07",
+          "bis": "2027-05-07"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SH",
+      "art": "sommerferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-07-03",
+          "bis": "2027-08-14"
+        }
+      ],
+      "hinweis": "Auf den Inseln Sylt, Föhr, Amrum und Helgoland sowie auf den Halligen gelten Sonderregelungen."
+    },
+    {
+      "land": "TH",
+      "art": "herbstferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-10-12",
+          "bis": "2026-10-24"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "TH",
+      "art": "weihnachtsferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2026-12-23",
+          "bis": "2027-01-02"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "TH",
+      "art": "winterferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-02-01",
+          "bis": "2027-02-06"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "TH",
+      "art": "osterferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-03-22",
+          "bis": "2027-04-03"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "TH",
+      "art": "pfingstferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-05-07",
+          "bis": "2027-05-07"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "TH",
+      "art": "sommerferien",
+      "schuljahr": "2026/27",
+      "zeitraeume": [
+        {
+          "von": "2027-07-10",
+          "bis": "2027-08-20"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BW",
+      "art": "herbstferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-11-02",
+          "bis": "2027-11-06"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BW",
+      "art": "weihnachtsferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-12-23",
+          "bis": "2028-01-08"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BW",
+      "art": "osterferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-04-13",
+          "bis": "2028-04-13"
+        },
+        {
+          "von": "2028-04-18",
+          "bis": "2028-04-22"
+        }
+      ],
+      "hinweis": "Im KMK-Kalender kursiv gesetzt, d. h. als schul- und unterrichtsfreier Tag gekennzeichnet: 13.04.2028."
+    },
+    {
+      "land": "BW",
+      "art": "pfingstferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-06-06",
+          "bis": "2028-06-17"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BW",
+      "art": "sommerferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-07-27",
+          "bis": "2028-09-09"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BY",
+      "art": "herbstferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-11-02",
+          "bis": "2027-11-05"
+        }
+      ],
+      "hinweis": "Im KMK-Kalender kursiv gesetzt, d. h. als schul- und unterrichtsfreie Tage gekennzeichnet."
+    },
+    {
+      "land": "BY",
+      "art": "weihnachtsferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-12-24",
+          "bis": "2028-01-07"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BY",
+      "art": "osterferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-02-28",
+          "bis": "2028-03-03"
+        },
+        {
+          "von": "2028-04-10",
+          "bis": "2028-04-21"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BY",
+      "art": "pfingstferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-06-06",
+          "bis": "2028-06-16"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BY",
+      "art": "sommerferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-07-31",
+          "bis": "2028-09-11"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BE",
+      "art": "herbstferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-10-11",
+          "bis": "2027-10-23"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BE",
+      "art": "weihnachtsferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-12-22",
+          "bis": "2027-12-31"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BE",
+      "art": "winterferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-01-31",
+          "bis": "2028-02-05"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BE",
+      "art": "osterferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-04-10",
+          "bis": "2028-04-22"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BE",
+      "art": "pfingstferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-05-26",
+          "bis": "2028-05-26"
+        },
+        {
+          "von": "2028-06-01",
+          "bis": "2028-06-02"
+        }
+      ],
+      "hinweis": "Im KMK-Kalender kursiv gesetzt, d. h. als schul- und unterrichtsfreier Tag gekennzeichnet: 26.05.2028."
+    },
+    {
+      "land": "BE",
+      "art": "sommerferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-07-01",
+          "bis": "2028-08-12"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BB",
+      "art": "herbstferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-10-11",
+          "bis": "2027-10-23"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BB",
+      "art": "weihnachtsferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-12-23",
+          "bis": "2027-12-31"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BB",
+      "art": "winterferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-01-31",
+          "bis": "2028-02-05"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BB",
+      "art": "osterferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-04-10",
+          "bis": "2028-04-22"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BB",
+      "art": "sommerferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-06-29",
+          "bis": "2028-08-12"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HB",
+      "art": "herbstferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-10-18",
+          "bis": "2027-10-30"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HB",
+      "art": "weihnachtsferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-12-23",
+          "bis": "2028-01-08"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HB",
+      "art": "winterferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-01-31",
+          "bis": "2028-02-01"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HB",
+      "art": "osterferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-04-10",
+          "bis": "2028-04-22"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HB",
+      "art": "pfingstferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-05-26",
+          "bis": "2028-05-26"
+        },
+        {
+          "von": "2028-06-06",
+          "bis": "2028-06-06"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HB",
+      "art": "sommerferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-07-20",
+          "bis": "2028-08-30"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HH",
+      "art": "herbstferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-10-11",
+          "bis": "2027-10-22"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HH",
+      "art": "weihnachtsferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-12-20",
+          "bis": "2027-12-31"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HH",
+      "art": "winterferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-01-28",
+          "bis": "2028-01-28"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HH",
+      "art": "osterferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-03-06",
+          "bis": "2028-03-17"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HH",
+      "art": "pfingstferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-05-22",
+          "bis": "2028-05-26"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HH",
+      "art": "sommerferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-07-03",
+          "bis": "2028-08-11"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HE",
+      "art": "herbstferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-10-04",
+          "bis": "2027-10-16"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HE",
+      "art": "weihnachtsferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-12-23",
+          "bis": "2028-01-11"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HE",
+      "art": "osterferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-04-03",
+          "bis": "2028-04-14"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HE",
+      "art": "sommerferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-07-03",
+          "bis": "2028-08-11"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "MV",
+      "art": "herbstferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-10-14",
+          "bis": "2027-10-23"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "MV",
+      "art": "weihnachtsferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-12-22",
+          "bis": "2028-01-04"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "MV",
+      "art": "winterferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-02-05",
+          "bis": "2028-02-17"
+        },
+        {
+          "von": "2028-02-18",
+          "bis": "2028-02-18"
+        }
+      ],
+      "hinweis": "Im KMK-Kalender kursiv gesetzt, d. h. als schul- und unterrichtsfreier Tag gekennzeichnet: 18.02.2028."
+    },
+    {
+      "land": "MV",
+      "art": "osterferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-04-12",
+          "bis": "2028-04-21"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "MV",
+      "art": "pfingstferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-05-26",
+          "bis": "2028-05-26"
+        },
+        {
+          "von": "2028-06-02",
+          "bis": "2028-06-06"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "MV",
+      "art": "sommerferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-06-26",
+          "bis": "2028-08-05"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NI",
+      "art": "herbstferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-10-16",
+          "bis": "2027-10-30"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NI",
+      "art": "weihnachtsferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-12-23",
+          "bis": "2028-01-08"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NI",
+      "art": "winterferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-01-31",
+          "bis": "2028-02-01"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NI",
+      "art": "osterferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-04-10",
+          "bis": "2028-04-22"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NI",
+      "art": "pfingstferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-05-26",
+          "bis": "2028-05-26"
+        },
+        {
+          "von": "2028-06-06",
+          "bis": "2028-06-06"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NI",
+      "art": "sommerferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-07-20",
+          "bis": "2028-08-30"
+        }
+      ],
+      "hinweis": "Auf den niedersächsischen Nordseeinseln gelten Sonderregelungen (Fußnote der KMK-Sommerferienregelung 2025–2030)."
+    },
+    {
+      "land": "NW",
+      "art": "herbstferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-10-23",
+          "bis": "2027-11-06"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NW",
+      "art": "weihnachtsferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-12-24",
+          "bis": "2028-01-08"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NW",
+      "art": "osterferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-04-10",
+          "bis": "2028-04-22"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NW",
+      "art": "sommerferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-07-10",
+          "bis": "2028-08-22"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "RP",
+      "art": "herbstferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-10-04",
+          "bis": "2027-10-15"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "RP",
+      "art": "weihnachtsferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-12-23",
+          "bis": "2028-01-07"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "RP",
+      "art": "osterferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-04-10",
+          "bis": "2028-04-21"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "RP",
+      "art": "sommerferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-07-03",
+          "bis": "2028-08-11"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SL",
+      "art": "herbstferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-10-04",
+          "bis": "2027-10-15"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SL",
+      "art": "weihnachtsferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-12-20",
+          "bis": "2027-12-31"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SL",
+      "art": "winterferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-02-21",
+          "bis": "2028-02-29"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SL",
+      "art": "osterferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-04-12",
+          "bis": "2028-04-21"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SL",
+      "art": "sommerferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-07-03",
+          "bis": "2028-08-11"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SN",
+      "art": "herbstferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-10-11",
+          "bis": "2027-10-23"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SN",
+      "art": "weihnachtsferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-12-23",
+          "bis": "2028-01-01"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SN",
+      "art": "winterferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-02-14",
+          "bis": "2028-02-26"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SN",
+      "art": "osterferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-04-14",
+          "bis": "2028-04-22"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SN",
+      "art": "pfingstferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-05-26",
+          "bis": "2028-05-26"
+        }
+      ],
+      "hinweis": "Im KMK-Kalender kursiv gesetzt, d. h. als schul- und unterrichtsfreier Tag gekennzeichnet."
+    },
+    {
+      "land": "SN",
+      "art": "sommerferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-07-22",
+          "bis": "2028-09-01"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "ST",
+      "art": "herbstferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-10-18",
+          "bis": "2027-10-23"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "ST",
+      "art": "weihnachtsferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-12-20",
+          "bis": "2027-12-31"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "ST",
+      "art": "winterferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-02-07",
+          "bis": "2028-02-12"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "ST",
+      "art": "osterferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-04-10",
+          "bis": "2028-04-22"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "ST",
+      "art": "pfingstferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-06-03",
+          "bis": "2028-06-10"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "ST",
+      "art": "sommerferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-07-22",
+          "bis": "2028-09-01"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SH",
+      "art": "herbstferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-10-11",
+          "bis": "2027-10-23"
+        }
+      ],
+      "hinweis": "Auf den Inseln Sylt, Föhr, Amrum und Helgoland sowie auf den Halligen gelten Sonderregelungen."
+    },
+    {
+      "land": "SH",
+      "art": "weihnachtsferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-12-23",
+          "bis": "2028-01-08"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SH",
+      "art": "osterferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-04-03",
+          "bis": "2028-04-15"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SH",
+      "art": "pfingstferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-05-26",
+          "bis": "2028-05-26"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SH",
+      "art": "sommerferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-06-24",
+          "bis": "2028-08-04"
+        }
+      ],
+      "hinweis": "Auf den Inseln Sylt, Föhr, Amrum und Helgoland sowie auf den Halligen gelten Sonderregelungen."
+    },
+    {
+      "land": "TH",
+      "art": "herbstferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-10-09",
+          "bis": "2027-10-23"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "TH",
+      "art": "weihnachtsferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2027-12-23",
+          "bis": "2027-12-31"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "TH",
+      "art": "winterferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-02-07",
+          "bis": "2028-02-12"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "TH",
+      "art": "osterferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-04-03",
+          "bis": "2028-04-15"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "TH",
+      "art": "pfingstferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-05-26",
+          "bis": "2028-05-26"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "TH",
+      "art": "sommerferien",
+      "schuljahr": "2027/28",
+      "zeitraeume": [
+        {
+          "von": "2028-07-22",
+          "bis": "2028-09-01"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BW",
+      "art": "herbstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-10-30",
+          "bis": "2028-11-03"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BW",
+      "art": "weihnachtsferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-12-23",
+          "bis": "2029-01-05"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BW",
+      "art": "osterferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-03-26",
+          "bis": "2029-04-07"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BW",
+      "art": "pfingstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-05-22",
+          "bis": "2029-06-01"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BW",
+      "art": "sommerferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-07-26",
+          "bis": "2029-09-08"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BY",
+      "art": "herbstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-10-30",
+          "bis": "2028-11-03"
+        }
+      ],
+      "hinweis": "Im KMK-Kalender kursiv gesetzt, d. h. als schul- und unterrichtsfreie Tage gekennzeichnet."
+    },
+    {
+      "land": "BY",
+      "art": "weihnachtsferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-12-23",
+          "bis": "2029-01-05"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BY",
+      "art": "osterferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-02-12",
+          "bis": "2029-02-16"
+        },
+        {
+          "von": "2029-03-26",
+          "bis": "2029-04-06"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BY",
+      "art": "pfingstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-05-22",
+          "bis": "2029-06-01"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BY",
+      "art": "sommerferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-07-30",
+          "bis": "2029-09-10"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BE",
+      "art": "herbstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-10-02",
+          "bis": "2028-10-14"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BE",
+      "art": "weihnachtsferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-12-22",
+          "bis": "2029-01-02"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BE",
+      "art": "winterferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-01-29",
+          "bis": "2029-02-03"
+        },
+        {
+          "von": "2029-03-09",
+          "bis": "2029-03-09"
+        }
+      ],
+      "hinweis": "Im KMK-Kalender kursiv gesetzt, d. h. als schul- und unterrichtsfreier Tag gekennzeichnet: 09.03.2029."
+    },
+    {
+      "land": "BE",
+      "art": "osterferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-03-26",
+          "bis": "2029-04-06"
+        },
+        {
+          "von": "2029-04-30",
+          "bis": "2029-04-30"
+        }
+      ],
+      "hinweis": "Im KMK-Kalender kursiv gesetzt, d. h. als schul- und unterrichtsfreier Tag gekennzeichnet: 30.04.2029."
+    },
+    {
+      "land": "BE",
+      "art": "pfingstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-05-11",
+          "bis": "2029-05-11"
+        },
+        {
+          "von": "2029-05-22",
+          "bis": "2029-05-25"
+        }
+      ],
+      "hinweis": "Im KMK-Kalender kursiv gesetzt, d. h. als schul- und unterrichtsfreier Tag gekennzeichnet: 11.05.2029."
+    },
+    {
+      "land": "BE",
+      "art": "sommerferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-07-01",
+          "bis": "2029-08-11"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BB",
+      "art": "herbstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-10-02",
+          "bis": "2028-10-14"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BB",
+      "art": "weihnachtsferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-12-22",
+          "bis": "2029-01-02"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BB",
+      "art": "winterferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-01-29",
+          "bis": "2029-02-03"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BB",
+      "art": "osterferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-03-26",
+          "bis": "2029-04-06"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BB",
+      "art": "pfingstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-05-22",
+          "bis": "2029-05-22"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BB",
+      "art": "sommerferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-06-28",
+          "bis": "2029-08-11"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HB",
+      "art": "herbstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-10-02",
+          "bis": "2028-10-02"
+        },
+        {
+          "von": "2028-10-23",
+          "bis": "2028-11-04"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HB",
+      "art": "weihnachtsferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-12-27",
+          "bis": "2029-01-06"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HB",
+      "art": "winterferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-02-01",
+          "bis": "2029-02-02"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HB",
+      "art": "osterferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-03-19",
+          "bis": "2029-04-03"
+        },
+        {
+          "von": "2029-04-30",
+          "bis": "2029-04-30"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HB",
+      "art": "pfingstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-05-11",
+          "bis": "2029-05-11"
+        },
+        {
+          "von": "2029-05-22",
+          "bis": "2029-05-22"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HB",
+      "art": "sommerferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-07-19",
+          "bis": "2029-08-29"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HH",
+      "art": "herbstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-10-02",
+          "bis": "2028-10-13"
+        },
+        {
+          "von": "2028-10-30",
+          "bis": "2028-10-30"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HH",
+      "art": "weihnachtsferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-12-18",
+          "bis": "2028-12-29"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HH",
+      "art": "winterferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-02-02",
+          "bis": "2029-02-02"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HH",
+      "art": "osterferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-03-05",
+          "bis": "2029-03-16"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HH",
+      "art": "pfingstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-05-11",
+          "bis": "2029-05-18"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HH",
+      "art": "sommerferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-07-02",
+          "bis": "2029-08-10"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HE",
+      "art": "herbstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-10-09",
+          "bis": "2028-10-20"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HE",
+      "art": "weihnachtsferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-12-27",
+          "bis": "2029-01-12"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HE",
+      "art": "osterferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-03-29",
+          "bis": "2029-04-13"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HE",
+      "art": "sommerferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-07-16",
+          "bis": "2029-08-24"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "MV",
+      "art": "herbstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-10-02",
+          "bis": "2028-10-02"
+        },
+        {
+          "von": "2028-10-23",
+          "bis": "2028-10-28"
+        },
+        {
+          "von": "2028-10-30",
+          "bis": "2028-10-30"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "MV",
+      "art": "weihnachtsferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-12-22",
+          "bis": "2029-01-02"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "MV",
+      "art": "winterferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-02-05",
+          "bis": "2029-02-16"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "MV",
+      "art": "osterferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-03-09",
+          "bis": "2029-03-09"
+        },
+        {
+          "von": "2029-03-28",
+          "bis": "2029-04-06"
+        },
+        {
+          "von": "2029-04-30",
+          "bis": "2029-04-30"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "MV",
+      "art": "pfingstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-05-11",
+          "bis": "2029-05-11"
+        },
+        {
+          "von": "2029-05-18",
+          "bis": "2029-05-22"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "MV",
+      "art": "sommerferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-06-18",
+          "bis": "2029-07-28"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NI",
+      "art": "herbstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-10-02",
+          "bis": "2028-10-02"
+        },
+        {
+          "von": "2028-10-23",
+          "bis": "2028-11-04"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NI",
+      "art": "weihnachtsferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-12-27",
+          "bis": "2029-01-06"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NI",
+      "art": "winterferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-02-01",
+          "bis": "2029-02-02"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NI",
+      "art": "osterferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-03-19",
+          "bis": "2029-04-03"
+        },
+        {
+          "von": "2029-04-30",
+          "bis": "2029-04-30"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NI",
+      "art": "pfingstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-05-11",
+          "bis": "2029-05-11"
+        },
+        {
+          "von": "2029-05-22",
+          "bis": "2029-05-22"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NI",
+      "art": "sommerferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-07-19",
+          "bis": "2029-08-29"
+        }
+      ],
+      "hinweis": "Auf den niedersächsischen Nordseeinseln gelten Sonderregelungen (Fußnote der KMK-Sommerferienregelung 2025–2030)."
+    },
+    {
+      "land": "NW",
+      "art": "herbstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-10-23",
+          "bis": "2028-11-04"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NW",
+      "art": "weihnachtsferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-12-21",
+          "bis": "2029-01-05"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NW",
+      "art": "osterferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-03-26",
+          "bis": "2029-04-07"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NW",
+      "art": "pfingstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-05-22",
+          "bis": "2029-05-22"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NW",
+      "art": "sommerferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-07-02",
+          "bis": "2029-08-14"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "RP",
+      "art": "herbstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-10-09",
+          "bis": "2028-10-20"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "RP",
+      "art": "weihnachtsferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-12-21",
+          "bis": "2029-01-08"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "RP",
+      "art": "osterferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-03-26",
+          "bis": "2029-04-06"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "RP",
+      "art": "sommerferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-07-16",
+          "bis": "2029-08-24"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SL",
+      "art": "herbstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-10-09",
+          "bis": "2028-10-20"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SL",
+      "art": "weihnachtsferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-12-20",
+          "bis": "2029-01-02"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SL",
+      "art": "winterferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-02-12",
+          "bis": "2029-02-16"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SL",
+      "art": "osterferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-03-26",
+          "bis": "2029-04-06"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SL",
+      "art": "pfingstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-05-22",
+          "bis": "2029-05-25"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SL",
+      "art": "sommerferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-07-16",
+          "bis": "2029-08-24"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SN",
+      "art": "herbstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-10-23",
+          "bis": "2028-11-03"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SN",
+      "art": "weihnachtsferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-12-23",
+          "bis": "2029-01-03"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SN",
+      "art": "winterferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-02-05",
+          "bis": "2029-02-16"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SN",
+      "art": "osterferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-03-29",
+          "bis": "2029-04-06"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SN",
+      "art": "pfingstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-05-11",
+          "bis": "2029-05-11"
+        },
+        {
+          "von": "2029-05-19",
+          "bis": "2029-05-22"
+        }
+      ],
+      "hinweis": "Im KMK-Kalender kursiv gesetzt, d. h. als schul- und unterrichtsfreier Tag gekennzeichnet: 11.05.2029."
+    },
+    {
+      "land": "SN",
+      "art": "sommerferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-07-21",
+          "bis": "2029-08-31"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "ST",
+      "art": "herbstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-10-02",
+          "bis": "2028-10-02"
+        },
+        {
+          "von": "2028-10-30",
+          "bis": "2028-11-03"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "ST",
+      "art": "weihnachtsferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-12-21",
+          "bis": "2029-01-02"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "ST",
+      "art": "winterferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-02-05",
+          "bis": "2029-02-10"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "ST",
+      "art": "osterferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-03-26",
+          "bis": "2029-03-31"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "ST",
+      "art": "pfingstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-04-30",
+          "bis": "2029-04-30"
+        },
+        {
+          "von": "2029-05-11",
+          "bis": "2029-05-25"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "ST",
+      "art": "sommerferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-07-21",
+          "bis": "2029-08-31"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SH",
+      "art": "herbstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-10-16",
+          "bis": "2028-10-30"
+        }
+      ],
+      "hinweis": "Auf den Inseln Sylt, Föhr, Amrum und Helgoland sowie auf den Halligen gelten Sonderregelungen."
+    },
+    {
+      "land": "SH",
+      "art": "weihnachtsferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-12-21",
+          "bis": "2029-01-05"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SH",
+      "art": "osterferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-03-23",
+          "bis": "2029-04-06"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SH",
+      "art": "pfingstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-05-11",
+          "bis": "2029-05-11"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SH",
+      "art": "sommerferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-06-23",
+          "bis": "2029-08-03"
+        }
+      ],
+      "hinweis": "Auf den Inseln Sylt, Föhr, Amrum und Helgoland sowie auf den Halligen gelten Sonderregelungen."
+    },
+    {
+      "land": "TH",
+      "art": "herbstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-10-23",
+          "bis": "2028-11-03"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "TH",
+      "art": "weihnachtsferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2028-12-23",
+          "bis": "2029-01-05"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "TH",
+      "art": "winterferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-02-12",
+          "bis": "2029-02-17"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "TH",
+      "art": "osterferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-03-26",
+          "bis": "2029-04-07"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "TH",
+      "art": "pfingstferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-05-11",
+          "bis": "2029-05-11"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "TH",
+      "art": "sommerferien",
+      "schuljahr": "2028/29",
+      "zeitraeume": [
+        {
+          "von": "2029-07-21",
+          "bis": "2029-08-31"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BW",
+      "art": "sommerferien",
+      "schuljahr": "2029/30",
+      "zeitraeume": [
+        {
+          "von": "2030-07-25",
+          "bis": "2030-09-07"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BY",
+      "art": "sommerferien",
+      "schuljahr": "2029/30",
+      "zeitraeume": [
+        {
+          "von": "2030-07-29",
+          "bis": "2030-09-09"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BE",
+      "art": "sommerferien",
+      "schuljahr": "2029/30",
+      "zeitraeume": [
+        {
+          "von": "2030-07-04",
+          "bis": "2030-08-17"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "BB",
+      "art": "sommerferien",
+      "schuljahr": "2029/30",
+      "zeitraeume": [
+        {
+          "von": "2030-07-04",
+          "bis": "2030-08-17"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "HB",
+      "art": "sommerferien",
+      "schuljahr": "2029/30",
+      "zeitraeume": [
+        {
+          "von": "2030-07-11",
+          "bis": "2030-08-21"
+        }
+      ],
+      "hinweis": "Termin aus der langfristigen KMK-Sommerferienregelung; endet der Zeitraum in der Wochenmitte, darf das Land die Ferien laut KMK bis zum folgenden Wochenende verlängern."
+    },
+    {
+      "land": "HH",
+      "art": "sommerferien",
+      "schuljahr": "2029/30",
+      "zeitraeume": [
+        {
+          "von": "2030-07-04",
+          "bis": "2030-08-14"
+        }
+      ],
+      "hinweis": "Termin aus der langfristigen KMK-Sommerferienregelung; endet der Zeitraum in der Wochenmitte, darf das Land die Ferien laut KMK bis zum folgenden Wochenende verlängern."
+    },
+    {
+      "land": "HE",
+      "art": "sommerferien",
+      "schuljahr": "2029/30",
+      "zeitraeume": [
+        {
+          "von": "2030-07-22",
+          "bis": "2030-08-30"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "MV",
+      "art": "sommerferien",
+      "schuljahr": "2029/30",
+      "zeitraeume": [
+        {
+          "von": "2030-07-01",
+          "bis": "2030-08-10"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "NI",
+      "art": "sommerferien",
+      "schuljahr": "2029/30",
+      "zeitraeume": [
+        {
+          "von": "2030-07-11",
+          "bis": "2030-08-21"
+        }
+      ],
+      "hinweis": "Termin aus der langfristigen KMK-Sommerferienregelung; endet der Zeitraum in der Wochenmitte, darf das Land die Ferien laut KMK bis zum folgenden Wochenende verlängern. Auf den niedersächsischen Nordseeinseln gelten Sonderregelungen (Fußnote der KMK-Sommerferienregelung 2025–2030)."
+    },
+    {
+      "land": "NW",
+      "art": "sommerferien",
+      "schuljahr": "2029/30",
+      "zeitraeume": [
+        {
+          "von": "2030-06-24",
+          "bis": "2030-08-06"
+        }
+      ],
+      "hinweis": "Termin aus der langfristigen KMK-Sommerferienregelung; endet der Zeitraum in der Wochenmitte, darf das Land die Ferien laut KMK bis zum folgenden Wochenende verlängern."
+    },
+    {
+      "land": "RP",
+      "art": "sommerferien",
+      "schuljahr": "2029/30",
+      "zeitraeume": [
+        {
+          "von": "2030-07-22",
+          "bis": "2030-08-30"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SL",
+      "art": "sommerferien",
+      "schuljahr": "2029/30",
+      "zeitraeume": [
+        {
+          "von": "2030-07-22",
+          "bis": "2030-08-30"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SN",
+      "art": "sommerferien",
+      "schuljahr": "2029/30",
+      "zeitraeume": [
+        {
+          "von": "2030-07-13",
+          "bis": "2030-08-23"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "ST",
+      "art": "sommerferien",
+      "schuljahr": "2029/30",
+      "zeitraeume": [
+        {
+          "von": "2030-07-13",
+          "bis": "2030-08-23"
+        }
+      ],
+      "hinweis": null
+    },
+    {
+      "land": "SH",
+      "art": "sommerferien",
+      "schuljahr": "2029/30",
+      "zeitraeume": [
+        {
+          "von": "2030-07-08",
+          "bis": "2030-08-17"
+        }
+      ],
+      "hinweis": "Auf den Inseln Sylt, Föhr, Amrum und Helgoland sowie auf den Halligen gelten Sonderregelungen."
+    },
+    {
+      "land": "TH",
+      "art": "sommerferien",
+      "schuljahr": "2029/30",
+      "zeitraeume": [
+        {
+          "von": "2030-07-13",
+          "bis": "2030-08-23"
+        }
+      ],
+      "hinweis": null
+    }
+  ]
+}
