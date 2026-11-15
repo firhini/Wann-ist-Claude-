@@ -59,14 +59,23 @@ export function Tafel({
               </Link>
               <span className="mono text-fein hidden lg:block">{z.notiz}</span>
               <span className="flex items-center justify-end gap-2 text-zeile max-sm:row-span-2">
-                {z.phase === "vor" ? (
-                  <>
-                    <FlapStatisch text={tausender(z.tage).padStart(2, "0")} />
-                    <span className="mono text-fein w-9">{z.tage === 1 ? "Tag" : "Tage"}</span>
-                  </>
-                ) : (
-                  <FlapStatisch text={z.phase === "heute" ? "HEUTE" : "LÄUFT"} breit />
-                )}
+                <span className="sr-only">
+                  {z.phase === "vor"
+                    ? `noch ${tausender(z.tage)} ${z.tage === 1 ? "Tag" : "Tage"}`
+                    : z.phase === "heute"
+                      ? "heute"
+                      : "läuft gerade"}
+                </span>
+                <span className="flex items-center gap-2" aria-hidden="true">
+                  {z.phase === "vor" ? (
+                    <>
+                      <FlapStatisch text={tausender(z.tage).padStart(2, "0")} />
+                      <span className="mono text-fein w-9">{z.tage === 1 ? "Tag" : "Tage"}</span>
+                    </>
+                  ) : (
+                    <FlapStatisch text={z.phase === "heute" ? "HEUTE" : "LÄUFT"} breit />
+                  )}
+                </span>
               </span>
             </li>
           ))}

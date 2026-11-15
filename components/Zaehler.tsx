@@ -29,6 +29,8 @@ type Props = {
   hatUhrzeit?: boolean;
   /** Einheit des Zeitraums für "Noch 9 Tage Ferien". */
   zeitraumWort?: string;
+  /** Satz, wenn der Termin vorbei ist und kein weiterer folgt. */
+  vorbeiText?: string;
 };
 
 export function Uhr({
@@ -87,6 +89,7 @@ export function Zaehler({
   laeuftText,
   hatUhrzeit,
   zeitraumWort,
+  vorbeiText,
 }: Props) {
   const jetztMs = useJetzt(serverNow);
   const jetzt = new Date(jetztMs);
@@ -231,7 +234,10 @@ export function Zaehler({
   return (
     <div className="zaehler" data-phase="vorbei">
       <p className="display text-plakat">Vorbei.</p>
-      <p className="mono text-fein text-ink-soft mt-4">Ein neuer Termin steht noch nicht fest.</p>
+      <p className="mono text-fein text-ink-soft mt-4">
+        {vorbeiText ?? "Ein neuer Termin steht noch nicht fest."}
+        {heuteNr - endeNr > 0 ? ` Das war vor ${tausender(heuteNr - endeNr)} ${plural(heuteNr - endeNr, "Tag", "Tagen")}.` : ""}
+      </p>
     </div>
   );
 }

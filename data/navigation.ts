@@ -1,5 +1,6 @@
 import { BUNDESLAENDER } from "./bundeslaender";
 import { STAMM } from "./countdowns";
+import { kommendeEvents } from "./events";
 import { FERIENARTEN } from "./ferien";
 import { KW_JAHRE } from "./kalenderwoche";
 
@@ -11,6 +12,7 @@ export const HAUPTNAVI: NavLink[] = [
   { name: "Ferien", pfad: "/ferien" },
   { name: "Kalenderwoche", pfad: "/kalenderwoche" },
   { name: "Alltag", pfad: "/alltag" },
+  { name: "Eigener Countdown", pfad: "/eigener-countdown" },
 ];
 
 export type FussGruppe = { titel: string; pfad?: string; links: NavLink[] };
@@ -40,11 +42,17 @@ export function fussGruppen(): FussGruppe[] {
     { titel: "Jahreszeiten", pfad: "/jahreszeiten", links: nach("jahreszeiten") },
     { titel: "Alltag", pfad: "/alltag", links: nach("alltag") },
     {
+      titel: "Events",
+      pfad: "/events",
+      links: kommendeEvents(new Date()).map((c) => ({ name: c.tafel ?? c.title, pfad: c.pfad })),
+    },
+    {
       titel: "Kalender",
       links: [
         { name: "Welche KW haben wir?", pfad: "/kalenderwoche" },
         ...KW_JAHRE.map((j) => ({ name: `Kalenderwochen ${j}`, pfad: `/kalenderwoche/${j}` })),
         { name: "Tage bis zu einem Datum", pfad: "/tage-bis" },
+        { name: "Eigener Countdown", pfad: "/eigener-countdown" },
       ],
     },
   ];

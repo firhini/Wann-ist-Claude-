@@ -5,6 +5,7 @@ export const HUBS: Partial<Record<Kategorie, { name: string; pfad: string }>> = 
   feiertage: { name: "Feiertage", pfad: "/feiertage" },
   jahreszeiten: { name: "Jahreszeiten", pfad: "/jahreszeiten" },
   alltag: { name: "Alltag", pfad: "/alltag" },
+  events: { name: "Events", pfad: "/events" },
   ferien: { name: "Ferien", pfad: "/ferien" },
   schule: { name: "Schule", pfad: "/schule" },
 };

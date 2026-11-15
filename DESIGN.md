@@ -57,7 +57,7 @@ Skala (Tailwind-Klassen `text-…`):
 
 | Token | Größe | Zeilenhöhe | Einsatz |
 |---|---|---|---|
-| `zahl` | `clamp(7rem, 34vw, 22rem)` | 0.8 | Die Hauptzahl. Laufweite −0.02em, `tabular-nums`. |
+| `zahl` | `clamp(7rem, 34vw, 22rem)` | 0.8 | Die Hauptzahl. Laufweite −0.02em, `tabular-nums`. Gilt für drei Stellen, siehe unten. |
 | `plakat` | `clamp(2.75rem, 8vw, 6rem)` | 0.92 | H1 auf Hubs und Startseite, „Heute“-Zustand |
 | `frage` | `clamp(1.625rem, 3.2vw, 2.75rem)` | 1.02 | H1 auf Countdown-Seiten (die Suchfrage) |
 | `kopf` | `clamp(1.5rem, 2.4vw, 2.125rem)` | 1.05 | H2 |
@@ -67,6 +67,17 @@ Skala (Tailwind-Klassen `text-…`):
 | `klein` | `0.9375rem` | 1.5 | Nebentexte, Footer-Links |
 | `daten` | `0.8125rem` | 1.45 | Mono-Daten in Tabellen |
 | `fein` | `0.75rem` | 1.4 | Mono-Beschriftungen (nie kleiner) |
+
+Die Hauptzahl richtet sich nach der Stellenzahl (`.zahl-reihe[data-stellen]`), damit sie das Blatt füllt:
+
+| Stellen | Größe | Beispiel |
+|---|---|---|
+| 1–2 | `clamp(11rem, 56vw, 28rem)` | 40 Tage bis Weihnachten |
+| 3 | `clamp(8.5rem, 42vw, 22rem)` | 137 Tage |
+| 4–5 | `clamp(6rem, 30vw, 18rem)` | 1.136 Tage |
+
+Die Einheit daneben („Tage“) misst immer 0.2 der Zahl. `zahl-klein` (Startseite) misst 0.62 des Tokens.
+Weitere feste Größen: `marke` 1.75rem (Wortmarke), Uhr `clamp(2.25rem, 5.4vw, 3.75rem)`.
 
 Regeln:
 
@@ -109,7 +120,12 @@ Regeln:
 | Jahrestabelle | `components/Jahre.tsx` | „Die nächsten Jahre“, Zebra in `paper-deep` |
 | FAQ | `components/Faq.tsx` | `<details>`, Plus/Minus in Mono, keine Animation |
 | Motiv | `components/Motiv.tsx` | Ein Strichmotiv pro Event, 1.5 px `ink`, keine Füllung |
-| Stempel / Fahrschein | `components/Stempel.tsx` | Ferienseiten: Länderkürzel und Zeitraum als Stempel |
+| Stempel | `components/Stempel.tsx` | Ferien- und Länderseiten: Länderkürzel als Stempel in `orchid-deep`, 7° gedreht |
+| Hub-Kopf | `components/HubKopf.tsx` | Kopf jeder Übersichtsseite: Frage und Antwort links, Fahrplanspalte rechts |
+| Übersicht | `components/Uebersicht.tsx` | Tabelle auf Hubs: Name, Datum, Wochentag, Zusatz, verbleibende Tage |
+| Matrix | `.matrix` | Ferien-Hub: 16 Länder × 6 Ferienarten, erste Spalte bleibt beim Scrollen stehen |
+| Tagesraster | `.tagesraster` | Datums-Hub: 31 Spalten am Desktop, 7 auf dem Handy |
+| Formular | `.feld`, `.motivwahl` | Eigener Countdown: eckige Felder mit Haarlinie, Motivauswahl als Raster mit 1-px-Fugen |
 | Buttons | `.knopf` | Rechteck, 1 px `ink`, Mono. Primär: gefüllt `ink`. Hover: invertiert |
 | Werbeplatz | `components/AdSlot.tsx` | Reservierte Höhe, standardmäßig leer und unsichtbar für Screenreader |
 

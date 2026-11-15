@@ -147,6 +147,7 @@ export function CountdownSeite({ c, now, krumen, embedPfad, jahre, zusatz, motiv
                 heuteText={c.heute}
                 laeuftText={c.laeuft}
                 hatUhrzeit={Boolean(c.uhrzeit) || Boolean(c.hatUhrzeit)}
+                vorbeiText={c.vorbeiText}
               />
             </div>
             <div className="order-4 mt-7">

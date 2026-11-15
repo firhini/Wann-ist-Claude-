@@ -1,7 +1,8 @@
 import type { TafelZeile } from "@/components/Tafel";
-import { type Countdown, type Kategorie, stand } from "@/lib/countdown";
+import { type Countdown, type Kategorie, istVorbei, stand } from "@/lib/countdown";
 import { datumTagMonat } from "@/lib/format";
 import { STAMM } from "./countdowns";
+import { EVENTS } from "./events";
 import { alleFeiertageLandCountdowns } from "./feiertage-land-seiten";
 import { alleFerienCountdowns, alleFerienLandCountdowns, alleSchulanfangCountdowns } from "./ferien";
 
@@ -12,7 +13,10 @@ export function alleCountdowns(): Countdown[] {
   alle ??= [
     ...STAMM,
     ...alleFeiertageLandCountdowns(),
-    ...alleFerienCountdowns(), ...alleFerienLandCountdowns(), ...alleSchulanfangCountdowns(),
+    ...alleFerienCountdowns(),
+    ...alleFerienLandCountdowns(),
+    ...alleSchulanfangCountdowns(),
+    ...EVENTS,
   ];
   return alle;
 }
@@ -43,6 +47,9 @@ function notizVon(c: Countdown, now: Date): string {
     if (Array.isArray(c.gesetzlich)) return `Feiertag in ${c.gesetzlich.length} ${c.gesetzlich.length === 1 ? "Land" : "Ländern"}`;
     return "kein Feiertag";
   }
+  if (c.category === "events") {
+    return c.zeilen?.(now).find((z) => z.label === "Rubrik")?.wert ?? "Event";
+  }
   return KATEGORIE_NAME[c.category];
 }
 
@@ -67,7 +74,7 @@ function sortiert(zeilen: TafelZeile[]): TafelZeile[] {
 
 /** Die nächsten n Ereignisse aus einer Auswahl. */
 export function naechste(auswahl: Countdown[], now: Date, n: number): TafelZeile[] {
-  return sortiert(auswahl.map((c) => tafelZeile(c, now))).slice(0, n);
+  return sortiert(auswahl.filter((c) => !istVorbei(c, now)).map((c) => tafelZeile(c, now))).slice(0, n);
 }
 
 /** Verwandte Countdowns: erst die ausdrücklich genannten, dann Auffüllen aus derselben Kategorie. */
@@ -75,11 +82,11 @@ export function verwandte(c: Countdown, now: Date, n = 7): TafelZeile[] {
   const gewaehlt: Countdown[] = [];
   for (const pfad of c.related) {
     const r = nachPfad(pfad);
-    if (r && r.pfad !== c.pfad && !gewaehlt.includes(r)) gewaehlt.push(r);
+    if (r && r.pfad !== c.pfad && !gewaehlt.includes(r) && !istVorbei(r, now)) gewaehlt.push(r);
   }
   if (gewaehlt.length < n) {
     const rest = alleCountdowns()
-      .filter((k) => k.category === c.category && k.pfad !== c.pfad && !gewaehlt.includes(k))
+      .filter((k) => k.category === c.category && k.pfad !== c.pfad && !gewaehlt.includes(k) && !istVorbei(k, now))
       .map((k) => ({ k, tage: stand(k, now).tage }))
       .sort((a, b) => a.tage - b.tage);
     for (const { k } of rest) {

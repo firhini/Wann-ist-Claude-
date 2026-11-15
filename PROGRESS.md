@@ -98,3 +98,23 @@ Dazu `/embed/<slug>` (noindex), `/og` (Vorschaubild), `/sitemap.xml` mit `/sitem
 **Stand:** 569 indexierbare Seiten. Build: 765 Routen in rund 11 Sekunden.
 
 **Screenshots:** `screenshots/phase-4/`
+
+## Phase 5: Events, eigener Countdown, Widget (15.11.2026)
+
+**Neue URLs (39 indexierbar, insgesamt 608)**
+- `/events` und `/events/<slug>` (37 Events mit bestätigtem Datum)
+- `/eigener-countdown` (Generator, indexierbar)
+- `/c?…` (geteilter Countdown, noindex) und `/embed/<pfad>` (235 Widgets, noindex)
+- neue Sitemap `/sitemaps/events.xml`
+
+**Qualitätsschleife**
+- Runde 1: Events fehlten auf der Startseiten-Tafel (ein Eintrag im Register hatte nicht gegriffen), der
+  Antwortsatz „GTA 6 fällt 2026 auf einen Donnerstag“ klang falsch (jetzt „Termin: …“), die Tafelspalte zeigte
+  nur „Event“ (jetzt die Rubrik).
+- Runde 2: Abriss-Animation neu (siehe DECISIONS), Zahl in den Beispielen ohne Tausenderpunkt (behoben),
+  Widget bei 360 × 220 geprüft.
+- Lighthouse Mobile: `/events` 100/100/100/100, `/events/handball-wm-2027` 100/100/100/100,
+  `/eigener-countdown` 100/100/100/100, `/` 100/100/100/100. `/c` hat SEO 66, weil `noindex` gewollt ist. CLS 0.
+- Smoke-Test über alle 608 Seiten der Sitemaps: keine Fehler, keine kaputten internen Links.
+
+**Screenshots:** `screenshots/phase-5/`

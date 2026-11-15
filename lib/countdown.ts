@@ -60,6 +60,10 @@ export type Countdown = {
   uhrzeit?: { h: number; mi: number };
   /** Der Termin hat eine Uhrzeit, die von Jahr zu Jahr wechselt. Sie wird aus getNextDate gelesen. */
   hatUhrzeit?: boolean;
+  /** Einmaliger Termin: Nach dem letzten Tag ist er vorbei und kommt nicht wieder. */
+  einmalig?: boolean;
+  /** Satz, wenn ein einmaliger Termin vorbei ist. */
+  vorbeiText?: string;
   /** Eigene Termintabelle statt der berechneten „nächsten Jahre“. */
   tabelle?: (now: Date) => {
     titel: string;
@@ -112,6 +116,13 @@ export function stand(c: Pick<Countdown, "getNextDate" | "getEndDate" | "art">, 
     tageGesamt,
     restTage: phase === "vor" ? tageGesamt : Math.max(0, tageDiff(heute, ende) + 1),
   };
+}
+
+/** Ist ein einmaliger Termin schon vorbei? */
+export function istVorbei(c: Pick<Countdown, "einmalig" | "getNextDate" | "getEndDate">, now: Date): boolean {
+  if (!c.einmalig) return false;
+  const ende = c.getEndDate ? c.getEndDate(now) : c.getNextDate(now);
+  return tagNr(tagVon(now)) > tagNr(tagVon(ende));
 }
 
 /**

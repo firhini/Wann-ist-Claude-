@@ -1,4 +1,4 @@
-import { type Countdown, stand } from "@/lib/countdown";
+import { type Countdown, istVorbei, stand } from "@/lib/countdown";
 import { alleCountdowns } from "./alle";
 
 /** Was auf der großen Tafel der Startseite stehen darf: alles außer Alltag und den Länderseiten. */
@@ -37,6 +37,12 @@ export function startHubs(now: Date): StartHub[] {
       naechstes: naechstesIn(alle.filter((c) => c.category === "ferien" && c.slug.startsWith("ferien-")), now),
     },
     {
+      name: "Events",
+      pfad: "/events",
+      text: "Turniere, Spielereleases, Feste, Wahlen und Finsternisse. Nur Termine mit offiziell bestätigtem Datum, jeweils mit Quelle.",
+      naechstes: naechstesIn(alle.filter((c) => c.category === "events" && !istVorbei(c, now)), now),
+    },
+    {
       name: "Jahreszeiten",
       pfad: "/jahreszeiten",
       text: "Frühlings-, Sommer-, Herbst- und Winteranfang auf die Minute, dazu die nächste Zeitumstellung.",
@@ -66,6 +72,12 @@ export function startHubs(now: Date): StartHub[] {
       text: "Jeder Tag des Jahres mit eigener Seite: Countdown, Wochentag, Kalenderwoche und was an dem Tag los ist.",
       naechstes: "366 Daten",
     },
+    {
+      name: "Eigener Countdown",
+      pfad: "/eigener-countdown",
+      text: "Name, Datum, Uhrzeit: fertig ist der Link zum Teilen. Ohne Anmeldung, gespeichert wird nichts.",
+      naechstes: "Dein Termin",
+    },
   ];
 }
 
@@ -84,4 +96,4 @@ export function startSchnell(): { name: string; pfad: string }[] {
 }
 
 /** Seiten ohne eigenen Countdown-Datensatz, die als Schnelleinstieg taugen. */
-const EXTRA_SEITEN: string[] = ["/ferien/sommerferien"];
+const EXTRA_SEITEN: string[] = ["/ferien/sommerferien", "/eigener-countdown"];

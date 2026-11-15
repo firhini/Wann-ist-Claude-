@@ -57,6 +57,9 @@ export type MotifKey =
   | "schultuete"
   | "aschenkreuz"
   | "preisschild"
+  | "mikro"
+  | "buch"
+  | "segel"
   | "stempel";
 
 function strahlen(n: number, r1: number, r2: number, cx = 24, cy = 24, versatz = 0, r2b = r2): string {
@@ -423,6 +426,24 @@ const FORMEN: Record<MotifKey, () => ReactNode> = {
       <path d="M5 24L24 5H43V24L24 43Z" />
       <circle cx={35} cy={13} r={3} />
       <path d="M16 27L27 16M17 19.500h.010M26 27h.010" />
+    </>
+  ),
+  mikro: () => (
+    <>
+      <path d="M19 5H29V23A5 5 0 0 1 19 23Z" />
+      <path d="M13 21A11 11 0 0 0 35 21M24 32V43M16 43H32M19 11H23M19 16H23" />
+    </>
+  ),
+  buch: () => (
+    <>
+      <path d="M24 12C20 9 13 8 5 9V38C13 37 20 38 24 41C28 38 35 37 43 38V9C35 8 28 9 24 12Z" />
+      <path d="M24 12V41M10 16H19M10 22H19M29 16H38M29 22H38" />
+    </>
+  ),
+  segel: () => (
+    <>
+      <path d="M5 36H43L38 44H10Z" />
+      <path d="M24 4V36M26 8L40 31H26ZM22 13L9 31H22Z" />
     </>
   ),
   stempel: () => (

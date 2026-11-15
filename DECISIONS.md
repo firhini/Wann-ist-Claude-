@@ -167,3 +167,51 @@ Embed-Seiten dazu. Das OG-Bild rechnet direkt aus dem Datum (`/og?t=…&d=…`).
 Die Liste steht in `data/kalenderwoche.ts` (`KW_JAHRE`) und lässt sich mit einer Zahl verlängern.
 
 **Neue Kategorie `datum`** im Typ, weil Datumsseiten in keine der sechs Kategorien des Auftrags passen.
+
+## Phase 5: Events, eigener Countdown, Widget
+
+**Events: 37 Seiten, nur mit offiziell bestätigtem Datum.** Die Recherche (`data/research/events.json`,
+abgerufen am 15.11.2026) prüfte 44 Kandidaten an der Seite des Veranstalters, Verbands, Herstellers oder der
+Behörde. Fünf Termine habe ich danach selbst stichprobenartig an der Quelle nachgelesen (GTA 6, Wimbledon,
+Landtagswahl NRW, Oktoberfest: bestätigt; die EBU-Seite zum ESC blockte den Abruf).
+
+Aufgenommen (37): GTA 6 (19.11.2026), Black Friday 2026, Avengers: Doomsday (Kinostart Deutschland),
+Vierschanzentournee 2026/27, Handball-WM 2027, Alpine Ski-WM, Biathlon-WM, Super Bowl LXI, Nordische Ski-WM,
+Formel-1-Saisonstart, Landtagswahlen in Schleswig-Holstein, im Saarland, in NRW, Bremen und Niedersachsen,
+ESC-Finale 2027, DFB-Pokalfinale 2027 und 2028, Rock am Ring, Champions-League-Finale, Kieler Woche,
+Frauen-WM 2027, Wimbledon, Tour de France, Wacken, Sonnenfinsternis 2.8.2027, Perseiden, Bundesliga-Start
+2027/28, gamescom, Oktoberfest, Frankfurter Buchmesse, EM 2028, Olympia 2028, drei Mondfinsternisse
+(31.12.2028, 26.6.2029, 20.12.2029) und die Sonnenfinsternis am 1.6.2030.
+
+Nicht aufgenommen, weil das Datum nicht an offizieller Stelle nachzulesen war (7): Star Wars: Starfighter
+(nur US-Termin), Herr der Ringe: Jagd nach Gollum (nur Medienberichte), Avengers: Secret Wars (Quelle nicht
+abrufbar), Avatar 4 (nur Fachpresse), Olympische Winterspiele 2030 (offizielle Seite nicht erreichbar),
+Fußball-WM 2030 (kein Spielplan veröffentlicht), Bundestagswahl 2029 (noch kein Wahltag).
+
+**Uhrzeiten nur, wenn sie bestätigt sind.** Bei Super Bowl, ESC, Champions-League-Finale und anderen zählt
+die Seite bis zum Tagesbeginn und sagt das im Text. Olympia 2028 steht mit deutschem Datum (15. Juli, 2 Uhr),
+nicht mit dem Ortsdatum.
+
+**Finsternis-Zeiten für Deutschland sind als ungefähr gekennzeichnet.** Die NASA veröffentlicht für die
+Sonnenfinsternisse keine Ortszeiten für deutsche Städte. Die Werte (Beginn, Maximum, Bedeckung) stammen aus
+einer eigenen Berechnung der Recherche aus den NASA-Elementen und stehen deshalb mit „ungefähr“ und „je nach Ort“ im Text.
+
+**Die Event-Texte habe ich selbst geschrieben,** nachdem ein paralleler Schreibdurchgang an einem
+Nutzungslimit gescheitert war. Regel dabei: Fakten nur aus der Recherche, sonst steht dort „steht noch nicht fest“.
+
+**Vergangene Events verschwinden von selbst.** Einmalige Termine haben `einmalig: true`. Nach dem letzten Tag
+fallen sie aus Tafeln, Hub, Footer und Sitemap, die Seite selbst zeigt „Vorbei“ und trägt `noindex`.
+GTA 6 ist der erste Fall, am 20. November 2026.
+
+**Eigener Countdown ohne Speicherung.** Name, Datum, Uhrzeit, Motiv und „jedes Jahr“ stehen als Parameter in
+der Adresse (`/c?n=…&d=…&t=…&m=…&j=1`). Der Generator (`/eigener-countdown`) ist indexierbar, die geteilte
+Seite `/c` trägt `noindex` als Meta-Tag und als HTTP-Header. Das Vorschaubild rechnet `/og` aus denselben
+Parametern. Namen sind auf 60 Zeichen begrenzt, das Datum wird geprüft.
+
+**Widget:** `/embed/<pfad>` für jeden Countdown außer den 366 Datumsseiten. Der Knopf „Einbetten“ auf jeder
+Seite zeigt den fertigen iframe-Code samt Textlink zurück. Das Widget passt sich über `vw`-Einheiten an die
+Breite des iframes an.
+
+**Abriss-Animation überarbeitet.** In der ersten Fassung hatte das alte Blatt dieselbe Farbe wie die Seite
+und sah aus wie eine drehende Zahl. Jetzt ist es eine Stufe dunkler (`paper-deep`), hat oben die Perforation
+und fällt als sichtbares Blatt weg. Dauer weiter 560 ms, nur CSS.
