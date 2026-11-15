@@ -33,6 +33,7 @@ export const metadata: Metadata = {
   description: site.description,
   applicationName: site.name,
   formatDetection: { telephone: false, date: false, address: false, email: false },
+  verification: site.googleVerification ? { google: site.googleVerification } : undefined,
 };
 
 export const viewport: Viewport = {

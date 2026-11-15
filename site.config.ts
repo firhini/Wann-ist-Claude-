@@ -20,6 +20,11 @@ export const site = {
     address: "Ulmenweg 43, 68723 Schwetzingen",
     email: "Farhan2008hb@gmail.com",
   },
+  /**
+   * Bestätigungscode der Google Search Console (Methode „HTML-Tag“). Steht als
+   * <meta name="google-site-verification"> im Kopf jeder Seite. Leer lassen, wenn nicht gebraucht.
+   */
+  googleVerification: "_O3GiT3gSVsXXpTM8z10vOfimM-ernPYSxrt9DSLVE0",
   /** Werbung und Affiliate sind vorbereitet, aber aus. */
   ads: { enabled: false },
   affiliate: { enabled: false },
