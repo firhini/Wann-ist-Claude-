@@ -24,7 +24,8 @@ export function metadaten(opt: {
   const ogParams = new URLSearchParams(opt.og ?? { t: opt.titel });
   const bild = `/og?${ogParams.toString()}`;
   return {
-    title: opt.titel,
+    // Lange Titel bekommen keinen Markennamen angehängt, sonst schneidet Google sie ab.
+    title: opt.titel.length > 50 ? { absolute: opt.titel } : opt.titel,
     description: opt.beschreibung,
     alternates: { canonical: opt.pfad },
     robots: opt.noindex ? { index: false, follow: true } : undefined,

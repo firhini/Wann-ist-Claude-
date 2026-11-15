@@ -71,3 +71,45 @@ Links `[Text](/pfad)` enthalten, damit Fließtext intern verlinken kann.
 
 **Playwright** ist als Dev-Abhängigkeit auf 1.63.0 festgelegt, passend zum vorinstallierten Chromium. Statt
 `@playwright/test` gibt es zwei schlanke Skripte: `scripts/screenshots.mjs` und `scripts/smoke.mjs`.
+
+## Phase 2: Ferien
+
+**Quelle der Ferientermine: nur die Kultusministerkonferenz.** `data/ferien.json` wurde aus den KMK-PDFs für
+2026/27, 2027/28 und 2028/29 sowie der langfristigen Sommerferienregelung (für 2030) gelesen: 276 Einträge,
+310 Zeiträume. Jeder Zeitraum wurde maschinell gegen die OpenHolidays API geprüft: 310 von 310 identisch.
+Die API ist nur Prüfinstrument, zitiert wird die KMK. Details und offene Punkte in `data/ferien-pruefbericht.md`.
+Für 2029/30 gibt es noch keinen KMK-Kalender, deshalb stehen dort nur die Sommerferien, als „vorläufig“ markiert.
+
+**Hauptzeitraum und Zusatztage.** Die KMK führt in einer Spalte oft mehrere Teile, etwa „07.05. + 18.05.–19.05.“.
+Teile, zwischen denen nur Wochenenden und Feiertage liegen, werden zu einem Zeitraum zusammengefasst. Von den
+übrigen ist der längste der Hauptzeitraum, auf den der Countdown zählt. Die anderen erscheinen als
+„dazu frei“ in Text und Tabelle. So zählt „Pfingstferien Berlin“ nicht auf einen einzelnen Brückentag im Mai.
+
+**Bayerns Frühjahrsferien stehen unter Winterferien.** Die KMK führt die Februarwoche in der Spalte
+„Ostern/Frühjahr“. Sie liegt Wochen vor Ostern, und gesucht wird sie als Winter- oder Faschingsferien.
+Deshalb gibt es `/ferien/winterferien/bayern`, mit Hinweis auf die Herkunft der Zuordnung.
+
+**Nur Seiten mit Terminen.** Hat ein Land eine Ferienart laut KMK nicht (Winterferien in Hessen, Pfingstferien
+in Rheinland-Pfalz), gibt es keine Seite. Aus 6 × 16 = 96 möglichen werden so 87 echte. Die Hubs sagen ausdrücklich,
+welche Länder fehlen.
+
+**Zusätzliche Seiten: `/ferien/<bundesland>` (16) und `/schule` (Hub).** „Schulferien Bayern“ ist eine eigene,
+häufige Suche, die der Seitenbaum des Auftrags nicht abdeckte. Ferienart und Bundesland teilen sich das Segment
+`/ferien/[slug]`, die Namen überschneiden sich nicht. Der Schul-Hub sorgt dafür, dass die 16 Schulanfang-Seiten
+zwei Klicks von der Startseite entfernt sind.
+
+**Schulanfang ist berechnet, nicht recherchiert:** der erste Tag nach den Sommerferien, der weder Wochenende noch
+gesetzlicher Feiertag im Land ist. Grundlage ist der KMK-Sommertermin. Die Seiten sagen deutlich, dass die
+Einschulung der Erstklässler ein eigener Termin der Schule ist.
+
+**Einmalige Inhalte je Ferienseite** entstehen aus den Daten: Dauer, freie Tage am Stück mit Wochenenden und
+Feiertagen, erster Schultag danach, Feiertage in den Ferien, Rang im Ländervergleich, Länder mit gleichem Start,
+Folgejahr, fehlende Ferienarten des Landes. Dazu kommt ein redaktioneller Absatz je Ferienart.
+
+**Lange Titel ohne Markennamen.** Ab 50 Zeichen wird „| Zeitblatt“ nicht angehängt. Ferientitel lassen bei
+langen Ländernamen zusätzlich die Klammer „(noch X Tage)“ weg. Der Smoke-Test bricht bei mehr als 70 Zeichen ab.
+
+**Feiertage je Land** (`data/feiertage-laender.ts`) sind aus den Feiertagsgesetzen der Länder zusammengestellt.
+Regionale Sonderfälle (Fronleichnam in Teilen Sachsens und Thüringens, Mariä Himmelfahrt in Teilen Bayerns) sind
+als „teilweise“ markiert und zählen nicht als landesweit frei. Berlins einmaliger Feiertag am 17. Juni 2028 ist
+enthalten (Gesetz vom 10. Juli 2024, laut Recherche auf berlin.de bestätigt).

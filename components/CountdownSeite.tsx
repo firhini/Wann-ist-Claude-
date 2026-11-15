@@ -125,7 +125,13 @@ export function CountdownSeite({ c, now, krumen, embedPfad, jahre, zusatz, motiv
           <div className="flex flex-col pt-6 pb-8 lg:col-span-8 lg:pt-8 lg:pb-12 lg:pr-6">
             <div className="flex items-start justify-between gap-4">
               <h1 className="text-frage max-w-[18ch]">{c.question}</h1>
-              <div className="w-14 shrink-0 text-ink sm:w-20 lg:w-28">{motiv ?? <Motiv name={c.motif} />}</div>
+              {motiv ? (
+                <div className="shrink-0">{motiv}</div>
+              ) : (
+                <div className="w-14 shrink-0 text-ink sm:w-20 lg:w-28">
+                  <Motiv name={c.motif} />
+                </div>
+              )}
             </div>
             <p className="text-lead order-3 mt-7 max-w-text">
               <strong className="font-semibold">{a.satz}</strong> {a.zusatz}

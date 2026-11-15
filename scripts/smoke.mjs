@@ -44,7 +44,7 @@ async function pruefe(pfad) {
   if (h1.length !== 1) f(`${h1.length} H1 statt 1`);
   const title = b.match(/<title>([^<]*)<\/title>/)?.[1] ?? "";
   if (title.length < 15) f(`Title zu kurz: "${title}"`);
-  if (title.length > 75) f(`Title zu lang (${title.length}): "${title}"`);
+  if (title.length > 70) f(`Title zu lang (${title.length}): "${title}"`);
   const desc = b.match(/<meta name="description" content="([^"]*)"/)?.[1] ?? "";
   if (desc.length < 50) f(`Description zu kurz (${desc.length})`);
   if (!/<link rel="canonical" href="[^"]+"/.test(b)) f("Canonical fehlt");

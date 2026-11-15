@@ -31,6 +31,18 @@ export function startHubs(now: Date): StartHub[] {
       naechstes: naechstesIn(feiertage, now),
     },
     {
+      name: "Ferien",
+      pfad: "/ferien",
+      text: "Schulferien aller 16 Bundesländer aus den Kalendern der Kultusministerkonferenz: Sommer, Herbst, Weihnachten, Winter, Ostern, Pfingsten.",
+      naechstes: naechstesIn(alle.filter((c) => c.category === "ferien" && c.slug.startsWith("ferien-")), now),
+    },
+    {
+      name: "Schulanfang",
+      pfad: "/schule",
+      text: "Der erste Schultag nach den Sommerferien, für jedes Bundesland.",
+      naechstes: naechstesIn(alle.filter((c) => c.category === "schule"), now),
+    },
+    {
       name: "Kalenderwoche",
       pfad: "/kalenderwoche",
       text: "Die aktuelle KW und alle Wochen des Jahres mit Montag und Sonntag.",
@@ -54,4 +66,4 @@ export function startSchnell(): { name: string; pfad: string }[] {
 }
 
 /** Seiten ohne eigenen Countdown-Datensatz, die als Schnelleinstieg taugen. */
-const EXTRA_SEITEN: string[] = [];
+const EXTRA_SEITEN: string[] = ["/ferien/sommerferien"];

@@ -1,10 +1,15 @@
 import type { TafelZeile } from "@/components/Tafel";
 import { type Countdown, type Kategorie, stand } from "@/lib/countdown";
+import { datumTagMonat } from "@/lib/format";
 import { STAMM } from "./countdowns";
+import { alleFerienCountdowns, alleFerienLandCountdowns, alleSchulanfangCountdowns } from "./ferien";
 
 /** Jeder Countdown der Seite, egal unter welchem Pfad. */
+let alle: Countdown[] | null = null;
+
 export function alleCountdowns(): Countdown[] {
-  return [...STAMM];
+  alle ??= [...STAMM, ...alleFerienCountdowns(), ...alleFerienLandCountdowns(), ...alleSchulanfangCountdowns()];
+  return alle;
 }
 
 let index: Map<string, Countdown> | null = null;
@@ -34,6 +39,9 @@ function notizVon(c: Countdown): string {
 
 export function tafelZeile(c: Countdown, now: Date, notiz?: string): TafelZeile {
   const s = stand(c, now);
+  if (!notiz && c.art === "zeitraum" && s.tageGesamt > 1) {
+    notiz = `${s.tageGesamt} Tage, bis ${datumTagMonat(s.ende)}`;
+  }
   return {
     pfad: c.pfad,
     titel: c.tafel ?? c.title,

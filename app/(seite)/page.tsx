@@ -86,9 +86,15 @@ export default function Start() {
         titel="Nächste Abfahrten"
         zeilen={zeilen}
         fuss={
-          <Link href="/feiertage" className="link">
-            Alle Feiertage mit Datum und Countdown
-          </Link>
+          <>
+            <Link href="/feiertage" className="link">
+              Alle Feiertage mit Datum und Countdown
+            </Link>
+            <span aria-hidden="true"> · </span>
+            <Link href="/ferien" className="link">
+              Schulferien in allen Bundesländern
+            </Link>
+          </>
         }
       />
 
