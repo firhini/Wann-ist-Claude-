@@ -1,4 +1,4 @@
-# Zeitblatt auf Netlify veröffentlichen
+# Nochtage auf Netlify veröffentlichen
 
 Schritt für Schritt, vom leeren Netlify-Konto bis zur Seite unter eigener Domain.
 Das Projekt ist dafür fertig eingerichtet (`netlify.toml`, geplanter Tageswechsel). Du musst nichts programmieren.
@@ -62,7 +62,7 @@ oder mir die Fehlermeldung schicken.
 
 1. Im Projekt auf „Project configuration“ (früher „Site configuration“).
 2. Unter „Project details“ auf „Change project name“.
-3. Zum Beispiel `zeitblatt` eintragen. Die Seite heißt dann `https://zeitblatt.netlify.app`, falls der Name frei ist.
+3. Zum Beispiel `nochtage` eintragen. Die Seite heißt dann `https://nochtage.netlify.app`, falls der Name frei ist.
 4. Danach einmal neu bauen lassen: „Deploys“ → „Trigger deploy“ → „Deploy project“.
    Die Seite schreibt ihre eigene Adresse in Sitemap und Vorschaubilder, und die liest sie beim Bauen.
 
@@ -85,15 +85,14 @@ Nacht ein Eintrag „Tageswechsel: 200“.
 Die Seite funktioniert auch unter der `netlify.app`-Adresse. Für Google und für den Markennamen ist eine
 eigene Domain aber besser.
 
-1. Die Domain bei einem Anbieter für `.de`-Domains registrieren, zum Beispiel INWX, IONOS oder Strato.
-   Ob `zeitblatt.de` frei ist, zeigt dir der Anbieter bei der Suche. Ist sie vergeben: einen anderen Namen
-   wählen und in `site.config.ts` die Zeilen `name` und `domain` anpassen (so wie in Schritt 0).
+1. Die Domain `nochtage.de` hast du registriert. Warte, bis dein Anbieter sie als aktiv anzeigt.
+   Direkt nach der Bestellung kann das ein paar Minuten bis Stunden dauern.
 2. Bei Netlify: „Domain management“ → „Add a domain“ → „Add a domain you already own“ → Domain eintragen.
 3. Netlify zeigt dir jetzt genau, welche DNS-Einträge nötig sind. Es gibt zwei Wege:
    - **Einfacher:** „Use Netlify DNS“. Netlify nennt dir vier Nameserver. Die trägst du beim Domain-Anbieter
      als Nameserver ein.
    - **Oder:** Die DNS-Einträge beim Domain-Anbieter selbst setzen, mit den Werten, die Netlify anzeigt
-     (ein Eintrag für `zeitblatt.de`, einer für `www.zeitblatt.de`).
+     (ein Eintrag für `nochtage.de`, einer für `www.nochtage.de`).
 4. Warten. Bis die Domain überall funktioniert, vergehen meist ein paar Minuten, manchmal einige Stunden.
 5. Das Zertifikat für `https` stellt Netlify von selbst aus. Unter „Domain management“ → „HTTPS“ steht dann
    „Your site has HTTPS enabled“.
@@ -104,11 +103,11 @@ eigene Domain aber besser.
 ## Schritt 7: Die Seite bei Google anmelden
 
 1. <https://search.google.com/search-console> öffnen und mit einem Google-Konto anmelden.
-2. „Property hinzufügen“ → „Domain“ → `zeitblatt.de` eintragen.
+2. „Property hinzufügen“ → „Domain“ → `nochtage.de` eintragen.
 3. Google zeigt einen TXT-Eintrag. Den trägst du dort ein, wo deine DNS-Einträge liegen
    (bei Netlify DNS: „Domain management“ → Domain anklicken → „Add new record“, Typ TXT).
 4. In der Search Console auf „Bestätigen“.
-5. Links auf „Sitemaps“, dann `https://zeitblatt.de/sitemap.xml` eintragen und senden.
+5. Links auf „Sitemaps“, dann `https://nochtage.de/sitemap.xml` eintragen und senden.
 
 Bis die ersten Seiten in der Suche auftauchen, dauert es Tage bis Wochen. Das ist normal.
 
@@ -134,4 +133,4 @@ Bis die ersten Seiten in der Suche auftauchen, dauert es Tage bis Wochen. Das is
 | `next.config.ts` | liest die Adresse der Seite aus der Netlify-Variable `URL` |
 
 Eine Variable für die Adresse musst du nicht setzen. Wer sie trotzdem fest vorgeben will, legt
-`NEXT_PUBLIC_SITE_URL` an (zum Beispiel `https://zeitblatt.de`). Sie hat dann Vorrang.
+`NEXT_PUBLIC_SITE_URL` an (zum Beispiel `https://nochtage.de`). Sie hat dann Vorrang.

@@ -48,7 +48,7 @@ export const viewport: Viewport = {
  * Das Kalenderblatt reißt nur einmal pro Besuch ab. Das Skript läuft vor dem ersten Bild,
  * setzt das Attribut und nimmt es wieder weg, sobald die Animation vorbei ist.
  */
-const ABRISS = `try{if(!sessionStorage.getItem("zb-abriss")){sessionStorage.setItem("zb-abriss","1");var d=document.documentElement;d.setAttribute("data-abriss","");setTimeout(function(){d.removeAttribute("data-abriss")},1500)}}catch(e){}`;
+const ABRISS = `try{if(!sessionStorage.getItem("nt-abriss")){sessionStorage.setItem("nt-abriss","1");var d=document.documentElement;d.setAttribute("data-abriss","");setTimeout(function(){d.removeAttribute("data-abriss")},1500)}}catch(e){}`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

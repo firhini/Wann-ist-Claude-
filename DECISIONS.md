@@ -2,6 +2,9 @@
 
 Jede größere Entscheidung mit kurzer Begründung. Neueste Phase unten.
 
+> Die Seite heißt seit dem 15.11.2026 **Nochtage** (`nochtage.de`). In den Abschnitten zu Phase 1 bis 6 steht
+> noch der Arbeitsname Zeitblatt, so wie er zum Zeitpunkt der Entscheidung galt. Siehe letzter Abschnitt.
+
 ## Phase 1: Fundament
 
 **Markenname: Zeitblatt.** Kurz, deutsch, verbindet Zeit mit dem Kalenderblatt, um das sich das Design dreht.
@@ -284,3 +287,17 @@ Auf Wunsch läuft die Seite auf Netlify statt auf Vercel.
   Analytics (serverseitig, kostenpflichtig) lässt sich später ohne Codeänderung dazubuchen.
 - **Impressum:** Name, Straße und E-Mail sind eingetragen. Postleitzahl und Ort fehlten in der Angabe und
   stehen als `[[PLZ ORT]]` in `site.config.ts`.
+
+## Neuer Name: Nochtage
+
+`zeitblatt.de` war vergeben. Meine Prüfung zu Beginn hatte nur gezeigt, dass die Domain auf keinen Server zeigt,
+nicht, dass sie frei ist. Das war zu wenig. Die neuen Vorschläge sind direkt bei der DENIC abgefragt worden.
+Gewählt wurde **Nochtage** mit `nochtage.de`.
+
+- Der Name steht weiter nur in `site.config.ts` (`name`, `domain`). Neu ist `akzent`: der Teil des Namens, der
+  in der Wortmarke in Orchid steht.
+- **Die Wortmarke ist zweifarbig:** „NOCH“ in Tinte, „TAGE“ in Orchid. Sie wiederholt, was auf jeder
+  Countdown-Seite groß zu sehen ist („40 TAGE“). Der Name sagt außerdem genau das, was die Seite antwortet.
+- Icon mit „N“ statt „Z“, Paketname, Tests, README und Anleitung sind angepasst.
+- Bei der letzten Abfrage (15.11.2026) führte die DENIC `nochtage.de` noch nicht als registriert. Direkt nach
+  einer Bestellung ist das normal. Wenn die Domain beim Anbieter nach einigen Stunden nicht aktiv ist: Bestellung prüfen.

@@ -5,7 +5,7 @@ import type { NextConfig } from "next";
  * die Netlify beim Build in URL bereitstellt, sonst die geplante Domain. Der Wert wird fest
  * eingebaut, damit Server und Browser dieselbe Adresse kennen.
  */
-const SEITEN_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? process.env.URL ?? "https://zeitblatt.de").replace(/\/$/, "");
+const SEITEN_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? process.env.URL ?? "https://nochtage.de").replace(/\/$/, "");
 
 const config: NextConfig = {
   poweredByHeader: false,

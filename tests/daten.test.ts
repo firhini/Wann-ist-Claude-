@@ -78,7 +78,7 @@ describe("Register aller Countdowns", () => {
   it("Seitentitel sind nie länger als 70 Zeichen", () => {
     for (const c of alle) {
       const titel = seitenTitel(c, stand(c, JETZT));
-      const mitMarke = titel.length > 50 ? titel : `${titel} | Zeitblatt`;
+      const mitMarke = titel.length > 50 ? titel : `${titel} | Nochtage`;
       expect(mitMarke.length, `${c.pfad}: ${mitMarke}`).toBeLessThanOrEqual(70);
     }
   });

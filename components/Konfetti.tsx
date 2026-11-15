@@ -7,7 +7,7 @@ export function Konfetti() {
   const [an, setAn] = useState(false);
 
   useEffect(() => {
-    const key = `zb-konfetti:${location.pathname}${location.search}`;
+    const key = `nt-konfetti:${location.pathname}${location.search}`;
     try {
       if (sessionStorage.getItem(key)) return;
       sessionStorage.setItem(key, "1");

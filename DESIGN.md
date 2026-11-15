@@ -1,4 +1,4 @@
-# DESIGN.md – Zeitblatt
+# DESIGN.md – Nochtage
 
 Verbindliche Gestaltungsgrundlage. Jede Seite wird nur aus diesen Tokens und Bausteinen gebaut.
 Die Tokens stehen maschinenlesbar in `app/globals.css` (`@theme`). Tailwinds Standardfarben,
@@ -36,6 +36,8 @@ Regeln:
   - Kleine Akzente: die laufende Sekunde, die nächste Abfahrt auf der Tafel (Kacheln der ersten Zeile), die
     Heute-Marke auf der Jahresleiste am Seitenkopf, der Stempel der Ferienseiten, der Fortschrittsbalken, der
     nächste Termin in Übersichtstabellen, „heute“ und „läuft“.
+  - Die Wortmarke: „NOCH“ in Tinte, „TAGE“ in Orchid. Sie wiederholt im Kleinen, was die Seite im Großen
+    zeigt („40 TAGE“). Gesteuert über `akzent` in `site.config.ts`.
   - Dazu ohne Fläche: Link-Unterstreichung beim Hover, `::selection`, Fokusrahmen, Konfetti am Ziel.
   - Verboten bleibt Orchid als Hintergrund ganzer Abschnitte, als Rahmen um Textblöcke und in Fließtext.
 - `orchid` nur für große Schrift (≥ 24 px fett) und Grafik. Kleine Schrift in Akzentfarbe nimmt immer `orchid-deep`.
