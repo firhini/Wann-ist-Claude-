@@ -1,9 +1,10 @@
 import { datumOhneJahr, datumLang, monatName } from "@/lib/format";
 import { kalenderwoche, montagDerKw, wochenImJahr } from "@/lib/kw";
+import { bundesweiterFeiertagAm } from "@/data/feiertage-laender";
 import { type Tag, plusTage, tagNr } from "@/lib/zeit";
 
 /** Alle Kalenderwochen eines Jahres mit Montag und Sonntag. Die laufende Woche ist markiert. */
-export function KwTabelle({ jahr, heute }: { jahr: number; heute: Tag }) {
+export function KwTabelle({ jahr, heute, mitFeiertagen = false }: { jahr: number; heute: Tag; mitFeiertagen?: boolean }) {
   const aktuell = kalenderwoche(heute);
   const wochen = Array.from({ length: wochenImJahr(jahr) }, (_, i) => {
     const mo = montagDerKw(jahr, i + 1);
@@ -19,7 +20,7 @@ export function KwTabelle({ jahr, heute }: { jahr: number; heute: Tag }) {
             <th scope="col">Montag</th>
             <th scope="col">Sonntag</th>
             <th scope="col" className="max-sm:hidden">
-              Monat
+              {mitFeiertagen ? "Bundesweite Feiertage" : "Monat"}
             </th>
             <th scope="col" className="rechts">
               Stand
@@ -44,7 +45,13 @@ export function KwTabelle({ jahr, heute }: { jahr: number; heute: Tag }) {
                 <td className="mono text-daten whitespace-nowrap">
                   {w.so.y === jahr ? datumOhneJahr(w.so) : datumLang(w.so)}
                 </td>
-                <td className="max-sm:hidden">{monatName(do_.m)}</td>
+                <td className="max-sm:hidden">
+                  {mitFeiertagen
+                    ? Array.from({ length: 7 }, (_, i) => bundesweiterFeiertagAm(plusTage(w.mo, i)))
+                        .filter((x): x is string => x !== null)
+                        .join(", ")
+                    : monatName(do_.m)}
+                </td>
                 <td className="mono text-daten rechts whitespace-nowrap">
                   {laeuft ? (
                     <span className="font-medium text-orchid-deep">läuft</span>

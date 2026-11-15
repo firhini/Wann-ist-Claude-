@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
-import { Brotkrumen } from "@/components/Brotkrumen";
+import { HubKopf } from "@/components/HubKopf";
 import { JsonLd } from "@/components/JsonLd";
+import { BUNDESLAENDER } from "@/data/bundeslaender";
+import { naechsterFeiertag } from "@/data/feiertage-land-seiten";
+import { anzahlFeiertage } from "@/data/feiertage-laender";
 import { Uebersicht, type UebersichtZeile } from "@/components/Uebersicht";
 import { STAMM } from "@/data/countdowns";
 import { stand } from "@/lib/countdown";
 import { datumMitWochentag } from "@/lib/format";
 import { type Krume, metadaten, schemaKrumen, schemaWebPage } from "@/lib/seo";
 import { nochTage } from "@/lib/texte";
-import { tagVon } from "@/lib/zeit";
+import { tageDiff, tagVon } from "@/lib/zeit";
 
 export const revalidate = 3600;
 
@@ -70,29 +73,31 @@ export default function FeiertageHub() {
           schemaKrumen(KRUMEN),
         ]}
       />
-      <div className="blatt pt-4 pb-3">
-        <Brotkrumen krumen={KRUMEN} />
-      </div>
-      <section className="blatt">
-        <div className="border-t border-ink pt-8 lg:pt-10">
-          <h1 className="text-plakat max-w-[14ch]">Wann ist der nächste Feiertag?</h1>
-          <p className="text-lead mt-6 max-w-text">
-            {gesetzlich ? (
-              <>
-                <strong className="font-semibold">
-                  Der nächste bundesweite Feiertag ist {gesetzlich.c.title}: {datumMitWochentag(gesetzlich.s.start)},{" "}
-                  {nochTage(gesetzlich.s.tage)}.
-                </strong>{" "}
-              </>
-            ) : null}
-            {naechster && naechster !== gesetzlich
-              ? `Vorher im Kalender: ${naechster.c.title}, ${
-                  naechster.s.phase === "vor" ? nochTage(naechster.s.tage) : "heute"
-                }.`
-              : null}
-          </p>
-        </div>
-      </section>
+      <HubKopf
+        krumen={KRUMEN}
+        h1="Wann ist der nächste Feiertag?"
+        zeilenTitel="Die nächsten bundesweiten Feiertage"
+        zeilen={liste
+          .filter((e) => e.c.gesetzlich === "bundesweit" && e.s.phase === "vor")
+          .slice(0, 5)
+          .map((e) => ({ label: e.c.title, wert: `in ${e.s.tage} ${e.s.tage === 1 ? "Tag" : "Tagen"}` }))}
+      >
+        <p>
+          {gesetzlich ? (
+            <>
+              <strong className="font-semibold">
+                Der nächste bundesweite Feiertag ist {gesetzlich.c.title}: {datumMitWochentag(gesetzlich.s.start)},{" "}
+                {nochTage(gesetzlich.s.tage)}.
+              </strong>{" "}
+            </>
+          ) : null}
+          {naechster && naechster !== gesetzlich
+            ? `Vorher im Kalender: ${naechster.c.title}, ${
+                naechster.s.phase === "vor" ? nochTage(naechster.s.tage) : "heute"
+              }.`
+            : null}
+        </p>
+      </HubKopf>
 
       <section className="blatt mt-12">
         <h2 className="text-kopf mb-5">Alle Feste und Feiertage, der Reihe nach</h2>
@@ -101,6 +106,30 @@ export default function FeiertageHub() {
           zeilen={zeilen}
           spalteName="Fest"
           spalteExtra="Arbeitsfrei?"
+        />
+      </section>
+
+      <section className="blatt mt-abschnitt">
+        <h2 className="text-kopf mb-2">Feiertage nach Bundesland</h2>
+        <p className="mb-5 max-w-text">
+          Wie viele Feiertage es gibt, hängt vom Wohnort ab. Jede Zeile führt zur Liste des Landes, mit Brückentagen.
+        </p>
+        <Uebersicht
+          titel="Gesetzliche Feiertage nach Bundesland"
+          spalteName="Bundesland"
+          spalteExtra="Nächster Feiertag"
+          zeilen={BUNDESLAENDER.map((b) => {
+            const f = naechsterFeiertag(b.code, now);
+            const n = tageDiff(tagVon(now), f.tag);
+            return {
+              pfad: `/feiertage/${b.slug}`,
+              titel: b.name,
+              datum: f.tag,
+              tage: Math.max(0, n),
+              phase: n > 0 ? ("vor" as const) : ("heute" as const),
+              extra: `${f.name} · ${anzahlFeiertage(b.code)} Feiertage im Jahr`,
+            };
+          })}
         />
       </section>
 

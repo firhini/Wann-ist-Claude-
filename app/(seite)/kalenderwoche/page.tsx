@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Brotkrumen } from "@/components/Brotkrumen";
 import { FaqListe } from "@/components/FaqListe";
 import { JsonLd } from "@/components/JsonLd";
 import { KwBlatt } from "@/components/KwBlatt";
 import { KwTabelle } from "@/components/KwTabelle";
 import { Prosa } from "@/components/Text";
-import { KW_FAQ, KW_TEXT } from "@/data/kalenderwoche";
+import { KW_FAQ, KW_JAHRE, KW_TEXT } from "@/data/kalenderwoche";
 import { datumLang, datumOhneJahr, wochentagName } from "@/lib/format";
 import { kalenderwoche, montagDerWoche, wochenImJahr } from "@/lib/kw";
 import { type Krume, metadaten, schemaFaq, schemaKrumen, schemaWebPage } from "@/lib/seo";
@@ -112,6 +113,17 @@ export default function Kalenderwoche() {
       <section className="blatt mt-abschnitt">
         <h2 className="text-kopf mb-5">Alle Kalenderwochen {a.kw.jahr}</h2>
         <KwTabelle jahr={a.kw.jahr} heute={a.heute} />
+        <p className="mt-5">
+          Mit Feiertagen und für andere Jahre:{" "}
+          {KW_JAHRE.map((j, i) => (
+            <span key={j}>
+              <Link href={`/kalenderwoche/${j}`} className="link">
+                Kalenderwochen {j}
+              </Link>
+              {i < KW_JAHRE.length - 1 ? ", " : ""}
+            </span>
+          ))}
+        </p>
       </section>
 
       <section className="blatt mt-abschnitt">

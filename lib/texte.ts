@@ -8,7 +8,17 @@ import {
   uhrzeit,
   wochentagName,
 } from "./format";
-import type { Tag } from "./zeit";
+import { type Tag, teile } from "./zeit";
+
+/** Startuhrzeit eines Countdowns in Berliner Zeit, falls er eine hat. */
+export function uhrVon(c: Pick<Countdown, "uhrzeit" | "hatUhrzeit">, s: Stand): { h: number; mi: number } | null {
+  if (c.uhrzeit) return c.uhrzeit;
+  if (c.hatUhrzeit) {
+    const t = teile(s.startZeit);
+    return { h: t.h, mi: t.mi };
+  }
+  return null;
+}
 
 export function grossAnfang(s: string): string {
   return s.charAt(0).toUpperCase() + s.slice(1);
@@ -50,10 +60,13 @@ export function antwort(c: Countdown, s: Stand, folge?: Tag | null): { satz: str
       : `${grossAnfang(c.bis)} sind es noch ${tausender(s.tage)} Tage.`;
 
   let zusatz: string;
-  if (c.art === "zeitraum" && s.tageGesamt > 1) {
+  const uhr = uhrVon(c, s);
+  if (c.zusatzSatz) {
+    zusatz = c.zusatzSatz(s);
+  } else if (c.art === "zeitraum" && s.tageGesamt > 1) {
     zusatz = `${name} ${mz ? "beginnen" : "beginnt"} am ${datumMitWochentag(s.start)}, und ${mz ? "enden" : "endet"} am ${datumMitWochentag(s.ende)}.`;
-  } else if (c.uhrzeit) {
-    zusatz = `${name} ${mz ? "beginnen" : "beginnt"} am ${datumMitWochentag(s.start)}, um ${uhrzeit(c.uhrzeit.h, c.uhrzeit.mi)}.`;
+  } else if (uhr) {
+    zusatz = `${name} ${mz ? "beginnen" : "beginnt"} am ${datumMitWochentag(s.start)}, um ${uhrzeit(uhr.h, uhr.mi)}.`;
   } else {
     zusatz = `${name} ${mz ? "fallen" : "fällt"} ${s.start.y} auf einen ${wochentagName(s.start)}, den ${datumLang(s.start)}.`;
   }

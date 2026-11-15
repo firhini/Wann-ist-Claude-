@@ -22,7 +22,7 @@ function naechstesIn(auswahl: Countdown[], now: Date): string {
 /** Einstiege in alle Hubs, mit dem jeweils nächsten Termin. */
 export function startHubs(now: Date): StartHub[] {
   const alle = alleCountdowns();
-  const feiertage = alle.filter((c) => c.category === "feiertage");
+  const feiertage = alle.filter((c) => c.category === "feiertage" && !c.bundesland);
   return [
     {
       name: "Feiertage",
@@ -37,6 +37,18 @@ export function startHubs(now: Date): StartHub[] {
       naechstes: naechstesIn(alle.filter((c) => c.category === "ferien" && c.slug.startsWith("ferien-")), now),
     },
     {
+      name: "Jahreszeiten",
+      pfad: "/jahreszeiten",
+      text: "Frühlings-, Sommer-, Herbst- und Winteranfang auf die Minute, dazu die nächste Zeitumstellung.",
+      naechstes: naechstesIn(alle.filter((c) => c.category === "jahreszeiten"), now),
+    },
+    {
+      name: "Alltag",
+      pfad: "/alltag",
+      text: "Wochenende, Freitag, Feierabend, Monatsende, Zahltag, Jahresende: die kleinen Ziele.",
+      naechstes: naechstesIn(alle.filter((c) => c.category === "alltag" && c.slug !== "feierabend"), now),
+    },
+    {
       name: "Schulanfang",
       pfad: "/schule",
       text: "Der erste Schultag nach den Sommerferien, für jedes Bundesland.",
@@ -47,6 +59,12 @@ export function startHubs(now: Date): StartHub[] {
       pfad: "/kalenderwoche",
       text: "Die aktuelle KW und alle Wochen des Jahres mit Montag und Sonntag.",
       naechstes: "Wechselt jeden Montag",
+    },
+    {
+      name: "Tage bis",
+      pfad: "/tage-bis",
+      text: "Jeder Tag des Jahres mit eigener Seite: Countdown, Wochentag, Kalenderwoche und was an dem Tag los ist.",
+      naechstes: "366 Daten",
     },
   ];
 }

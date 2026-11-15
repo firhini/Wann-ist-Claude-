@@ -186,7 +186,7 @@ export const FERIEN: Ferienzeit[] = aufbereiten();
 export const FERIEN_ABGERUFEN: string = roh.abgerufen;
 export const KMK_UEBERSICHT = {
   label: "Kultusministerkonferenz: Ferienregelung",
-  url: "https://www.kmk.org/service/ferien.html",
+  url: "https://www.kmk.org/service/ferienregelung.html",
 };
 
 export function ferienzeiten(art: Ferienart, code: BundeslandCode): Ferienzeit[] {

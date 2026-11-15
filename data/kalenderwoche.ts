@@ -1,5 +1,8 @@
 import type { Faq } from "@/lib/countdown";
 
+/** Jahre mit eigener Übersichtsseite unter /kalenderwoche/<jahr>. */
+export const KW_JAHRE = [2026, 2027, 2028, 2029, 2030];
+
 export const KW_TEXT = `In Deutschland werden Kalenderwochen nach der Norm ISO 8601 gezählt. Sie hat zwei einfache Regeln: Jede Woche beginnt am Montag und endet am Sonntag. Und die erste Kalenderwoche eines Jahres ist die Woche, in der der erste Donnerstag liegt.
 
 Aus der zweiten Regel folgt, dass der 4. Januar immer in KW 1 liegt und der 28. Dezember immer in der letzten Woche. Es folgt auch, dass die Tage um den Jahreswechsel manchmal zur „falschen“ Woche gehören: Der 1. Januar kann noch in KW 52 oder KW 53 des alten Jahres liegen, der 31. Dezember schon in KW 1 des neuen.

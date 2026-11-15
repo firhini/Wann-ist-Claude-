@@ -11,7 +11,7 @@ import {
   wochenendenBis,
 } from "./zeit";
 
-export type Kategorie = "feiertage" | "ferien" | "jahreszeiten" | "alltag" | "events" | "schule";
+export type Kategorie = "feiertage" | "ferien" | "jahreszeiten" | "alltag" | "events" | "schule" | "datum";
 
 export type Faq = { q: string; a: string };
 export type Quelle = { label: string; url: string };
@@ -58,6 +58,16 @@ export type Countdown = {
   endeImJahr?: (jahr: number) => Tag | null;
   /** Startuhrzeit, falls der Termin eine hat (Berliner Zeit). */
   uhrzeit?: { h: number; mi: number };
+  /** Der Termin hat eine Uhrzeit, die von Jahr zu Jahr wechselt. Sie wird aus getNextDate gelesen. */
+  hatUhrzeit?: boolean;
+  /** Eigene Termintabelle statt der berechneten „nächsten Jahre“. */
+  tabelle?: (now: Date) => {
+    titel: string;
+    spalteEins?: string;
+    zeilen: { jahr: number | string; start: Tag; ende?: Tag | null; notiz?: string }[];
+  };
+  /** Eigener zweiter Satz der Antwort statt des Standards „… fällt auf einen …“. */
+  zusatzSatz?: (s: Stand) => string;
   /** Gesetzlicher Feiertag? */
   gesetzlich?: "bundesweit" | BundeslandCode[] | false;
   /** Zusätzliche Fahrplanzeilen im Hero. */

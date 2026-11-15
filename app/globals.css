@@ -297,6 +297,17 @@
     border-left: 0;
   }
 
+  /* Tagesraster im Datums-Hub: auf dem Handy wie ein Wochenkalender, am Desktop ein Monat pro Zeile. */
+  .tagesraster {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+  @media (min-width: 64rem) {
+    .tagesraster {
+      grid-template-columns: repeat(31, minmax(0, 1fr));
+    }
+  }
+
   /* Stempel: das Motiv der Ferienseiten. */
   .stempel {
     display: inline-flex;

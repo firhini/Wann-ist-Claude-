@@ -58,3 +58,43 @@ Dazu `/embed/<slug>` (noindex), `/og` (Vorschaubild), `/sitemap.xml` mit `/sitem
   (`/feiertage/<bundesland>`, `/jahresende`).
 
 **Screenshots:** `screenshots/phase-2/`
+
+## Phase 3: Feiertage komplett, Jahreszeiten, Alltag (15.11.2026)
+
+**Neue URLs (54 indexierbar)**
+- 25 Feste: `/weiberfastnacht`, `/rosenmontag`, `/aschermittwoch`, `/valentinstag`, `/frauentag`, `/karfreitag`,
+  `/ostern`, `/ostermontag`, `/tag-der-arbeit`, `/muttertag`, `/christi-himmelfahrt`, `/vatertag`, `/pfingsten`,
+  `/pfingstmontag`, `/fronleichnam`, `/heilige-drei-koenige`, `/mariae-himmelfahrt`, `/weltkindertag`,
+  `/tag-der-deutschen-einheit`, `/halloween`, `/reformationstag`, `/allerheiligen`, `/sankt-martin`, `/karneval`,
+  `/buss-und-bettag`
+- `/feiertage/<bundesland>` (16)
+- `/jahreszeiten` mit `/fruehlingsanfang`, `/sommeranfang`, `/herbstanfang`, `/winteranfang`, `/zeitumstellung`
+- `/alltag` mit `/wochenende`, `/freitag`, `/feierabend`, `/monatsende`, `/jahresende`, `/payday`
+
+**Qualitätsschleife**
+- Runde 1: Tafel zeigte bei Länderseiten „kein Feiertag“ (jetzt der Name des nächsten Feiertags),
+  Zahltag-Satz im Dezember holprig (neu formuliert), eine Quellen-URL der PTB gab es nicht (ersetzt).
+- Runde 2: Feiertags-Hub hatte rechts eine leere Fläche (jetzt Fahrplanspalte mit den nächsten bundesweiten
+  Feiertagen und Tabelle nach Bundesland). Der Alltags-Hub trug dieselbe H1 wie `/wochenende` (geändert).
+- Lighthouse Mobile: `/feiertage/bayern` 100/100/100/100, `/ostern` 100/100/100/100,
+  `/zeitumstellung` 99/100/100/100, `/feierabend` 99/100/100/100. CLS 0.
+
+**Screenshots:** `screenshots/phase-3/`
+
+## Phase 4: Datumsseiten und KW-Jahre (15.11.2026)
+
+**Neue URLs (372 indexierbar)**
+- `/tage-bis` (Hub mit allen 366 Tagen) und `/tage-bis/<tag>-<monat>` (366), z. B. `/tage-bis/1-april`
+- `/kalenderwoche/2026` bis `/kalenderwoche/2030` (5)
+
+**Qualitätsschleife**
+- Runde 1: Tagesraster im Hub brach nach 27 Tagen um (jetzt 31 Spalten am Desktop, 7 auf dem Handy wie ein
+  Wochenkalender). Datumsseiten hatten keine Tafel (jetzt die nächsten sieben Termine).
+- Runde 2: Stichproben 29. Februar (zählt bis 2028, Texte stimmen), 24. Dezember, 1. April.
+- Lighthouse Mobile: `/tage-bis/1-april` 100/100/100/100, `/tage-bis` 100/100/100/100,
+  `/kalenderwoche/2027` 100/100/100/100. CLS 0.
+- Smoke-Test über alle 569 Seiten der Sitemaps: ein offener Link (`/eigener-countdown`, entsteht in Phase 5).
+
+**Stand:** 569 indexierbare Seiten. Build: 765 Routen in rund 11 Sekunden.
+
+**Screenshots:** `screenshots/phase-4/`

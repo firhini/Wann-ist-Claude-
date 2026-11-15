@@ -2,13 +2,18 @@ import type { TafelZeile } from "@/components/Tafel";
 import { type Countdown, type Kategorie, stand } from "@/lib/countdown";
 import { datumTagMonat } from "@/lib/format";
 import { STAMM } from "./countdowns";
+import { alleFeiertageLandCountdowns } from "./feiertage-land-seiten";
 import { alleFerienCountdowns, alleFerienLandCountdowns, alleSchulanfangCountdowns } from "./ferien";
 
 /** Jeder Countdown der Seite, egal unter welchem Pfad. */
 let alle: Countdown[] | null = null;
 
 export function alleCountdowns(): Countdown[] {
-  alle ??= [...STAMM, ...alleFerienCountdowns(), ...alleFerienLandCountdowns(), ...alleSchulanfangCountdowns()];
+  alle ??= [
+    ...STAMM,
+    ...alleFeiertageLandCountdowns(),
+    ...alleFerienCountdowns(), ...alleFerienLandCountdowns(), ...alleSchulanfangCountdowns(),
+  ];
   return alle;
 }
 
@@ -26,9 +31,13 @@ export const KATEGORIE_NAME: Record<Kategorie, string> = {
   alltag: "Alltag",
   events: "Event",
   schule: "Schule",
+  datum: "Datum",
 };
 
-function notizVon(c: Countdown): string {
+function notizVon(c: Countdown, now: Date): string {
+  if (c.category === "feiertage" && c.bundesland) {
+    return c.zeilen?.(now)[0]?.wert ?? "Feiertage";
+  }
   if (c.category === "feiertage") {
     if (c.gesetzlich === "bundesweit") return "gesetzlicher Feiertag";
     if (Array.isArray(c.gesetzlich)) return `Feiertag in ${c.gesetzlich.length} ${c.gesetzlich.length === 1 ? "Land" : "Ländern"}`;
@@ -48,7 +57,7 @@ export function tafelZeile(c: Countdown, now: Date, notiz?: string): TafelZeile 
     datum: s.start,
     tage: s.tage,
     phase: s.phase,
-    notiz: notiz ?? notizVon(c),
+    notiz: notiz ?? notizVon(c, now),
   };
 }
 

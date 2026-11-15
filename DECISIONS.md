@@ -113,3 +113,57 @@ langen Ländernamen zusätzlich die Klammer „(noch X Tage)“ weg. Der Smoke-T
 Regionale Sonderfälle (Fronleichnam in Teilen Sachsens und Thüringens, Mariä Himmelfahrt in Teilen Bayerns) sind
 als „teilweise“ markiert und zählen nicht als landesweit frei. Berlins einmaliger Feiertag am 17. Juni 2028 ist
 enthalten (Gesetz vom 10. Juli 2024, laut Recherche auf berlin.de bestätigt).
+
+## Phase 3: Feiertage, Jahreszeiten, Alltag
+
+**25 weitere Feste, zwei davon über den Auftrag hinaus.** Zur Liste kamen Ostermontag, Pfingstmontag, Tag der
+Arbeit, Heilige Drei Könige, Buß- und Bettag, Mariä Himmelfahrt, Frauentag, Weltkindertag, Aschermittwoch und der
+Karnevalsbeginn (11.11., 11:11 Uhr) hinzu. Ohne sie wären die Länderseiten lückenhaft: Jeder gesetzliche Feiertag
+eines Landes soll eine eigene Seite haben, auf die die Tabelle verlinkt.
+
+**Texte mit Faktenprüfung.** Die Texte für 25 Feste entstanden in zwei parallelen Schreibdurchgängen nach der
+Vorlage der Wintersaison. Vorgabe: nur gesichertes Wissen, keine Umfragen, unsichere Jahreszahlen per Suche prüfen
+oder vorsichtig formulieren. Datumsbereiche beweglicher Feste wurden mit `lib/feiertage.ts` nachgerechnet.
+Danach habe ich alle Fakten gegengelesen. Bewusst vage blieben: Ursprung der Weiberfastnacht (Beuel 1824, „der
+Überlieferung nach“), Thesenanschlag („nicht sicher belegt“), Narrenzahl Elf („gesichert ist keine Erklärung“).
+
+**Quelle für bundesweite Feiertage:** die BMI-Seite „Nationale Feiertage“. Sie existiert und listet die neun
+bundeseinheitlichen Feiertage. Sie blockt allerdings automatische Abrufe ohne Cookie, Link-Checker melden dort
+fälschlich Fehler.
+
+**Vatertag und Christi Himmelfahrt haben getrennte Seiten,** obwohl das Datum dasselbe ist. Es sind zwei
+verschiedene Suchen mit verschiedenen Fragen (Brauch und Bollerwagen hier, Kirchenfest und Feiertagsrecht dort).
+Ebenso Halloween und Reformationstag.
+
+**Jahreszeiten zählen auf die Minute.** Astronomischer Beginn laut U.S. Naval Observatory, umgerechnet in
+deutsche Zeit. Der meteorologische Beginn steht daneben in der Fahrplanspalte.
+
+**Zeitumstellung zählt bis 1:00 Uhr UTC,** dem Moment der Umstellung laut EU-Richtlinie. Angezeigt wird
+„von 2 auf 3 Uhr“ bzw. „von 3 auf 2 Uhr“, weil eine einzelne Uhrzeit hier in die Irre führt.
+Quelle ist die PTB (die zuerst notierte Unterseite gab es nicht, verlinkt ist jetzt die geprüfte Übersichtsseite).
+
+**Alltag mit festen, nachlesbaren Regeln.** Wochenende ab Samstag 0 Uhr, Feierabend montags bis freitags
+17 Uhr, Monatsende am letzten Kalendertag. Der Zahltag (`/payday`) folgt § 24 Abs. 1 TVöD: letzter Tag des
+Monats, bei Samstag, Feiertag oder 31. Dezember der Werktag davor, bei Sonntag der zweite Werktag davor.
+Einen gesetzlichen Zahltag für alle gibt es nicht. Die Seite sagt das im ersten Satz und nennt die Regel beim Namen.
+
+**`/feiertage/<bundesland>` als Countdown zum nächsten Feiertag des Landes,** mit Tabellen für das laufende
+und das nächste Jahr, Brückentagen (Feiertag am Dienstag oder Donnerstag) und den Feiertagen, die aufs
+Wochenende fallen. Regionale Feiertage stehen in der Tabelle, zählen aber nicht für den Countdown.
+
+## Phase 4: Datumsseiten und Kalenderwochen
+
+**366 Datumsseiten mit Inhalten, die nur für dieses Datum gelten:** Tag im Jahr (auch für Schaltjahre),
+Wochentage der nächsten sechs Jahre, Kalenderwoche, bewegliche Feste, die in den nächsten zwölf Jahren auf das
+Datum fallen (berechnet), feste Feiertage mit Geltungsbereich, eine handverlesene Liste von 45 Gedenk- und
+Aktionstagen, welche Bundesländer an dem Tag Schulferien haben (aus den KMK-Daten), Sternzeichen, Jahreszeit
+und die acht zeitlich nächsten Feste mit Abstand in Tagen. Historische „Was geschah am“-Listen gibt es nicht:
+366 Tage mal mehrere Ereignisse hätte ich nicht einzeln prüfen können.
+
+**Datumsseiten haben kein Widget.** Sie stehen nicht im Register der Countdowns, sonst kämen 366 weitere
+Embed-Seiten dazu. Das OG-Bild rechnet direkt aus dem Datum (`/og?t=…&d=…`).
+
+**Kalenderwochen-Jahre 2026 bis 2030** unter `/kalenderwoche/<jahr>`, mit bundesweiten Feiertagen je Woche.
+Die Liste steht in `data/kalenderwoche.ts` (`KW_JAHRE`) und lässt sich mit einer Zahl verlängern.
+
+**Neue Kategorie `datum`** im Typ, weil Datumsseiten in keine der sechs Kategorien des Auftrags passen.

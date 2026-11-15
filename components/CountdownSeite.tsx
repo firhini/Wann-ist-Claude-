@@ -5,7 +5,7 @@ import { type Countdown, type Faq, einheiten, naechsteJahre, stand } from "@/lib
 import { datumLang, uhrzeit, wochentagName, zeitraumKurz } from "@/lib/format";
 import { kalenderwoche } from "@/lib/kw";
 import { type Krume, schemaFaq, schemaKrumen, schemaWebPage } from "@/lib/seo";
-import { antwort, beschreibung, seitenTitel } from "@/lib/texte";
+import { antwort, beschreibung, seitenTitel, uhrVon } from "@/lib/texte";
 import { mitternacht, plusTage, tagNr, tagVon } from "@/lib/zeit";
 import { AdSlot, AffiliateSlot } from "./AdSlot";
 import { Brotkrumen } from "./Brotkrumen";
@@ -86,6 +86,7 @@ export function CountdownSeite({ c, now, krumen, embedPfad, jahre, zusatz, motiv
   const faq = [...c.faq, ...(c.faqDynamisch?.(now) ?? []), ...fragenZumFeiertag(c)];
   const kw = kalenderwoche(s.start);
   const istZeitraum = c.art === "zeitraum" && s.tageGesamt > 1;
+  const uhr = uhrVon(c, s);
 
   const zeilen: { label: string; wert: string }[] = [
     {
@@ -93,16 +94,17 @@ export function CountdownSeite({ c, now, krumen, embedPfad, jahre, zusatz, motiv
       wert: istZeitraum ? zeitraumKurz(s.start, s.ende) : datumLang(s.start),
     },
     { label: istZeitraum ? "Erster Tag" : "Wochentag", wert: wochentagName(s.start) },
-    ...(c.uhrzeit ? [{ label: "Uhrzeit", wert: uhrzeit(c.uhrzeit.h, c.uhrzeit.mi) }] : []),
+    ...(uhr ? [{ label: "Uhrzeit", wert: uhrzeit(uhr.h, uhr.mi) }] : []),
     ...(istZeitraum ? [{ label: "Dauer", wert: `${s.tageGesamt} Tage` }] : []),
     { label: "Kalenderwoche", wert: `KW ${kw.kw}` },
     ...(gesetzlichText(c) ? [{ label: "Gesetzlicher Feiertag", wert: gesetzlichText(c) as string }] : []),
     ...(c.zeilen?.(now) ?? []),
   ];
 
+  const eigene = jahre ?? c.tabelle?.(now);
   const jahreZeilen: JahrZeile[] =
-    jahre?.zeilen ?? naechsteJahre(c, now, 6).map((j) => ({ jahr: j.jahr, start: j.start, ende: j.ende }));
-  const jahreTitel = jahre?.titel ?? `${c.title} in den nächsten Jahren`;
+    eigene?.zeilen ?? naechsteJahre(c, now, 6).map((j) => ({ jahr: j.jahr, start: j.start, ende: j.ende }));
+  const jahreTitel = eigene?.titel ?? `${c.title} in den nächsten Jahren`;
   const tafelZeilen = tafel?.zeilen ?? verwandte(c, now, 7);
 
   return (
@@ -144,7 +146,7 @@ export function CountdownSeite({ c, now, krumen, embedPfad, jahre, zusatz, motiv
                 bis={c.bis}
                 heuteText={c.heute}
                 laeuftText={c.laeuft}
-                hatUhrzeit={Boolean(c.uhrzeit)}
+                hatUhrzeit={Boolean(c.uhrzeit) || Boolean(c.hatUhrzeit)}
               />
             </div>
             <div className="order-4 mt-7">
@@ -209,7 +211,7 @@ export function CountdownSeite({ c, now, krumen, embedPfad, jahre, zusatz, motiv
       {jahreZeilen.length > 1 && (
         <section className="blatt mt-abschnitt">
           <h2 className="text-kopf mb-5">{jahreTitel}</h2>
-          <Jahre titel={jahreTitel} zeilen={jahreZeilen} heute={s.heute} spalteEins={jahre?.spalteEins} />
+          <Jahre titel={jahreTitel} zeilen={jahreZeilen} heute={s.heute} spalteEins={eigene?.spalteEins} />
           {jahre?.hinweis ? <div className="mono text-fein mt-3 max-w-text text-ink-soft">{jahre.hinweis}</div> : null}
         </section>
       )}
