@@ -104,7 +104,7 @@ export default function Start() {
             <h2 className="text-kopf">Welche KW haben wir?</h2>
             <p className="mt-3 flex items-end gap-x-3">
               <span className="zahl zahl-klein">{kw.kw}</span>
-              <span className="display text-kopf pb-1">
+              <span className="display text-kopf pb-1 text-orchid">
                 KW
                 <span className="block text-ink-soft">{kw.jahr}</span>
               </span>

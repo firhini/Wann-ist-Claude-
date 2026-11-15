@@ -106,6 +106,7 @@ export default function FeiertageHub() {
           zeilen={zeilen}
           spalteName="Fest"
           spalteExtra="Arbeitsfrei?"
+          ersteMarkieren
         />
       </section>
 

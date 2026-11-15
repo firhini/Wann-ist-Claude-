@@ -68,7 +68,7 @@ export function KategorieHub({
       </HubKopf>
       <section className="blatt mt-12">
         <h2 className="text-kopf mb-5">{tabellenTitel}</h2>
-        <Uebersicht titel={tabellenTitel} zeilen={liste} spalteName={spalteName} spalteExtra={spalteExtra} />
+        <Uebersicht titel={tabellenTitel} zeilen={liste} spalteName={spalteName} spalteExtra={spalteExtra} ersteMarkieren />
       </section>
       {danach}
       <section className="blatt mt-abschnitt">

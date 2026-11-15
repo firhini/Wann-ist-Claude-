@@ -245,3 +245,22 @@ scrollbarer Bereich per Tastatur erreichbar.
 - Schleswig-Holsteins Sommerferien 2028 und 2029: Jahreskalender und langfristige Regelung der KMK weichen
   voneinander ab, übernommen ist der neuere Jahreskalender. Die Seite des Landes war bei der Prüfung nicht
   erreichbar (siehe `data/ferien-pruefbericht.md`).
+
+## Nach Rückmeldung: mehr Orchid
+
+Wunsch nach der Durchsicht: Der Farbton war bisher fast nur an den Sekunden zu sehen und sollte etwas
+präsenter sein, mit einem deutlichen Effekt, ohne die Seite bunt zu machen. Umgesetzt mit einer festen Regel
+statt mit Streuung: **ein großer Akzent pro Seite, höchstens zwei kleine.**
+
+- **Die Einheit neben der großen Zahl ist Orchid.** „TAGE“, „KW“, „STUNDEN“ sind jetzt das eine farbige Wort
+  auf dem Blatt, im Stil eines Schweizer Plakats. Auf der Startseite ist es der Monat neben der Tageszahl.
+  Das Vorschaubild und das Widget ziehen mit. Kontrast 3,42:1 auf Papier, zulässig für große Schrift.
+- **Die nächste Abfahrt auf der Tafel** hat Kacheln in Orchid. So fällt auf jeder Tafel sofort auf, was als
+  Nächstes kommt.
+- **Der Balken am Seitenkopf wird zur Jahresleiste.** Eine kleine Marke in Orchid steht dort, wo im Jahr
+  heute ist. Sie wandert jeden Tag ein Stück nach rechts. Wenig Fläche, aber auf jeder Seite da, und sie
+  bedeutet etwas.
+- **In Übersichtstabellen** steht der nächste Termin in `orchid-deep`.
+
+Nicht gemacht: Orchid in Überschriften, Flächen oder Buttons. Dort würde es zur Dekoration, und der Effekt
+der wenigen Stellen wäre weg. `DESIGN.md`, Abschnitt 2, beschreibt die neue Regel.

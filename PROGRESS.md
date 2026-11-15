@@ -150,3 +150,10 @@ Dazu `/embed/<slug>` (noindex), `/og` (Vorschaubild), `/sitemap.xml` mit `/sitem
 | Build | 843 Routen in rund 11 Sekunden |
 
 **Screenshots:** `screenshots/phase-6/`
+
+## Nachtrag: mehr Orchid (15.11.2026)
+
+Nach Rückmeldung drei zusätzliche Akzente, siehe `DECISIONS.md`: die Einheit neben der Zahl, die nächste
+Abfahrt auf der Tafel, die Heute-Marke auf der Jahresleiste. Geprüft in zwei Runden (Countdown, Startseite,
+Ferienseite mit Stempel, Tintenmodus, Vorschaubild). Kontrastprüfung um zwei Kombinationen erweitert, alle AA.
+Lighthouse unverändert, CLS 0. Screenshots: `screenshots/orchid/`.

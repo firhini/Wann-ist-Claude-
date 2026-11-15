@@ -42,10 +42,10 @@ export function Tafel({
           </p>
         </div>
         <ol className="border-t border-paper/30">
-          {zeilen.map((z) => (
+          {zeilen.map((z, i) => (
             <li
               key={z.pfad}
-              className="grid grid-cols-[1fr_auto] items-center gap-x-4 border-b border-paper/30 py-3 sm:grid-cols-[7.5rem_1fr_auto] lg:grid-cols-[9rem_1fr_14rem_auto] lg:py-3.5"
+              className={`${i === 0 && z.phase === "vor" ? "tafel-erste " : ""}grid grid-cols-[1fr_auto] items-center gap-x-4 border-b border-paper/30 py-3 sm:grid-cols-[7.5rem_1fr_auto] lg:grid-cols-[9rem_1fr_14rem_auto] lg:py-3.5`}
             >
               <span className="mono text-daten max-sm:col-start-1 max-sm:row-start-2 max-sm:text-fein">
                 {datumTafel(z.datum)}

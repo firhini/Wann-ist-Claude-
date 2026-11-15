@@ -29,10 +29,11 @@ const PAARE: Paar[] = [
   { text: "ink-soft", grund: "paper-deep", min: 4.5, wo: "Sekundärtext in Tabellenzeile" },
   { text: "orchid-deep", grund: "paper", min: 4.5, wo: "Akzent, kleine Schrift" },
   { text: "orchid-deep", grund: "paper-deep", min: 4.5, wo: "Akzent in Tabellenzeile" },
-  { text: "orchid", grund: "paper", min: 3, wo: "Akzent groß, Balken, Linien" },
+  { text: "orchid", grund: "paper", min: 3, wo: "Einheit neben der Zahl, Monat, Balken, Linien" },
+  { text: "orchid", grund: "paper-deep", min: 3, wo: "Einheit auf dem abreißenden Blatt" },
   { text: "paper", grund: "ink", min: 4.5, wo: "Tafel, Knopf gefüllt, Kachel" },
   { text: "orchid", grund: "ink", min: 3, wo: "Sekunden-Kachel (große Ziffer)" },
-  { text: "#17151a", grund: "orchid", min: 4.5, wo: "Heute-Marker, Textmarkierung" },
+  { text: "#17151a", grund: "orchid", min: 4.5, wo: "Heute-Marker, nächste Abfahrt, Textmarkierung" },
 ];
 
 function leuchtdichte(hex: string): number {

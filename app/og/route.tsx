@@ -135,8 +135,7 @@ export async function GET(request: Request) {
                   marginBottom: 8,
                 }}
               >
-                <div style={{ display: "flex", width: 56, height: 14, background: ORCHID, marginBottom: 14 }} />
-                <div style={{ display: "flex", fontSize: 76, lineHeight: 0.9, textTransform: "uppercase" }}>
+                <div style={{ display: "flex", fontSize: 84, lineHeight: 0.9, textTransform: "uppercase", color: ORCHID }}>
                   {einheit}
                 </div>
               </div>

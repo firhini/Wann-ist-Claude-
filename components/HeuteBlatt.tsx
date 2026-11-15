@@ -22,7 +22,7 @@ export function HeuteBlatt({ serverNow }: { serverNow: number }) {
         <span className="zahl zahl-klein" suppressHydrationWarning>
           {heute.d}
         </span>
-        <span className="display text-kopf pb-1" suppressHydrationWarning>
+        <span className="display text-kopf pb-1 text-orchid" suppressHydrationWarning>
           {monatName(heute.m)}
           <span className="block text-ink-soft">{heute.y}</span>
         </span>

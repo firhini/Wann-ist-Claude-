@@ -170,6 +170,7 @@ function ArtSeite({ art }: { art: FerienartInfo }) {
           zeilen={a.zeilen.map(zeile)}
           spalteName="Bundesland"
           spalteExtra="Dauer"
+          ersteMarkieren
         />
         {a.ohne.length > 0 && (
           <p className="mono text-fein mt-3 text-ink-soft">

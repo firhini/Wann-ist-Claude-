@@ -30,9 +30,14 @@ Die Seite ist ein Fahrplan für Tage. Sie zeigt eine Zahl, sagt, wofür sie steh
 
 Regeln:
 
-- **Orchid ist selten.** Erlaubte Orte: die laufende Sekunde, der „Heute“-Marker, die Unterstreichung
-  von Links beim Hover, `::selection`, der Fortschrittsbalken während der Ferien, der Stempel, Konfetti am Ziel,
-  Fokusrahmen. Pro Bildschirm höchstens zwei davon gleichzeitig sichtbar. Keine Orchid-Flächen als Deko.
+- **Orchid ist selten, aber nie versteckt.** Jede Seite hat genau einen großen Akzent und höchstens zwei kleine.
+  - Der große Akzent ist das eine farbige Wort neben der großen Zahl: die Einheit („TAGE“, „KW“, „STUNDEN“)
+    auf Countdown-Seiten, der Monat auf dem Kalenderblatt der Startseite.
+  - Kleine Akzente: die laufende Sekunde, die nächste Abfahrt auf der Tafel (Kacheln der ersten Zeile), die
+    Heute-Marke auf der Jahresleiste am Seitenkopf, der Stempel der Ferienseiten, der Fortschrittsbalken, der
+    nächste Termin in Übersichtstabellen, „heute“ und „läuft“.
+  - Dazu ohne Fläche: Link-Unterstreichung beim Hover, `::selection`, Fokusrahmen, Konfetti am Ziel.
+  - Verboten bleibt Orchid als Hintergrund ganzer Abschnitte, als Rahmen um Textblöcke und in Fließtext.
 - `orchid` nur für große Schrift (≥ 24 px fett) und Grafik. Kleine Schrift in Akzentfarbe nimmt immer `orchid-deep`.
 - **Tintenmodus** (`prefers-color-scheme: dark`): `paper` und `ink` tauschen die Plätze. Keine neuen Farben,
   kein Glühen. Die Abfahrtstafel, im Hellen ein Tintenblock auf Papier, wird im Dunkeln ein Papierblock auf Tinte.
@@ -101,7 +106,7 @@ Regeln:
 ## 5. Linien, Ecken, Flächen
 
 - **Haarlinie:** 1 px `ink`. Sie trägt die Struktur: zwischen Hero-Spalten, zwischen Tabellenzeilen, um Buttons.
-- **Balken:** 6 px `ink` am Seitenkopf (die Leiste des Kalenders) und über dem Footer.
+- **Balken:** 6 px `ink` am Seitenkopf (die Jahresleiste mit der Heute-Marke) und über dem Footer.
 - **Perforation:** 2 px gepunktet `ink` (`.perforation`). Nur dort, wo ein Blatt endet: unter der Zahl, um den Fahrschein.
 - **Ecken:** eckig. Ausnahmen: Ziffernkacheln `radius-flap` = 2 px, Fahrschein und Stempel `radius-blatt` = 4 px.
 - **Schatten, Verläufe, Unschärfe:** keine. Die Tokens existieren nicht.
@@ -111,7 +116,8 @@ Regeln:
 
 | Baustein | Datei | Beschreibung |
 |---|---|---|
-| Kopf | `components/Kopf.tsx` | Balken, Wortmarke, Navigation als Textlinks, Datum und KW in Mono |
+| Kopf | `components/Kopf.tsx` | Jahresleiste, Wortmarke, Navigation als Textlinks, Datum und KW in Mono |
+| Jahresleiste | `components/Jahresleiste.tsx` | Der 6-px-Balken am Seitenkopf ist das Jahr. Eine 10 px breite Marke in Orchid steht an der Stelle des heutigen Tages: am 1. Januar ganz links, an Silvester ganz rechts |
 | Brotkrumen | `components/Brotkrumen.tsx` | Mono, `fein`, mit `BreadcrumbList` |
 | Hero | `components/CountdownHero.tsx` | Frage, Zahl, Abriss, Uhr, Fahrplanspalte |
 | Ziffernkachel | `components/Flap.tsx` | Fallblatt-Ziffern. Im Hero Tinte auf Papier invertiert, auf der Tafel Papier auf Tinte |

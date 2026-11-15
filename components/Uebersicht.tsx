@@ -19,11 +19,14 @@ export function Uebersicht({
   zeilen,
   spalteName = "Tag",
   spalteExtra,
+  ersteMarkieren = false,
 }: {
   titel: string;
   zeilen: UebersichtZeile[];
   spalteName?: string;
   spalteExtra?: string;
+  /** Den nächsten Termin (erste Zeile) in Orchid hervorheben. Nur bei zeitlich sortierten Tabellen. */
+  ersteMarkieren?: boolean;
 }) {
   return (
     <div className="overflow-x-auto">
@@ -47,7 +50,7 @@ export function Uebersicht({
           </tr>
         </thead>
         <tbody>
-          {zeilen.map((z) => (
+          {zeilen.map((z, i) => (
             <tr key={`${z.pfad ?? z.titel}-${z.datum.y}${z.datum.m}${z.datum.d}`}>
               <th scope="row" className="display text-zeile text-ink">
                 {z.pfad ? (
@@ -66,7 +69,13 @@ export function Uebersicht({
               {spalteExtra && <td className="text-klein max-lg:hidden">{z.extra}</td>}
               <td className="mono text-daten rechts whitespace-nowrap">
                 {z.phase === "vor" ? (
-                  `${tausender(z.tage)} ${z.tage === 1 ? "Tag" : "Tage"}`
+                  ersteMarkieren && i === 0 ? (
+                    <span className="font-medium text-orchid-deep">
+                      {tausender(z.tage)} {z.tage === 1 ? "Tag" : "Tage"}
+                    </span>
+                  ) : (
+                    `${tausender(z.tage)} ${z.tage === 1 ? "Tag" : "Tage"}`
+                  )
                 ) : (
                   <span className="font-medium text-orchid-deep">{z.phase === "heute" ? "heute" : "läuft"}</span>
                 )}

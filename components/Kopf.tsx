@@ -2,11 +2,13 @@ import Link from "next/link";
 import { HAUPTNAVI } from "@/data/navigation";
 import { site } from "@/site.config";
 import { HeuteZeile } from "./HeuteZeile";
+import { Jahresleiste } from "./Jahresleiste";
 
 /** Seitenkopf: Balken, Wortmarke, Navigation als Textlinks, Datum in Mono. */
 export function Kopf({ serverNow }: { serverNow: number }) {
   return (
-    <header className="balken">
+    <header>
+      <Jahresleiste serverNow={serverNow} />
       <div className="blatt flex flex-wrap items-center justify-between gap-x-8 gap-y-1 pt-3 pb-2 lg:pt-4 lg:pb-3">
         <Link href="/" className="display text-marke" aria-label={`${site.name}, zur Startseite`}>
           {site.name}

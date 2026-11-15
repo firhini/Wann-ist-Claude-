@@ -218,6 +218,21 @@
     border-top: 6px solid var(--color-ink);
   }
 
+  /* Die Jahresleiste: Der Balken ist das Jahr, die Marke in Orchid ist heute. */
+  .jahresleiste {
+    position: relative;
+    height: 6px;
+    background: var(--color-ink);
+  }
+  .jahresmarke {
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 16px;
+    background: var(--color-orchid);
+    transform: translateX(-50%);
+  }
+
   /* Fahrplanzeile: Beschriftung links, Wert rechts, Haarlinie darunter. */
   .fahrplan > div.max-lg\:hidden {
     display: none;
@@ -435,6 +450,7 @@
   .embed-einheit {
     font-size: clamp(1.25rem, 7vw, 2.25rem);
     padding-bottom: 0.1em;
+    color: var(--color-orchid);
   }
   .embed-wort {
     font-size: clamp(1.75rem, 10vw, 3.5rem);
@@ -468,6 +484,8 @@
   .zahl-reihe > .zahl-einheit {
     font-size: 0.2em;
     padding-bottom: 0.05em;
+    /* Die Einheit ist das eine farbige Wort auf dem Blatt. */
+    color: var(--color-orchid);
   }
 
   /* Die Einheit neben der Hauptzahl ("Tage"). */
@@ -564,6 +582,11 @@
     --flap-bg: var(--color-orchid);
     --flap-fg: #17151a;
     letter-spacing: 0.02em;
+  }
+  /* Die nächste Abfahrt: Kacheln in Orchid. */
+  .tafel .tafel-erste {
+    --flap-bg: var(--color-orchid);
+    --flap-fg: #17151a;
   }
   /* Auf der Tafel sind die Kacheln hell. */
   .tafel {
