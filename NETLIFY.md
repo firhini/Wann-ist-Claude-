@@ -80,25 +80,52 @@ dieses Neu-Erzeugen von außen auslösen können.
 Ob die Funktion läuft, siehst du unter „Logs“ → „Functions“ → `tageswechsel`. Dort steht nach der ersten
 Nacht ein Eintrag „Tageswechsel: 200“.
 
-## Schritt 6: Die eigene Domain verbinden
+## Schritt 6: Die Domain nochtage.de (one.com) verbinden
 
-Die Seite funktioniert auch unter der `netlify.app`-Adresse. Für Google und für den Markennamen ist eine
-eigene Domain aber besser.
+Die Domain liegt bei one.com. Du lässt sie dort und trägst nur zwei DNS-Einträge ein, die auf Netlify zeigen.
+Die Nameserver bleiben, wie sie sind. So funktionieren auch E-Mail-Adressen bei one.com weiter.
 
-1. Die Domain `nochtage.de` hast du registriert. Warte, bis dein Anbieter sie als aktiv anzeigt.
-   Direkt nach der Bestellung kann das ein paar Minuten bis Stunden dauern.
-2. Bei Netlify: „Domain management“ → „Add a domain“ → „Add a domain you already own“ → Domain eintragen.
-3. Netlify zeigt dir jetzt genau, welche DNS-Einträge nötig sind. Es gibt zwei Wege:
-   - **Einfacher:** „Use Netlify DNS“. Netlify nennt dir vier Nameserver. Die trägst du beim Domain-Anbieter
-     als Nameserver ein.
-   - **Oder:** Die DNS-Einträge beim Domain-Anbieter selbst setzen, mit den Werten, die Netlify anzeigt
-     (ein Eintrag für `nochtage.de`, einer für `www.nochtage.de`).
-4. Warten. Bis die Domain überall funktioniert, vergehen meist ein paar Minuten, manchmal einige Stunden.
-5. Das Zertifikat für `https` stellt Netlify von selbst aus. Unter „Domain management“ → „HTTPS“ steht dann
-   „Your site has HTTPS enabled“.
-6. Bei „Domain management“ die Domain ohne `www` als „Primary domain“ festlegen.
-7. Noch einmal neu bauen: „Deploys“ → „Trigger deploy“ → „Deploy project“. Erst danach stehen in Sitemap,
-   Vorschaubildern und Einbett-Code die neue Adresse.
+**6a: Bei Netlify die Domain anmelden**
+
+1. Im Projekt auf „Domain management“ → „Add a domain“.
+2. `nochtage.de` eintragen und bestätigen. Netlify meldet, dass die Domain schon jemandem gehört: Das bist du,
+   also weiter mit „Add domain“.
+3. Netlify legt `nochtage.de` und `www.nochtage.de` an und zeigt „Awaiting external DNS“ oder ähnlich. Das ist richtig so.
+4. Merk dir die Netlify-Adresse deines Projekts, zum Beispiel `nochtage.netlify.app`. Sie steht oben auf derselben Seite.
+
+**6b: Bei one.com die Einträge setzen**
+
+Im Kontrollpanel von one.com: Domain `nochtage.de` → „DNS“ → „DNS Einträge“ → Bereich „Neuen Record erstellen“.
+
+| Reiter | Feld „Hostname“ | Feld für das Ziel | Zweck |
+|---|---|---|---|
+| A | leer lassen | `75.2.60.5` | `nochtage.de` zeigt auf Netlify |
+| CNAME | `www` | deine Netlify-Adresse, z. B. `nochtage.netlify.app` | `www.nochtage.de` zeigt auf Netlify |
+
+Die Reiter „Web Forward“ und „Web Alias“ brauchst du nicht. Unter „Nameserver“ nichts ändern.
+
+Danach die Liste der vorhandenen Einträge auf derselben Seite durchsehen:
+
+- Steht dort schon ein **A**- oder **AAAA**-Eintrag für `nochtage.de` oder `www`, der auf one.com zeigt (oft als
+  Standard-Eintrag mit Schalter): abschalten oder löschen. Vor allem der AAAA-Eintrag muss weg, sonst landet ein
+  Teil der Besucher weiter bei one.com und Netlify kann kein Zertifikat ausstellen.
+- Lässt sich der CNAME für `www` nicht anlegen, liegt es an so einem Standard-Eintrag für `www`. Erst den
+  abschalten, dann den CNAME anlegen.
+- **MX**-Einträge (E-Mail) nicht anfassen.
+
+Die Adresse `75.2.60.5` ist der Lastverteiler von Netlify (laut Netlify-Dokumentation, geprüft am 15.11.2026).
+Netlify zeigt dir denselben Wert unter „Domain management“ neben der Domain an. Weicht er ab, gilt der von Netlify.
+
+**6c: Zurück bei Netlify**
+
+1. „Domain management“ öffnen. Neben den beiden Domains erscheint nach einigen Minuten bis Stunden ein grüner Haken.
+2. Weiter unten bei „HTTPS“ auf „Verify DNS configuration“ klicken. Netlify stellt dann das Zertifikat aus.
+3. `nochtage.de` (ohne `www`) als „Primary domain“ festlegen.
+4. Neu bauen: „Deploys“ → „Trigger deploy“ → „Deploy project“. Erst danach stehen in Sitemap, Vorschaubildern
+   und Einbett-Code die neue Adresse.
+
+Direkt nach dem Kauf einer `.de`-Domain kann es einige Stunden dauern, bis sie weltweit erreichbar ist. Solange
+zeigt Netlify „Awaiting external DNS“. Die Einträge kannst du trotzdem schon setzen.
 
 ## Schritt 7: Die Seite bei Google anmelden
 
