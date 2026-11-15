@@ -6,17 +6,14 @@ Das Projekt ist dafür fertig eingerichtet (`netlify.toml`, geplanter Tageswechs
 Geprüft am 15.11.2026: Ein Netlify-Build dieses Projekts läuft lokal fehlerfrei durch.
 Die Namen der Menüpunkte bei Netlify können sich leicht ändern. Die Reihenfolge der Schritte bleibt dieselbe.
 
-## Schritt 0: Postleitzahl und Ort nachtragen
+## Schritt 0: Angaben im Impressum
 
-Im Impressum steht bisher „Ulmenweg 43, [[PLZ ORT]]“. Ein Impressum braucht die vollständige Anschrift.
+Name, Anschrift und E-Mail sind eingetragen. Ändern kannst du sie jederzeit selbst:
 
 1. Auf GitHub das Repository `firhini/Wann-ist-Claude-` öffnen.
 2. Die Datei `site.config.ts` anklicken, dann oben rechts auf den Stift („Edit this file“).
-3. In der Zeile `address: "Ulmenweg 43, [[PLZ ORT]]",` den Platzhalter ersetzen, zum Beispiel
-   `address: "Ulmenweg 43, 28195 Bremen",`.
-4. Unten auf „Commit changes“ klicken.
-
-Das kannst du auch später machen. Netlify baut die Seite nach jeder Änderung von selbst neu.
+3. Im Block `owner` die Zeilen `name`, `address` oder `email` anpassen.
+4. Unten auf „Commit changes“ klicken. Netlify baut die Seite danach von selbst neu.
 
 ## Schritt 1: Netlify-Konto anlegen
 

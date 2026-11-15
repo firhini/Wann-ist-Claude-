@@ -14,13 +14,10 @@ export const site = {
     "Nochtage zählt die Tage bis Weihnachten, Silvester, zu den Ferien in deinem Bundesland und zu jedem anderen Datum. Ohne Eingabe, mit laufender Uhr.",
   locale: "de-DE",
   timeZone: "Europe/Berlin",
-  /**
-   * Persönliche Angaben für Impressum und Datenschutz.
-   * Postleitzahl und Ort fehlen noch: [[PLZ ORT]] ersetzen, bevor die Seite online geht.
-   */
+  /** Persönliche Angaben für Impressum und Datenschutz. */
   owner: {
     name: "Farhan Ahmad",
-    address: "Ulmenweg 43, [[PLZ ORT]]",
+    address: "Ulmenweg 43, 68723 Schwetzingen",
     email: "Farhan2008hb@gmail.com",
   },
   /** Werbung und Affiliate sind vorbereitet, aber aus. */

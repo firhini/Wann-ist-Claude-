@@ -301,3 +301,5 @@ Gewählt wurde **Nochtage** mit `nochtage.de`.
 - Icon mit „N“ statt „Z“, Paketname, Tests, README und Anleitung sind angepasst.
 - Bei der letzten Abfrage (15.11.2026) führte die DENIC `nochtage.de` noch nicht als registriert. Direkt nach
   einer Bestellung ist das normal. Wenn die Domain beim Anbieter nach einigen Stunden nicht aktiv ist: Bestellung prüfen.
+
+**Impressum vollständig (15.11.2026):** Postleitzahl und Ort sind nachgetragen, der Platzhalter `[[PLZ ORT]]` ist weg.

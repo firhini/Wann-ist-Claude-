@@ -36,8 +36,8 @@ Die Seite ist für Netlify eingerichtet. Die Anleitung Schritt für Schritt steh
 
 ## Was vor dem Start zu tun ist
 
-1. **Postleitzahl und Ort** in `site.config.ts` ergänzen: Bei `owner.address` steht noch `[[PLZ ORT]]`.
-   Name und E-Mail sind eingetragen. Die Angaben erscheinen in Impressum und Datenschutz.
+1. **Impressum prüfen.** Name, Anschrift und E-Mail stehen in `site.config.ts` (`owner`) und erscheinen in
+   Impressum und Datenschutz.
 2. **Domain verbinden.** Gewählt ist `nochtage.de`. Markenname und Domain stehen nur in `site.config.ts`
    (`name`, `akzent`, `domain`).
 3. **Bei Netlify** optional `CRON_SECRET` setzen (siehe `NETLIFY.md`, Schritt 5). Die Adresse der Seite liest
